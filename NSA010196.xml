@@ -1,0 +1,125 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How the Turtle Tricked the Tiger</title>
+                <editor ref="p:Roth394" role="collector">Walter E. Roth</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
+                <principal>
+                    <persName>Katja Mellmann</persName>
+                    <persName>Michelle Scalise Sugiyama</persName>
+                </principal>
+                <respStmt>
+                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+                    <persName>Jan Jokisch</persName>
+                </respStmt>
+            </titleStmt>
+            <extent>
+                <measure unit="KB" quantity="15">About 15 kilobytes</measure>
+            </extent>
+            <publicationStmt>
+                <authority>The Forager Folklore Database</authority>
+                <idno type="FFDB">NSA010196</idno>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+                </availability>
+                <date when="2025">2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office, pp. 223-225.</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+            </projectDesc>
+            <samplingDecl>
+                <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly (or via the proxy of an interpreter or other immediate intermediary)
+                    from an informant who either lived or grew up as a member of a culture whose
+                    primary subsistence at the time of recording was or until recently had been
+                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
+                    recording and the relative freedom from external cultural influences. To create
+                    a corpus with high representability, multiple versions of the same narrative
+                    were omitted, cultural clusters and close cultural relations between two groups
+                    were negatively taken into account, and it was aimed for the highest degree of
+                    diversity.</p>
+            </samplingDecl>
+            <tagsDecl>
+                <namespace name="">
+                    <tagUsage gi="animal" occurs="62">Used to mark animal names in the text.</tagUsage>
+                    <tagUsage gi="plant" occurs="1">Used to mark plant names in the text.</tagUsage>
+                    <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
+                        text.</tagUsage>
+                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+                        text.</tagUsage>
+                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+                    <tagUsage gi="anamyth" occurs="1">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+                    <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <listPrefixDef>
+                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+                </prefixDef>
+                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
+                </prefixDef>
+                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+                        collected in the FFDB.</p>
+                </prefixDef>
+            </listPrefixDef>
+            <editorialDecl>
+                <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) with no clear systematic.</p>
+                <normalization method="silent">
+                    <p>In-text explanations by the original editor are set in brackets. In-text
+                        additions/excursions by the informant are set in parenthesis.</p>
+                    <p>Latin passages in the original (usually to hide language and themes deemed
+                        indecent) are rendered in English.</p>
+                </normalization>
+                <hyphenation eol="none">
+                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+                </hyphenation>
+                <quotation marks="all">
+                    <p>All quotation marks have been retained. No effort was made to mark quoted
+                        passages up as <gi>quote</gi>.</p>
+                </quotation>
+                <interpretation>
+                    <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged with a semantic tagger based on WordNet and on word lists as well as
+                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
+                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
+                        respectively.</p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <name type="culture" key="CSA36701">Warao</name>
+                    <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
+                </setting>
+            </settingDesc>
+        <textClass><keywords scheme="URLtoOurTMI"><list><item><idno type="TMI">A2412.5.1</idno><term>A2412.5.1. Markings on tortoise's back.</term></item><item><idno type="TMI">K11</idno><term>K11. Race won by deception.</term></item><item><idno type="TMI">K70</idno><term>K70. Contest in strength won by deception.</term></item><item><idno type="TMI">K366.6</idno><term>K366.6. Thieving turtle.</term></item><item><idno type="TMI">A2412.1+WS9</idno><term>A2412.1+WS9. Origin of jaguar's spots.</term></item><item><idno type="TMI">J1117+WS38</idno><term>J1117+WS38. Turtle as trickster.</term></item><item><idno type="TMI">K563.2+WS</idno><term>K563.2+WS. Tortoise persuades jaguar captor to put him in pocket with hole; escapes.</term></item></list></keywords></textClass></profileDesc>
+    </teiHeader>
+    <text>
+    <body>
+<p><animal>Tiger</animal> really wanted to eat the <animal>Turtle</animal>, but was a bit of a coward and none too sure whether his intended victim was the stronger or not. Wishing therefore to find out, he approached the <animal>Turtle</animal> and pretended to make friends. The latter, however, was no fool, and knowing quite well what reliance could be placed on such a pretended friendship, saw that he must exercise every craft and cunning to save himself. <animal>Tiger</animal> began telling him what a big strong man he was, that he ate only meat, with such and such results, thinking thereby to impress <animal>Turtle</animal> with his physical superiority. But nothing daunted, <animal>Turtle</animal> said he could do the same, and suggested that their respective statements be put to the proof. This was agreed on, <animal>Turtle</animal> stipulating only that during the test they should both keep their eyes shut, an arrangement to which <animal>Tiger</animal> agreed.<note>The details of what now takes place are identical with those given in the next story, in which the <animal>Anteater</animal> replaces the <animal>Turtle</animal>.</note> "Now, didn't I tell you?" said <animal>Turtle</animal>, "that I could do exactly the same as you and even go one better?" <animal>Tiger</animal> was loth to admit this, and therefore maintained: "Well, even if you are stronger than I, I am faster than you; I can run more quickly. Let <pb n="224"/>us have a race, and prove it." They accordingly arranged to run to a certain spot, along a certain path, and whichever got there first would be admitted to be the faster, <animal>Turtle</animal> stipulating only that he must be allowed a little time in which to get ready. <animal>Tiger</animal> again agreed. <animal>Turtle</animal> spent the interim in visiting his many friends, telling them what had happened, and arranging for them to place themselves at stated intervals along the course of the pathway where the race was to be run. The two then started, and <animal>Tiger</animal>, taking a spring ahead, was soon out of sight. <animal>Turtle</animal> utilized the opportunity by slipping into the bush, taking a short cut, and reaching the spot agreed on, where he awaited his opponent. <animal>Tiger</animal>, racing along, called out "Hullo!" on seeing just in front of him a <animal>turtle</animal>, whom he believed to be his friend. He raced on, finds another <animal>turtle</animal> ahead of him, thinks the same thing, and so meeting <animal>turtle</animal> after <animal>turtle</animal> finally reaches the goal, where his original "friend" had certainly arrived first.<note>This procedure savors of African origin.</note> <animal>Tiger</animal> therefore had to admit, "Yes, man, you have beaten me," <animal>Turtle</animal> adding: "So you are not after all either the stronger or the faster. Come, let us see who is now the cleverer. I will put marks on you and you put marks on me: that will be a good test." The <animal>Tiger</animal> again agreed. They then started painting each other. As to the <animal>Tiger</animal>'s handiwork, just look at a <animal>Turtle</animal>'s shell, and you will see how roughly and slovenly the marking was done. Of course <animal>Tiger</animal> was planning to get the better of his opponent if he could, but the latter well knew this and so had to be very smart in pleasing the <animal>Tiger</animal>. Look at the beautiful spots and stripes that <animal>Turtle</animal> put on him - and of course <animal>Tiger</animal> was delighted at seeing how handsome he looked, and had to admit that <animal>Turtle</animal> was cleverer than he. Now all the time that they had been talking, racing, and painting, they had had nothing to eat, and hence <animal>Tiger</animal> suggested their going into the depths of the bush, and finding some <animal>game</animal>, but <animal>Turtle</animal>, who had good reasons for not trusting his companion, refused. "No!" he said, "You can go and raise the <animal>deer</animal> and I will catch and kill it for you." So <animal>Tiger</animal> went and raised a <animal>deer</animal>, and drove it down the pathway. In the meantime <animal>Turtle</animal> climbed up a dead log that was lying across the road, and waited: as the <animal>deer</animal> raced underneath he dropped off the log and, falling straight on the <animal>animal</animal>'s neck, broke it. <animal>Turtle</animal> then sucked the dead <animal>deer</animal>'s blood and smeared it all over his mouth, so as to make <animal>Tiger</animal>, who just then came up breathless, believe that he had caught and destroyed the <animal>animal</animal>. "I have killed the <animal>deer</animal> and eaten my share; you can come and eat yours now." After having gorged himself, <animal>Tiger</animal> said, "Let us have a nap now," and curling himself up, soon fell asleep. <animal>Turtle</animal>, who kept awake, saw what a pretty necklace his companion was wearing <anamyth>(what we Indians call a "<animal>tiger</animal>-bead")</anamyth> and became envious of it.<note>This" tiger-bead necklace " is a rope-<plant>vine</plant> of some kind with more or less globular enlargements throughout its length, like beads threaded on a string.</note> <animal>Turtle</animal> watched very carefully and, assured that he was in a deep slumber, quietly and softly removed the necklace, which he handed to one of his friends in the neighborhood, telling the latter to make off with it. When <animal>Tiger</animal> at length woke, he missed his necklace and asked <animal>Turtle</animal> where it was, but the latter of course said he did not know. <animal>Tiger</animal> however, accused him of being the thief, and said that whether he had stolen it or not he would eat him unless he replaced it. <animal>Turtle</animal>, however, protested that necklaces were of no use to the like of him: he had no neck to put one on: all he had was a back! <animal>Tiger</animal>, however, insisted on killing him if he didn't return it, but <animal>Turtle</animal>, who was now on his mettle, let him know that he could not kill him if he tried. Had he not already proved to him that he was the stronger, the quicker, and the cleverer? On the other hand, there was much more reason for believing that he, the little <animal>Turtle</animal>, could easily kill him, the big <animal>Tiger</animal>, if he only wanted to. And thus they continued, contending, and finally they arranged to fight it out to a finish, the <animal>Turtle</animal> only insisting that each be allowed a little time to get ready for the fray. The conditions were that they should go in opposite directions, and return within a short interval to the same spot, when the fight must be fought to a finish and no quarter shown. <animal>Tiger</animal> went his <pb n="225"/>way, and on a given signal returned to the trysting place. But there was no <animal>Turtle</animal> to be seen. Of course not! hadn't he crawled into a hole in a log for safety? <epimyth>And there he still is, and there <animal>Tiger</animal> is continually on the watch for him to emerge.</epimyth></p>
+</body></text>
+</TEI>
