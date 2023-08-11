@@ -1,0 +1,125 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Contented and Happy Son-in-Law</title>
+                <editor ref="p:Roth394" role="collector">Walter E. Roth</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
+                <principal>
+                    <persName>Katja Mellmann</persName>
+                    <persName>Michelle Scalise Sugiyama</persName>
+                </principal>
+                <respStmt>
+                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+                    <persName>Jan Jokisch</persName>
+                </respStmt>
+            </titleStmt>
+            <extent>
+                <measure unit="KB" quantity="13">About 13 kilobytes</measure>
+            </extent>
+            <publicationStmt>
+                <authority>The Forager Folklore Database</authority>
+                <idno type="FFDB">NSA010028</idno>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+                </availability>
+                <date when="2025">2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office, pp. 190-191.</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+            </projectDesc>
+            <samplingDecl>
+                <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly (or via the proxy of an interpreter or other immediate intermediary)
+                    from an informant who either lived or grew up as a member of a culture whose
+                    primary subsistence at the time of recording was or until recently had been
+                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
+                    recording and the relative freedom from external cultural influences. To create
+                    a corpus with high representability, multiple versions of the same narrative
+                    were omitted, cultural clusters and close cultural relations between two groups
+                    were negatively taken into account, and it was aimed for the highest degree of
+                    diversity.</p>
+            </samplingDecl>
+            <tagsDecl>
+                <namespace name="">
+                    <tagUsage gi="animal" occurs="0">Used to mark animal names in the text.</tagUsage>
+                    <tagUsage gi="plant" occurs="4">Used to mark plant names in the text.</tagUsage>
+                    <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
+                        text.</tagUsage>
+                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+                        text.</tagUsage>
+                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+                    <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <listPrefixDef>
+                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+                </prefixDef>
+                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
+                </prefixDef>
+                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+                        collected in the FFDB.</p>
+                </prefixDef>
+            </listPrefixDef>
+            <editorialDecl>
+                <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) with no clear systematic.</p>
+                <normalization method="silent">
+                    <p>In-text explanations by the original editor are set in brackets. In-text
+                        additions/excursions by the informant are set in parenthesis.</p>
+                    <p>Latin passages in the original (usually to hide language and themes deemed
+                        indecent) are rendered in English.</p>
+                </normalization>
+                <hyphenation eol="none">
+                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+                </hyphenation>
+                <quotation marks="all">
+                    <p>All quotation marks have been retained. No effort was made to mark quoted
+                        passages up as <gi>quote</gi>.</p>
+                </quotation>
+                <interpretation>
+                    <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged with a semantic tagger based on WordNet and on word lists as well as
+                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
+                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
+                        respectively.</p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <name type="culture" key="CSA36701">Warao</name>
+                    <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
+                </setting>
+            </settingDesc>
+        <textClass><keywords scheme="URLtoOurTMI"><list><item><idno type="TMI">C920</idno><term>C920. Death for breaking tabu.</term></item><item><idno type="TMI">D610</idno><term>D610. Repeated transformation. Transformation into one form after another.</term></item><item><idno type="TMI">D2061.2.1</idno><term>D2061.2.1. Death-giving glance. (Cf. F555.7.)</term></item><item><idno type="TMI">D2188</idno><term>D2188. Magic disappearance. (Cf. D1641.)</term></item><item><idno type="TMI">E50</idno><term>E50. Resuscitation by magic.</term></item><item><idno type="TMI">F401.6</idno><term>F401.6. Spirit in human form.</term></item><item><idno type="TMI">F600</idno><term>F600. Persons with extraordinary powers.</term></item><item><idno type="TMI">K2212</idno><term>K2212. Treacherous sister. Usually elder sister.</term></item><item><idno type="TMI">L50</idno><term>L50. Victorious youngest daughter.</term></item><item><idno type="TMI">Q301</idno><term>Q301. Jealousy punished. (Cf. W181.)</term></item><item><idno type="TMI">R11.2.2</idno><term>R11.2.2. Abduction by demon.</term></item><item><idno type="TMI">S73.1</idno><term>S73.1. Fratricide.</term></item><item><idno type="TMI">T71</idno><term>T71. Women scorned in love.</term></item><item><idno type="TMI">H49+WS4</idno><term>H49+WS4. Recognition of evil spirit by immoderate behavior.</term></item></list></keywords></textClass></profileDesc>
+    </teiHeader>
+    <text>
+    <body>
+<p>Once upon a time there was a good old man who, possessed of a young wife and a field well planted, lived happily and contented. When off to his field one morning, he met a young man coming in the direction of his house, and noticed that, during the greeting which they gave each other, the stranger kept his eyes fixed hard on his wife in the dim distance. On his return home in the afternoon, he met the stranger again in just about the same place, where his movements seemed very suspicious: he rightly concluded that he was dealing with a Hebu and went on home. Arrived there, he told his wife he was going to hunt a little, and took his bow and arrow with him; but what he really did was to hide in the immediate vicinity. And from his hiding place he saw the Hebu steal into the house and wrestle with his wife, who was just about grating the <plant>cassava</plant>: he heard her say "No! No! Oh, if only my man were not so far away!" So taking aim, and waiting for a chance not to hurt his wife, he let fly and shot the Spirit. Both Spirit and wife simultaneously disappeared.<note>When a person suddenly disappears from any place without leaving a trace, under circumstances which in plain English would be described as murder and disposal of the body, the Indians ascribe it to the Evil Spirit.</note> It would seem that the Hebu had dragged his victim to the water's edge and thence thrown her in; fortunately she had caught hold of the <plant>bushes</plant> alongside the river bank, and came up to the surface. On meeting her husband, she told him she thought she had been dead and never expected to see him more; she told him also how the Hebu had threatened to visit their place again. They therefore went over to her mother's home, and stayed there a long while. At last the old man thought it was time to look over his <plant>cassava</plant> and <plant>plantains</plant>, and with his wife and brother-in-law returned to the scene of the outrage. The brother, who was a powerful medicine-man, led the way. As he went along he was accosted by a beautiful girl, who, staring into his eyes, rushed up ready to put her arms around his neck, and then drew back. Now, except at a drinking feast and when she is drunk, no Indian woman would behave in this bold manner, and it was thus that they recognized her to be the Hebu. The medicine-man just looked at her in silence, and she fell dead. The wife also met her death shortly after, and they then remembered having noticed the token; she had omitted to bathe after a meal some days before. But the parents of the deceased girl were very fond of their good old son-in-law, and gave him the younger of their two remaining daughters as a helpmate.<note>Among many savage races, the husband has marital rights over his wife's sisters, and vice versa; I have found several traces of this communal form of marriage in the Guianas. - W. E. R.</note> But the elder one becoming jealous, went over to the husband's place and picked a quarrel with her younger sister; this made the latter go and tell the old man that she was afraid to remain with him any longer. But he said: "No! I don't want your sister. She is much too passionate for an old man like me, whereas you and I get along very well together." The parents then gave a drinking party, at which the old man got so drunk that he fell into his hammock; whereupon the elder sister got in also. He was not so drunk, however, as not to be able to turn her out, which he did. She then said that they would have to kill her before she would let <pb n="191"/>him alone. And so the brother killed her. On seeing all the trouble that had arisen, and recognizing how he had been the cause of it, the old man offered to go away, but the brother said he would kill him before he would let him go. And so the old man stayed with his wife's parents in the customary way, and continued to live long, happy, and contented.</p>
+</body></text>
+</TEI>
