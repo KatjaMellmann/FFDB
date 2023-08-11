@@ -1,0 +1,125 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Stolen Child</title>
+                <editor ref="p:Roth394" role="collector">Walter E. Roth</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
+                <principal>
+                    <persName>Katja Mellmann</persName>
+                    <persName>Michelle Scalise Sugiyama</persName>
+                </principal>
+                <respStmt>
+                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+                    <persName>Jan Jokisch</persName>
+                </respStmt>
+            </titleStmt>
+            <extent>
+                <measure unit="KB" quantity="14">About 14 kilobytes</measure>
+            </extent>
+            <publicationStmt>
+                <authority>The Forager Folklore Database</authority>
+                <idno type="FFDB">NSA010191</idno>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+                </availability>
+                <date when="2025">2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office, pp. 202-23.</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+            </projectDesc>
+            <samplingDecl>
+                <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly (or via the proxy of an interpreter or other immediate intermediary)
+                    from an informant who either lived or grew up as a member of a culture whose
+                    primary subsistence at the time of recording was or until recently had been
+                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
+                    recording and the relative freedom from external cultural influences. To create
+                    a corpus with high representability, multiple versions of the same narrative
+                    were omitted, cultural clusters and close cultural relations between two groups
+                    were negatively taken into account, and it was aimed for the highest degree of
+                    diversity.</p>
+            </samplingDecl>
+            <tagsDecl>
+                <namespace name="">
+                    <tagUsage gi="animal" occurs="13">Used to mark animal names in the text.</tagUsage>
+                    <tagUsage gi="plant" occurs="2">Used to mark plant names in the text.</tagUsage>
+                    <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
+                        text.</tagUsage>
+                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+                        text.</tagUsage>
+                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+                    <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <listPrefixDef>
+                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+                </prefixDef>
+                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
+                </prefixDef>
+                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+                        collected in the FFDB.</p>
+                </prefixDef>
+            </listPrefixDef>
+            <editorialDecl>
+                <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) with no clear systematic.</p>
+                <normalization method="silent">
+                    <p>In-text explanations by the original editor are set in brackets. In-text
+                        additions/excursions by the informant are set in parenthesis.</p>
+                    <p>Latin passages in the original (usually to hide language and themes deemed
+                        indecent) are rendered in English.</p>
+                </normalization>
+                <hyphenation eol="none">
+                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+                </hyphenation>
+                <quotation marks="all">
+                    <p>All quotation marks have been retained. No effort was made to mark quoted
+                        passages up as <gi>quote</gi>.</p>
+                </quotation>
+                <interpretation>
+                    <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged with a semantic tagger based on WordNet and on word lists as well as
+                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
+                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
+                        respectively.</p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <name type="culture" key="CSA36701">Warao</name>
+                    <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
+                </setting>
+            </settingDesc>
+        <textClass><keywords scheme="URLtoOurTMI"><list><item><idno type="TMI">K800</idno><term>K800. Killing or maiming by deception.</term></item><item><idno type="TMI">K955.1</idno><term>K955.1. Murder by scalding.</term></item><item><idno type="TMI">N397</idno><term>N397. Accidental self-injury.</term></item><item><idno type="TMI">R13.1</idno><term>R13.1. Abduction by wild beast.</term></item><item><idno type="TMI">B535.0.8+WS</idno><term>B535.0.8+WS. Jaguar as nurse for child.</term></item><item><idno type="TMI">B754+WS</idno><term>B754+WS. Jaguars attracted to girl during menses.</term></item><item><idno type="TMI">K1822.4+WS</idno><term>K1822.4+WS. Jaguar disguises as human being.</term></item></list></keywords></textClass></profileDesc>
+    </teiHeader>
+    <text>
+    <body>
+<p>A man went out hunting, leaving at home his wife and little baby girl, a child that was just beginning to walk. Night was falling and the mother was preparing food for her husband's return. While thus occupied the child started crying, and just at that moment the old grandmother came from over the way to fetch it. The mother was only too pleased to be temporarily relieved of her responsibilities, and when the old woman asked her to hand the child over, she willingly did so, and was thus enabled to get all the cooking done without further interruption. When this was completed, she went to fetch her baby, and said, "Give me my child." But when the old woman said, "What child? I know nothing about any child," the poor mother knew that she had been tricked. As a matter of fact, it was really a <animal>Tiger</animal> who had assumed the exact form of the old woman, and so had deceived the mother. When the husband at last returned, the distracted woman told him what had happened, and they both started out to search, but found nothing. Next morning they renewed their search, but were again unsuccessful, and at last gave up their quest. Thus they gradually lost touch with their little daughter, and after a time she was forgotten. A few years passed, and the parents began to lose things about the house. First of all, the beads on their necklaces disappeared one night; on another occasion their <plant>cotton</plant> garters could not be found; one evening all the <plant>ite</plant> [Mauritia] starch vanished; one morning the wood-skin [i. e. bark] apron-belt was nowhere to be seen; not long afterward the buck-pots began to disappear one after the other; and so things continued unaccountably to be lost. Though the parents had not the slightest idea that such was the case, it was the <animal>Tiger</animal> who came every now and then after nightfall to steal all these things for the little girl to use. She was getting of course to be a young maiden now, and <animal>Tiger</animal> was minding her as his own kith and kin. The young maiden soon became a woman, nourished with all the meat that <animal>Tiger</animal> provided. Whenever she menstruated, she licked the blood. He was still a <animal>tiger</animal> and, continuing to do what <animal>tigers</animal> and <animal>dogs</animal> do [he began to sniff her thigh]. Moreover, his two brothers, being similarly affected, followed his example. The girl felt very strange at these periods and could not understand the actions toward her of <animal>Tiger</animal> and his two brothers. So she made up her mind to escape, and asked <animal>Tiger</animal> one day how far their place was from the spot where her parents lived. He was somewhat suspicious and wanted to know first of all why she asked the question. So she told him something like this: "You are an old man and will die soon. I am young. What will then happen to me? If I knew where they were, I could then go to my parents." Recognizing the force of her argument, he told her that they lived in such and such a direction, that it was not far, and that immediately upon his decease she must hurry to them, lest his two brothers should meet her and tear her up. Contented for the present with this information, the woman bided her time to seize a favorable opportunity of escape - an opportunity which was not long in coming. She planned what to do, she was getting tired of always being alone <pb n="203"/>in the depths of the forest. So, taking the biggest of the buck-pots, she put all kinds of food into it, and placed it on the fire. When the contents were boiled, she went to take it off, but pretended she could not stand the heat, and turning to <animal>Tiger</animal>, said, "No! it is too heavy. I want you to help me." So without more ado, <animal>Tiger</animal> stooped down, put his paws one on each side of the projecting rim of the pot, and so lifted it off the fire. While thus occupied, she smartly tapped the pot from below up, dashing the boiling contents over the creature's face, a procedure which made him fall, yell with pain, and die. His two brothers heard the roaring and said, "Oh! the old man must be sporting with his girl"; but this was not the case, he never having had intimate relations with her. In the meantime, the woman went to the place where she had been told her people lived, and called out: "I am the little girl that was lost many a long day ago. Where are my parents?" The latter showed themselves and said, "You are our daughter," and would have liked a long chat over what had happened during her absence, but the woman warned them that there was no time for this, that they must all escape because <animal>Tiger</animal>'s two brothers would come and kill them for payment [i. e. in revenge]. So they loosened their hammock-ropes and hurried themselves to leave. While they were doing so, a young man, a cousin, said: "Well! I cannot leave this grindstone here: I shall want it for sharpening."<note>The grindstone referred to here is a large chunk of sandstone, which is brought into the Pomeroon District from the Waini by way or trade and barter.</note> So saying, he placed it in his hammock, folded the latter, and, in the hurry of the moment, not thinking of what he was doing, slung it in the usual manner over his shoulder. The unprepared-for weight, however, broke his back and he fell down dead, and there the others left him.<note>When, through the interpreter, I pointed out to the old woman who told me the story that the ending was somewhat unsatisfactory, she reminded me that when <animal>Tiger</animal>'s two brothers came to the house, they found only the corpse there. Hence there was no one left to tell her what actually did transpire subsequently. - W. E. R.</note></p>
+</body></text>
+</TEI>
