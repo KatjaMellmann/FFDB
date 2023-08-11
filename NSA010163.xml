@@ -1,0 +1,125 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Honey-Bee Son-in-Law</title>
+                <editor ref="p:Roth394" role="collector">Walter E. Roth</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
+                <principal>
+                    <persName>Katja Mellmann</persName>
+                    <persName>Michelle Scalise Sugiyama</persName>
+                </principal>
+                <respStmt>
+                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+                    <persName>Jan Jokisch</persName>
+                </respStmt>
+            </titleStmt>
+            <extent>
+                <measure unit="KB" quantity="16">About 16 kilobytes</measure>
+            </extent>
+            <publicationStmt>
+                <authority>The Forager Folklore Database</authority>
+                <idno type="FFDB">NSA010163</idno>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+                </availability>
+                <date when="2025">2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office, pp. 199-21.</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+            </projectDesc>
+            <samplingDecl>
+                <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly (or via the proxy of an interpreter or other immediate intermediary)
+                    from an informant who either lived or grew up as a member of a culture whose
+                    primary subsistence at the time of recording was or until recently had been
+                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
+                    recording and the relative freedom from external cultural influences. To create
+                    a corpus with high representability, multiple versions of the same narrative
+                    were omitted, cultural clusters and close cultural relations between two groups
+                    were negatively taken into account, and it was aimed for the highest degree of
+                    diversity.</p>
+            </samplingDecl>
+            <tagsDecl>
+                <namespace name="">
+                    <tagUsage gi="animal" occurs="8">Used to mark animal names in the text.</tagUsage>
+                    <tagUsage gi="plant" occurs="2">Used to mark plant names in the text.</tagUsage>
+                    <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
+                        text.</tagUsage>
+                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+                        text.</tagUsage>
+                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+                    <tagUsage gi="apartmyth" occurs="2">Used to mark comments or any asides during a narrative.</tagUsage>
+                    <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <listPrefixDef>
+                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+                </prefixDef>
+                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
+                </prefixDef>
+                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+                        collected in the FFDB.</p>
+                </prefixDef>
+            </listPrefixDef>
+            <editorialDecl>
+                <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) with no clear systematic.</p>
+                <normalization method="silent">
+                    <p>In-text explanations by the original editor are set in brackets. In-text
+                        additions/excursions by the informant are set in parenthesis.</p>
+                    <p>Latin passages in the original (usually to hide language and themes deemed
+                        indecent) are rendered in English.</p>
+                </normalization>
+                <hyphenation eol="none">
+                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+                </hyphenation>
+                <quotation marks="all">
+                    <p>All quotation marks have been retained. No effort was made to mark quoted
+                        passages up as <gi>quote</gi>.</p>
+                </quotation>
+                <interpretation>
+                    <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged with a semantic tagger based on WordNet and on word lists as well as
+                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
+                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
+                        respectively.</p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <name type="culture" key="CSA36701">Warao</name>
+                    <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
+                </setting>
+            </settingDesc>
+        <textClass><keywords scheme="URLtoOurTMI"><list><item><idno type="TMI">B653.1</idno><term>B653.1. Marriage to bee in human form.</term></item><item><idno type="TMI">C36.1</idno><term>C36.1. Tabu: burning animal husband.</term></item><item><idno type="TMI">C142</idno><term>C142. Tabu: sexual intercourse during menses.</term></item><item><idno type="TMI">C143</idno><term>C143. Tabu: eating from hands of menstruating women.</term></item><item><idno type="TMI">C145</idno><term>C145. Tabu: not to touch certain things during menses.</term></item><item><idno type="TMI">D195</idno><term>D195. Transformation: man to frog. (Cf. B643).</term></item><item><idno type="TMI">D1283</idno><term>D1283. Magic packet.</term></item><item><idno type="TMI">F610.4</idno><term>F610.4. Man with strength of many men.</term></item><item><idno type="TMI">K2212</idno><term>K2212. Treacherous sister. Usually elder sister.</term></item><item><idno type="TMI">T137.4</idno><term>T137.4. Groom becomes a member of bride's family.</term></item></list></keywords></textClass></profileDesc>
+    </teiHeader>
+    <text>
+    <body>
+<p>A man made up a little family party to accompany him on a hunting expedition, taking with him his two sons and a daughter; he left his wife and the other two girls at home. He took the party far out into the bush, where they constructed a banab and rested themselves. Next day the girl told her father that she was not feeling well, in other words, that it was not permissible for her to build the babracote, to do <pb n="200"/>the cooking, or even to touch the utensils [Sect. 274]. "Never mind," replied the father, "just rest yourself. We are not going very far, and we can manage for ourselves." That afternoon they returned from the hunt with nothing, the same result happening on the succeeding afternoon. Was the young woman the unfortunate cause of their bad luck? Next morning, the huntsmen went into the bush as usual, and, not long after they had gone, the girl, who was lying in her hammock, was somewhat startled at seeing a young man approach the banab and stride up to where she was resting; she became very angry when he jumped in. She fought and wrestled with him, informed him of her condition, and tried to get out, threatening what her father would do when he returned. But he held her firmly, assured her that he had not the slightest intention of troubling her, that he had come only to rest himself, and promised to ask the old man for possession of her in the proper manner. So they both lay there quietly in the hammock, discussing their respective prospects and affairs. She learned from him that he had been long in love with her, and that he was a Simo-ahawara [lit. '<animal>bee</animal> tribe']; this information calmed her greatly, because it seems that at his first appearance, she took him for a Bush Spirit or Hebu.<note>This ahawara is the Warrau term for race, nation, tribe, etc.; thus Arawak-u ahawara signifies the Arawak nation.</note> Now, just as Simo had anticipated, when the father returned in the afternoon, he was not at all vexed at seeing the stranger in his daughter's hammock; in fact, he made not the slightest reference to her even having company. And when on the following morning Simo asked the old man for her, the latter told him he could have her if he desired, and the girl consenting, he was received as a son-in-law. Being now one of the family, so to speak, he told all three men to remain in their hammocks, as he would make himself responsible for supplying them with their evening meal. Carrying his bow with two arrows, he accordingly took himself off to the bush, and returning very shortly, instructed the girl to tell her father go fetch in the game which he had killed.<note>Three Indian customs are involved in this action: (a) The wife was tabooed from touching the meat, owing to her physiological condition (Sect. 274). (b) Her newly-acquired husband must not bring it into the house, otherwise he would lose his luck in hunting that particular <animal>animal</animal> (Sect. 244). (c) A man and his father-in-law, though they may converse in a friendly enough manner on everyday general topics, must never give each other any orders or instructions except through the medium of the wife, she being the go-between, so to speak.</note> The father went off to fetch the waiyarri in which Simo had packed the meat, but could not lift it, much less carry it, on account of its great weight, though comparatively small a bundle. He came back for his two sons to help him, but all three together could not raise it from the ground. When they returned to the banab, the old man told his daughter what had occurred and asked her to get Simo to bring up the bundle: the latter accordingly went, but not before telling his father-in-law, through his wife, to get the babracote ready. As soon as Simo brought in the bundle, one of his brothers-in-law loosened the <plant>vine</plant> rope and, opening the bundle, brought out of it one of every kind of <animal>bird</animal> and <animal>beast</animal> imaginable. They had plenty there to last them for months, and it took all three men a long time to clean and cut up the flesh and get it properly smoked. And when all the meat was dried, they started on the homeward journey, Simo arranging for the old man and the brothers-in-law to carry all they could, he following later on with the remainder, which as a matter of fact was five times greater than all their loads put together. <apartmyth>You see what a strong man he must have been!</apartmyth> And although he gave them a good start he speedily caught up with them on the road, and they all went home together, Simo taking up his residence as is customary, at his father-in-law's place. About a year later Simo found himself the proud father of a beautiful baby boy; in the meantime he had been busy clearing his field. Now it was just about this time that his two sisters-in-law were beginning to give trouble: they had fallen in love with him and were always jumping into his hammock, but as fast as they got in, he would turn them out. He neither liked nor wanted them, and complained to his wife about their conduct. <apartmyth>Of course there was <pb n="201"/>nothing wrong in what her sisters were trying to do, because with us Indians, so long as the women are single, it is no sin for a man to live with his sisters-in-law as well as with his wife.</apartmyth><note>Quite recently a woman complained about having been turned off a certain mission-station, for the sole reason discoverable by me that she wanted to live with her deceased sister's husband. On the other hand, when the missionary joins certain cousins in wedlock, the old Indians regard this as bestial and incestuous: it is a matter of blood-relationship. - W. E. R.</note> But in spite of his objections, the two sisters-in-law persisted in following him about, and while they would be bathing with his wife at the waterside, with him minding the baby on the river-bank, they would try to dash spray over him.<note>During the promiscuous bathing indulged in by the untutored Indians, the tact of a woman doing this to a member of the opposite sex is tantamount to solicitation.</note> This was very wicked of them, still more so because Simo had warned them that if water should ever touch him, it would act like fire, that is, first weaken, and then destroy him.<note>The idea intended to be conveyed here is that just in the same way that water mixed with honey weakens and spoils it, so fire melts and destroys the wax. As already mentioned, Simo belonged to the great <animal>Bee</animal> Nation, whose members are not made of flesh and bone, but of honey and wax.</note> As a matter of fact, none of the three women had ever seen him bathe: whenever he wanted to perform his ablutions, he would wash himself in honey just as the little <animal>bees</animal> do. His wife alone was well aware of this, because he had told her that he was Simo-ahawara when they had first met under the shade of the banab. As he was sitting one day on the bank with the baby in his arms, while the three women were washing themselves, the two sisters-in-law succeeded in dashing water over him. The result was that he screamed out, "I burn! I burn!" and flying away, like other <animal>bees</animal>, into a <plant>tree</plant>, melted into honey, and his child changed into Wau-uta, the <animal>Tree-frog</animal> [Sects. 17, 18].</p>
+</body></text>
+</TEI>
