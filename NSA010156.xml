@@ -1,0 +1,127 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Danger of Associating with Spirits</title>
+                <editor ref="p:Roth394" role="collector">Walter E. Roth</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
+                <principal>
+                    <persName>Katja Mellmann</persName>
+                    <persName>Michelle Scalise Sugiyama</persName>
+                </principal>
+                <respStmt>
+                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+                    <persName>Jan Jokisch</persName>
+                </respStmt>
+            </titleStmt>
+            <extent>
+                <measure unit="KB" quantity="16">About 16 kilobytes</measure>
+            </extent>
+            <publicationStmt>
+                <authority>The Forager Folklore Database</authority>
+                <idno type="FFDB">NSA010156</idno>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+                </availability>
+                <date when="2025">2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office, pp. 195-196.</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+            </projectDesc>
+            <samplingDecl>
+                <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly (or via the proxy of an interpreter or other immediate intermediary)
+                    from an informant who either lived or grew up as a member of a culture whose
+                    primary subsistence at the time of recording was or until recently had been
+                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
+                    recording and the relative freedom from external cultural influences. To create
+                    a corpus with high representability, multiple versions of the same narrative
+                    were omitted, cultural clusters and close cultural relations between two groups
+                    were negatively taken into account, and it was aimed for the highest degree of
+                    diversity.</p>
+            </samplingDecl>
+            <tagsDecl>
+                <namespace name="">
+                    <tagUsage gi="animal" occurs="16">Used to mark animal names in the text.</tagUsage>
+                    <tagUsage gi="plant" occurs="3">Used to mark plant names in the text.</tagUsage>
+                    <tagUsage gi="color" occurs="1">Used to mark color names (adjectives and nouns) in the
+                        text.</tagUsage>
+                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+                        text.</tagUsage>
+                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+                    <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <listPrefixDef>
+                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+                </prefixDef>
+                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
+                </prefixDef>
+                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+                        collected in the FFDB.</p>
+                </prefixDef>
+            </listPrefixDef>
+            <editorialDecl>
+                <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) with no clear systematic.</p>
+                <normalization method="silent">
+                    <p>In-text explanations by the original editor are set in brackets. In-text
+                        additions/excursions by the informant are set in parenthesis.</p>
+                    <p>Latin passages in the original (usually to hide language and themes deemed
+                        indecent) are rendered in English.</p>
+                </normalization>
+                <hyphenation eol="none">
+                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+                </hyphenation>
+                <quotation marks="all">
+                    <p>All quotation marks have been retained. No effort was made to mark quoted
+                        passages up as <gi>quote</gi>.</p>
+                </quotation>
+                <interpretation>
+                    <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged with a semantic tagger based on WordNet and on word lists as well as
+                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
+                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
+                        respectively.</p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <name type="culture" key="CSA36701">Warao</name>
+                    <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
+                </setting>
+            </settingDesc>
+        <textClass><keywords scheme="URLtoOurTMI"><list><item><idno type="TMI">B437.3</idno><term>B437.3. Helpful squirrel.</term></item><item><idno type="TMI">C286</idno><term>C286. Tabu: partaking of certain feast.</term></item><item><idno type="TMI">D1812.5.1</idno><term>D1812.5.1. Bad omens.</term></item><item><idno type="TMI">F401.6</idno><term>F401.6. Spirit in human form.</term></item><item><idno type="TMI">F517.1</idno><term>F517.1. Person unusual as to his feet. (Cf. F551.)</term></item><item><idno type="TMI">G341.1</idno><term>G341.1. Ogre with sharpened leg.</term></item><item><idno type="TMI">H57.2</idno><term>H57.2. Recognition by missing finger.</term></item><item><idno type="TMI">J652</idno><term>J652. Inattention to warnings.</term></item><item><idno type="TMI">J1762</idno><term>J1762. Animal thought to be a person.</term></item><item><idno type="TMI">K500</idno><term>K500. Escape from death or danger by deception.</term></item><item><idno type="TMI">K910</idno><term>K910. Murder by strategy.</term></item><item><idno type="TMI">L31</idno><term>L31. Youngest brother helps elder.</term></item><item><idno type="TMI">N340</idno><term>N340. Hasty killing or condemnation (mistake).</term></item><item><idno type="TMI">P251.5</idno><term>P251.5. Two brothers.</term></item><item><idno type="TMI">S73.1</idno><term>S73.1. Fratricide.</term></item><item><idno type="TMI">B450+WS1</idno><term>B450+WS1. Helpful hummingbird.</term></item><item><idno type="TMI">C946+WS</idno><term>C946+WS. Feet burned off for breaking tabu.</term></item></list></keywords></textClass></profileDesc>
+    </teiHeader>
+    <text>
+    <body>
+<p>There were two brothers living together, both of whom used to go hunting. During the course of the day, when deep in the heart of the forest, they heard the sounds and revelry of a drinking-party, and this made the elder one say, "Come, let us go sport with those people." But the younger one replied, "No! It cannot be a real party out here in the bush away from everybody: it cannot possibly be proper people who are sporting; they must be Spirits of some sort." Now the big brother insisted, and, proceeding in the direction whence the sounds came, they reached a house where apparently real people were much enjoying themselves. The visitors were made to sit down and drinks were handed to them. The elder one indulged and was happy; the younger refused because he was afraid of what might happen to him. As a matter of fact, the latter's suspicions were correct, because the people at the house who were sporting were really not people after all but the Spirits of the Warekki, or large <animal>Rain-frogs</animal>, who had taken on human shapes.<note>These <animal>Rain-frogs</animal> are peculiar in that they make an especially loud noise at the time of the first rainy season after which they cease.</note> After awhile, both the men came away, and as night was fast approaching they made themselves a banab, and the elder sent the younger to fetch firewood; he did so. When the banab had been built and the fire lighted, they slung their hammocks. By and by, the elder brother told the younger to put some more wood on the fire, and when he had done so, told him that it was not enough: again he told him the same thing, and still once more the same, so that with all the extra fuel there was an immense fire blazing away now. After some time the younger man smelt a very peculiar strong odor, and looking around, saw his brother's legs hanging from out his hammock close over the fire. "Look out! your legs are getting scorched." But all his brother did was to say, Akka&#700;! Akka&#700;!<note>This is an exclamation denoting astonishment or surprise.</note> and draw his feet into the hammock. And it was not long before he again put his feet into danger, a fact which, considering that he had not been drunk at the party, led the vigilant brother to know that it was a token of some evil about to befall them. At any rate, the latter, seeing that his warning was disregarded, bothered no more about the matter, but let his brother's feet continue burning. After a while, their owner realized for himself that his lower limbs were pretty well charred, and, looking down, saw that both feet were entirely gone, and most of the flesh around the shin-bones destroyed. All he did was to clean the flesh off in its entirety, and then, with his knife, scrape both shin-bones down to sharp points [cf. Sect. 125]. There he lay helpless in his hammock. He could not hunt any more, though it is true that now and again when a <animal>bird</animal> flew past, or any little <animal>animal</animal> ran along, he would cock out a leg and spear it with the pointed tip, a trick in which he soon got very expert.<note>In a Carib version of the story, it is a Yurokon by name of Araiyok&#243; who gives the brother his pointed feet, by way of punishment.</note></p>
+<p>His younger brother would sometimes carry him carefully to the shade of some <plant>bullet tree</plant>, and then climb the trunk and shake the branches, so as to enable him <pb n="196"/>to pick the fruit as it fell to the ground. At other times he would shoot little <animal>birds</animal> for him, so much that feathered <animal>game</animal> soon got to be very scarce in the immediate neighborhood, and herein began the trouble. The sick man never liked his brother to be out of sight and would always be calling him back, even before he had an opportunity of letting fly his arrow. At last the latter became exasperated at being continually called back before even taking a shot, and yet was afraid of running away because his brother had threatened to kill him should he ever dare to go out of his sight: he only waited his chance and it was not long in coming. One day he said: "Brother! Don't shout out for me just now, because my arrow has stuck up in a <plant>tree</plant> which I must go climb. It will be some time before I can possibly return." All this however was a lie, an excuse under cover of which he considered he could get away in safety. The sick man waited and waited in his hammock and at last holloa'd; but no brother came. Again and again he holloa'd, he shouted, and he screamed; still no brother came. He slipped out of his hammock and started in pursuit; to his astonishment he found that with his bone points he could travel a great deal faster than he could before on his feet. Thus walking and running, running and walking, along his brother's tracks, he started a <animal>deer</animal>. Mistaking the trail of the latter for that of his brother, he followed the <animal>creature</animal> and, soon getting within reach, threw himself upon it and pinned it with his bone points to the ground. And as he stuck it here and there, he excused himself by saying, "I am sorry, Brother, to have killed you, but it is your own fault; you tried to run away and leave me." On turning over the carcass, he noticed the <animal>animal</animal>'s <color>black</color> mouth. "Ah! That has got stained from the <plant>bullet-tree</plant> fruit." But on looking at the fore-legs he noticed something strange. "Eh? Let me count the fingers - one, two, three. Now, how many have I? - One, two, three - four! five!! Let me look at the foot now. It has toes - one, two, three. I'll count mine now. One, two, three - four! five!!" And thus he pondered and finally concluded that the <animal>creature</animal> he had just slain could not possibly be his brother [Sect. 26]. He thereupon returned to his banab, where he laid himself in his hammock.</p>
+<p>In the meantime the fugitive reached home and told the others: "Something has happened to my brother. We cannot be friends with him any more. We must kill him." So, leading the way, the others followed him into the bush where they surrounded the banab under which the elder brother was resting. They were afraid to attack him where he was, because of the skilful way he could use his bone-points as spears: their idea was to tempt him out into the open, where he would have to use these bones of his as feet, so they would be enabled to attack him with impunity. Thus, by sending a swift-flying <animal>bird</animal> to hover around his hammock, he would be sure to try to pin it in his customary fashion, and of course missing his aim, would jump out of his hammock in pursuit. With this design in view, they sent him a little <animal>huku-huku [hummingbird]</animal>, which flew here, there, and in all directions around his hammock; but it was not swift enough, and after many trials he succeeded in spearing it. So they sent him <animal latin="Sciurus aestuans">h&#250;ra [Sciurus &#230;stuans]</animal>, the little <animal>squirrel</animal> [Arawak, shimo-ok&#243;ri], which is much swifter in its movements than the <animal>huku-huku</animal>. He had a good many chances, but every time it passed and repassed his hammock, the bone-point missed its mark, and thus the little <animal>creature</animal> decoyed him out onto the open, closer and closer to the ring of people around. And when he got quite near, they fell upon and destroyed him.</p>
+</body></text>
+</TEI>
