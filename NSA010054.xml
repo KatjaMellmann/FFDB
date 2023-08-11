@@ -1,0 +1,125 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Man Who Was Changed into a Powis</title>
+                <editor ref="p:Roth394" role="collector">Walter E. Roth</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
+                <principal>
+                    <persName>Katja Mellmann</persName>
+                    <persName>Michelle Scalise Sugiyama</persName>
+                </principal>
+                <respStmt>
+                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+                    <persName>Jan Jokisch</persName>
+                </respStmt>
+            </titleStmt>
+            <extent>
+                <measure unit="KB" quantity="12">About 12 kilobytes</measure>
+            </extent>
+            <publicationStmt>
+                <authority>The Forager Folklore Database</authority>
+                <idno type="FFDB">NSA010054</idno>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+                </availability>
+                <date when="2025">2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office, pp. 201-22.</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+            </projectDesc>
+            <samplingDecl>
+                <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly (or via the proxy of an interpreter or other immediate intermediary)
+                    from an informant who either lived or grew up as a member of a culture whose
+                    primary subsistence at the time of recording was or until recently had been
+                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
+                    recording and the relative freedom from external cultural influences. To create
+                    a corpus with high representability, multiple versions of the same narrative
+                    were omitted, cultural clusters and close cultural relations between two groups
+                    were negatively taken into account, and it was aimed for the highest degree of
+                    diversity.</p>
+            </samplingDecl>
+            <tagsDecl>
+                <namespace name="">
+                    <tagUsage gi="animal" occurs="6">Used to mark animal names in the text.</tagUsage>
+                    <tagUsage gi="plant" occurs="1">Used to mark plant names in the text.</tagUsage>
+                    <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
+                        text.</tagUsage>
+                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+                        text.</tagUsage>
+                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+                    <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <listPrefixDef>
+                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+                </prefixDef>
+                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
+                </prefixDef>
+                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+                        collected in the FFDB.</p>
+                </prefixDef>
+            </listPrefixDef>
+            <editorialDecl>
+                <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) with no clear systematic.</p>
+                <normalization method="silent">
+                    <p>In-text explanations by the original editor are set in brackets. In-text
+                        additions/excursions by the informant are set in parenthesis.</p>
+                    <p>Latin passages in the original (usually to hide language and themes deemed
+                        indecent) are rendered in English.</p>
+                </normalization>
+                <hyphenation eol="none">
+                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+                </hyphenation>
+                <quotation marks="all">
+                    <p>All quotation marks have been retained. No effort was made to mark quoted
+                        passages up as <gi>quote</gi>.</p>
+                </quotation>
+                <interpretation>
+                    <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged with a semantic tagger based on WordNet and on word lists as well as
+                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
+                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
+                        respectively.</p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <name type="culture" key="CSA36701">Warao</name>
+                    <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
+                </setting>
+            </settingDesc>
+        <textClass><keywords scheme="URLtoOurTMI"><list><item><idno type="TMI">D150</idno><term>D150. Transformation: man to bird. (Cf. B644.)</term></item><item><idno type="TMI">D642</idno><term>D642. Transformation to escape difficult situation.</term></item><item><idno type="TMI">G61</idno><term>G61. Relative's flesh eaten unwittingly.</term></item><item><idno type="TMI">K500</idno><term>K500. Escape from death or danger by deception.</term></item><item><idno type="TMI">K800</idno><term>K800. Killing or maiming by deception.</term></item><item><idno type="TMI">Q211.3</idno><term>Q211.3. Uxoricide punished. (Cf. Q414.0.1, Q416.0.2.1, Q596.1.)</term></item><item><idno type="TMI">R311</idno><term>R311. Tree refuge.</term></item><item><idno type="TMI">S62</idno><term>S62. Cruel husband.</term></item><item><idno type="TMI">S139.2</idno><term>S139.2. Slain person dismembered.</term></item><item><idno type="TMI">S139.2.2.1+WS</idno><term>S139.2.2.1+WS. Head of slain wife impaled upon stake.</term></item></list></keywords></textClass></profileDesc>
+    </teiHeader>
+    <text>
+    <body>
+<p>A husband, his wife, and her two brothers lived together in a house. One day, when the sky was overclouded, and they all heard the noise of the approaching rain, the husband turned to his wife and told her that the rain always made him sleep soundly. When he turned into his hammock that night, and it happened to rain, the good woman accordingly said to her brothers, "I must tie up my man out in the rain," and they helped her tie him up and carry him outside into the rain where he remained all night. Waking up at early dawn, his first remark was: "I have had a good sleep. You may loose me." And they loosened him. Now although he was in a great passion, he did not show it, but he determined to punish his wife. He bade her get ready to accompany him, as he proposed going a-hunting, and when they reached a suitable spot far out in the bush, he told her to make a babracote and get firewood, because he intended killing the <animal>alligator</animal> which frequented the neighboring water-hole. But he was only fooling her with the <animal>alligator</animal> yarn, because as soon as she had completed everything, he killed her, and removing the head, cut up the rest of her body and put it on the babracote to dry. When the flesh was cured, he packed it in a waiyarri, which he had plaited in the meantime, and carried it toward his house, leaving it, as is usual, at some distance from the dwelling. Upon the top of a stick fixed in the ground over the waiyarri he attached his poor wife's head in such a way that her face looked in the direction of her late home. The face carried a silver nose-ornament. He took back with him only her dried liver, and his brothers-in-law welcomed him when they saw the meat. He then gave them to eat of the liver, and they ate it. At last he said, "You must go help your sister; she is weary of carrying such a load of meat." They accordingly proceeded down the path, and it was not long before they saw the head staring at them from above the waiyarri; they recognized it as their sister's and rushed home. In the meantime the husband had left the house in another direction, saying that he was going to bathe at the waterside; but he was again fooling, for on reaching the river-bank, he shoved all the corials <pb n="202"/>from their moorings, and getting into one, made his way down the stream. The murdered woman's brothers had got home by now, and telling their old mother what they had seen, asked her what had become of the culprit. As soon as they learned that he had gone to bathe, they hastened down to the landing, and finding no corial there, one of them swam across the stream to get one, and both getting in, they gave chase. They pulled hard and soon caught up with their man, but as they drew near, he jumped on shore and climbed a <plant>tree</plant>, shouting, "Your little sister is there where I left her." They tried to strike him, but he was now changed into a <animal>Yakahatata</animal>, a sort of <animal>powis</animal> which thus is always crying out "Sister-little-there" [that is, ija-ko-i sanuka tataha, of which <animal>Yakahatata</animal> is the nearest approach in <animal>bird</animal>-language to which he can attain].</p>
+</body></text>
+</TEI>
