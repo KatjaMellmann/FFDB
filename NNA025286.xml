@@ -1,0 +1,133 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Buzzard Brothers an Wood-Worm</title>
+                <editor ref="p:Curtin1091" role="collector">Jeremiah Curtin</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
+                <principal>
+                    <persName>Katja Mellmann</persName>
+                    <persName>Michelle Scalise Sugiyama</persName>
+                </principal>
+                <respStmt>
+                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+                    <persName>Jan Jokisch</persName>
+                </respStmt>
+            </titleStmt>
+            <extent>
+                <measure unit="KB" quantity="12">About 12 kilobytes</measure>
+            </extent>
+            <publicationStmt>
+                <authority>The Forager Folklore Database</authority>
+                <idno type="FFDB">NNA025286</idno>
+                <availability status="free">
+                    <licence target="http://rightsstatements.org/vocab/InC-NC/1.0/">In Copyright - Non-Commercial Use Permitted</licence>
+                </availability>
+                <date when="2025">2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Curtin, Jeremiah/Dixon, Roland B. (1909): Achomawi Myths. In: The Journal of American Folk-Lore 22(85), 283-287, pp. 285-286.</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+            </projectDesc>
+            <samplingDecl>
+                <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly (or via the proxy of an interpreter or other immediate intermediary)
+                    from an informant who either lived or grew up as a member of a culture whose
+                    primary subsistence at the time of recording was or until recently had been
+                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
+                    recording and the relative freedom from external cultural influences. To create
+                    a corpus with high representability, multiple versions of the same narrative
+                    were omitted, cultural clusters and close cultural relations between two groups
+                    were negatively taken into account, and it was aimed for the highest degree of
+                    diversity.</p>
+            </samplingDecl>
+            <tagsDecl>
+                <namespace name="">
+                    <tagUsage gi="animal" occurs="33">Used to mark animal names in the text.</tagUsage>
+                    <tagUsage gi="plant" occurs="1">Used to mark plant names in the text.</tagUsage>
+                    <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
+                        text.</tagUsage>
+                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+                        text.</tagUsage>
+                    <tagUsage gi="placeName" occurs="1">Used to mark named places in the text.</tagUsage>
+                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+                    <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <listPrefixDef>
+                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+                </prefixDef>
+                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
+                </prefixDef>
+                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+                        collected in the FFDB.</p>
+                </prefixDef>
+            </listPrefixDef>
+            <editorialDecl>
+                <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) with no clear systematic.</p>
+                <normalization method="silent">
+                    <p>In-text explanations by the original editor are set in brackets. In-text
+                        additions/excursions by the informant are set in parenthesis.</p>
+                    <p>Latin passages in the original (usually to hide language and themes deemed
+                        indecent) are rendered in English.</p>
+                </normalization>
+                <hyphenation eol="none">
+                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+                </hyphenation>
+                <quotation marks="all">
+                    <p>All quotation marks have been retained. No effort was made to mark quoted
+                        passages up as <gi>quote</gi>.</p>
+                </quotation>
+                <interpretation>
+                    <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged with a semantic tagger based on WordNet and on word lists as well as
+                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
+                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
+                        respectively.</p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <name type="culture" key="CNA29602">Achumawi</name>
+                    <date notAfter="1906" notBefore="1835" type="recorded">Recorded sometime between 1835 and 1906.</date>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+    <body>
+<p>Two <animal>Buzzard</animal> brothers lived together. Near <placeName>Pit River</placeName> lived <animal>Wood-Worm</animal>, the last of his race. All the other <animal>Wood-Worm</animal> people had been killed by Western men. <animal>Wood-Worm</animal> lived alone one winter; and when the winter was past, he began to think of going west to see what kind of a place it was where his people had been lost. He thought four or five days before starting, and got his weapons ready. Then he sent <animal>Cottontail-Rabbit</animal> to the <animal>Buzzard</animal> brothers to tell them of all he intended to do, and to say from him, "I'll come and visit you in two or three days." The brothers said, "All right. We are glad that you are coming." Both brothers were married, each having a wife and a mother-in-law.</p>
+<p>The <animal>Buzzard</animal> brothers got ready to go on the journey. They made flint knives out of their own feathers. These flint knives stuck out through their buckskin dresses: and when they were good-humored the knives were smooth like feathers; when angry, they stuck out like knives, and killed every man they touched.</p>
+<p>On the third day the <animal>Buzzard</animal> brothers were looking for <animal>Wood-Worm</animal>. They did not have to wait long, for he came early. All were glad, smoked, took breakfast, and then set out, reaching Sun's house about sundown. The people there were astonished, and said, "We thought all these men were killed." - "No, "said Sun," there are more yet; they keep back the best. These that have just come are the smartest. They are hard to kill." Sun sent his daughter to marry <animal>Wood-Worm</animal>, a very fine-looking man. He went to where the girls had fixed a place for him to sit.</p>
+<p>The <animal>Buzzard</animal> brothers did not like to enter Sun's house; but as <animal>Wood-Worm</animal> went in, they followed. Sun was very kind to the two brothers, and said, "I am glad to see you, my boys, and I am glad to have my daughters marry." Then he said, turning to <animal>Wood-Worm</animal>, "My son-in-law, take good care of me. I like my daughters to have a husband." The <animal>Buzzard</animal> brothers were very angry. They wanted to fight immediately, <pb n="286"/>for they knew that old man Sun was trying to fool them. <animal>Wood-Worm</animal> listened to the old man in silence, filled his pipe, and smoked.</p>
+<p>Sun's wife was cooking <plant>acorn</plant>-mush, <animal>salmon</animal> and other <animal>fish</animal>, for supper. She brought plenty of food to her daughters, and the young men all ate heartily. They went to bed. In the morning a great many people came to the house, wanting to sweat. They brought wood, made a great fire, and sweated. When they had half finished, the <animal>Buzzard</animal> brothers stuck out their flint knives, which cut and killed half the people.</p>
+<p>That day after breakfast they had to play with a big disk. The brothers were told to call for the game, and did so. They went out. "Bet your brother against ten men," said a spirit-guardian to the elder <animal>Buzzard</animal>. The young man began the game. <animal>Wood-Worm</animal> all this time was in Sun's house, with his wife. <animal>Buzzard</animal> bet his brother against ten men. The spirit-guardian said, "You roll first." <animal>Buzzard</animal> rolled, after putting up the disk with the help of his brother. <animal>Buzzard</animal> rolled the disk rather slowly; and the other side stopped it, then sent it back very fast. But <animal>Buzzard</animal> had something like a brake, with which he stopped and caught the disk.</p>
+<p>The second time <animal>Buzzard</animal> rolled the disk very hard. It went so fast that they could not stop it, and lost their ten men. They lost three times. Thus they lost thirty men in all. <animal>Buzzard</animal> killed the thirty men, cutting them up with his flint feathers, which acted like knives.</p>
+<p>Next morning they played with the disk again. <animal>Buzzard</animal> won twice and killed twenty men. Then. they ran a foot-race. The racers went to the starting-post. On the way back, <animal>Buzzard</animal> let others go ahead for awhile. Behind him Thunder was running, who tried to kill him; but <animal>Buzzard</animal> dodged, sometimes up, sometimes down, and at last he killed Thunder, and then killed a good many others. All were angry, and a great fight followed. While the race and fight were going on, <animal>Wood-Worm</animal> had gathered all the bones of his friends into a bag, and said to the <animal>Buzzard</animal> brothers, "You go on killing. I will go home."</p>
+<p>The <animal>Buzzard</animal> brothers fought the western people, they followed them eastward for a good while, but at last they had to go back. <animal>Wood-Worm</animal> reached home, put all the bones in water in the sweat-house, and all came to life again.</p>
+</body></text>
+</TEI>
