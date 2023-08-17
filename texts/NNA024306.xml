@@ -1,44 +1,47 @@
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Creation Myth</title>
-                <editor ref="p:Dixon1051" role="collector">Roland B. Dixon</editor><editor ref="p:4761" role="informant">"Old Wool"</editor><editor ref="p:CharleyGreen4760" role="informant">Charley Green</editor><funder>Deutsche Forschungsgemeinschaft</funder>
-                <principal>
-                    <persName>Katja Mellmann</persName>
-                    <persName>Michelle Scalise Sugiyama</persName>
-                </principal>
-                <respStmt>
-                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
-                    <persName>Jan Jokisch</persName>
-                </respStmt>
-            </titleStmt>
-            <extent>
-                <measure unit="KB" quantity="16">About 16 kilobytes</measure>
-            </extent>
-            <publicationStmt>
-                <authority>The Forager Folklore Database</authority>
-                <idno type="FFDB">NNA024306</idno>
-                <availability status="free">
-                    <licence target="http://rightsstatements.org/vocab/InC-NC/1.0/">In Copyright - Non-Commercial Use Permitted</licence>
-                </availability>
-                <date when="2025">2025</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>Dixon, Roland B. (1908): Achomawi and Atsugewi Tales. In: The Journal of American Folk-Lore 21(81), 159-177, pp. 159-161.</bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Creation Myth</title>
+        <editor ref="p:Dixon1051" role="collector">Roland B. Dixon</editor>
+        <editor ref="p:OldWool4761" role="informant">"Old Wool"</editor>
+        <editor ref="p:CharleyGreen4760" role="informant">Charley Green</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="15">About 15 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NNA024306</idno>
+        <availability status="free">
+          <licence target="http://rightsstatements.org/vocab/InC-NC/1.0/">In Copyright - Non-Commercial Use Permitted</licence>
+        </availability>
+        <date when="2025">2025</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Dixon, Roland B. (1908): Achomawi and Atsugewi Tales. In: The Journal of American Folk-Lore 21(81), 159-177., pp. 159-161.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
                     offers a basis for a systematic study of narrative universals,
                     the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
-            </projectDesc>
-            <samplingDecl>
-                <p>The narrative was selected for being a genuine piece of oral literature recorded
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
                     directly (or via the proxy of an interpreter or other immediate intermediary)
                     from an informant who either lived or grew up as a member of a culture whose
                     primary subsistence at the time of recording was or until recently had been
@@ -48,83 +51,84 @@
                     were omitted, cultural clusters and close cultural relations between two groups
                     were negatively taken into account, and it was aimed for the highest degree of
                     diversity.</p>
-            </samplingDecl>
-            <tagsDecl>
-                <namespace name="">
-                    <tagUsage gi="animal" occurs="61">Used to mark animal names in the text.</tagUsage>
-                    <tagUsage gi="plant" occurs="6">Used to mark plant names in the text.</tagUsage>
-                    <tagUsage gi="color" occurs="1">Used to mark color names (adjectives and nouns) in the
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="61">Used to mark animal names in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="6">Used to mark plant names in the text.</tagUsage>
+          <tagUsage gi="color" occurs="1">Used to mark color names (adjectives and nouns) in the
                         text.</tagUsage>
-                    <tagUsage gi="persName" occurs="9">Used to mark culturally important characters in the
+          <tagUsage gi="persName" occurs="9">Used to mark culturally important characters in the
                         text.</tagUsage>
-                    <tagUsage gi="placeName" occurs="2">Used to mark named places in the text.</tagUsage>
-                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+          <tagUsage gi="placeName" occurs="2">Used to mark named places in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
                         a narrative.</tagUsage>
-                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
-                    <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
                         narrative.</tagUsage>
-                </namespace>
-            </tagsDecl>
-            <listPrefixDef>
-                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
-                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
                         elements in the <name type="file">personography.xml</name> file.</p>
-                </prefixDef>
-                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
-                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
                         Wikidata</orgName> Q-IDs and refer to their entry.</p>
-                </prefixDef>
-                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
-                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
                         collected in the FFDB.</p>
-                </prefixDef>
-            </listPrefixDef>
-            <editorialDecl>
-                <p>Footnotes are generally retained, but no effort has been made to link the
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
                     narratives mentioned in comparative notes with corresponding records within the
                     FFDB.</p>
-                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
                     within a word have been moved either before or after the word (or nominal
                     phrase) with no clear systematic.</p>
-                <normalization method="silent">
-                    <p>In-text explanations by the original editor are set in brackets. In-text
+        <normalization method="silent">
+          <p>In-text explanations by the original editor are set in brackets. In-text
                         additions/excursions by the informant are set in parenthesis.</p>
-                    <p>Latin passages in the original (usually to hide language and themes deemed
+          <p>Latin passages in the original (usually to hide language and themes deemed
                         indecent) are rendered in English.</p>
-                </normalization>
-                <hyphenation eol="none">
-                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
                         retained.</p>
-                </hyphenation>
-                <quotation marks="all">
-                    <p>All quotation marks have been retained. No effort was made to mark quoted
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark quoted
                         passages up as <gi>quote</gi>.</p>
-                </quotation>
-                <interpretation>
-                    <p>Animals, plants, colors, characters, and place names were automatically
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
                         tagged with a semantic tagger based on WordNet and on word lists as well as
                         subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
                         plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
                         respectively.</p>
-                </interpretation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <settingDesc>
-                <setting>
-                    <name type="culture" key="CNA29602">Achumawi</name>
-                    <date notAfter="1903" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1903.</date>
-                </setting>
-            </settingDesc>
-        </profileDesc>
-    </teiHeader>
-    <text>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CNA29602">Achumawi</name>
+          <date notAfter="1903" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1903.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
     <body>
-<p>In the beginning all was water. In all directions the sky was clear and unobstructed. A cloud formed in the sky, grew lumpy, and turned into <animal>Coyote</animal>. Then a fog arose, grew lumpy, and became <animal>Silver-Fox</animal>. They became persons. Then they thought. They thought a canoe, and they said, "Let us stay here, let us make it our home." Then they floated about, for many years they floated; and the canoe became old and mossy, and they grew weary of it.</p>
-<p>"Do you go and lie down," said <animal>Silver-Fox</animal> to <animal>Coyote</animal>, and he did so. While he slept, <animal>Silver-Fox</animal> combed his hair, and the combings he saved. When there was much of them, he rolled them in his hands, stretched them out, and flattened them between his hands. When he had done this, he laid them upon the water and spread them out, till they covered all the surface of the water. Then he thought, "There should be a <plant>tree</plant>," and it was there. And he did the same way with <plant>shrubs</plant> and with rocks, and weighted the film down with stones, so that the film did not wave and rise in ripples as it floated in the wind. And thus he made it, that it was just right, this that was to be the world. And then the canoe floated gently up to the edge, and it was the world. Then he cried to <animal>Coyote</animal>, "Wake up! We are going to sink!" And <animal>Coyote</animal> woke, and looked up; and over his head, as he lay, hung <plant>cherries</plant> and <plant>plums</plant>; and from the surface of the world he heard <animal>crickets</animal> chirping. And at once <animal>Coyote</animal> began to cat the <plant>cherries</plant> and the <plant>plums</plant>, and the <animal>crickets</animal> also.</p>
-<p>After a time <animal>Coyote</animal> said, "Where are we? What place is this that we have come to?" And <animal>Silver-Fox</animal> replied, "I do not know. We are just here. We floated up to the shore." Still all the time he knew; but he denied that he had made the world. He did not want <animal>Coyote</animal> to know that the world was his creation. Then <animal>Silver-Fox</animal> said, "What shall we <pb n="160"/>do? Here is solid ground. I am going ashore, and am going to live here." So they landed, and built a sweat-house and lived in it. They thought about making people; and after a time, they made little sticks of service-berry, and they thrust them all about into the roof of the house on the inside. And by and by all became people of different sorts, <animal>birds</animal> and <animal>animals</animal> and <animal>fish</animal>, all but the <animal>deer</animal>, and he was as the <animal>deer</animal> are to-day. And <animal>Pine-Marten</animal> was the chief of the people; and <animal>Eagle</animal> was the woman chief, for she was <animal>Pine-Marten</animal>'s sister. And this happened at <placeName>Il&#257;&#700;texcag&#275;wa</placeName>.</p>
-<p>And people went out to hunt from the sweat-house. And they killed <animal>deer</animal>, and brought them home, and had plenty to eat. Arrows with pine-bark points were what they used then, it is said, for there was no obsidian. And <animal>Ground-Squirrel</animal>, of all the people, he only knew where obsidian could be found. So he went to steal it. To <placeName>Medicine Lake</placeName> he went, for there <persName>Obsidian-Old-Man</persName> lived, in a big sweat-house. And <animal>Ground-Squirrel</animal> went in, taking with him roots in a basket of tules. And he gave the old man some to eat; and he liked them so much, that he sent <animal>Ground-Squirrel</animal> out to get more. But while he was digging them <animal>Grizzly-Bear</animal> came, and said, "Sit down! Let me sit in your lap. Feed me those roots by handfuls." So <animal>Ground-Squirrel</animal> sat down, and fed <animal>Grizzly-Bear</animal> as he had asked, for he was afraid. Then <animal>Grizzly-Bear</animal> said, "<persName>Obsidian-Old-Man</persName>'s mother cleaned roots for some one," and went away. <animal>Ground-Squirrel</animal> went back to the sweat-house, but had few roots, for <animal>Grizzly-Bear</animal> had eaten so many. Then he gave them to the old man, and told him what the <animal>bear</animal> had said about him, and how he had robbed him of the roots. Then <persName>Obsidian-Old-Man</persName> was angry. "To-morrow we will go," he said. Then they slept. In the morning they ate breakfast early and went off, and the old man said that <animal>Ground-Squirrel</animal> should go and dig more roots, and that he would wait, and watch for <animal>Grizzly-Bear</animal>. So <animal>Ground-Squirrel</animal> went and dug; and when the basket was filled, <animal>Grizzly-Bear</animal> came, and said, "You have dug all these for me. Sit down!" So <animal>Ground-Squirrel</animal> sat down, and fed <animal>Grizzly-Bear</animal> roots by the handful. But <persName>Obsidian-Old-Man</persName> had come near. And <animal>Grizzly-Bear</animal> got up to fight, and he struck at the old man; but he turned his side to the blow, and <animal>Grizzly-Bear</animal> merely cut off a great slice of his own flesh. And he kept on fighting, till he was all cut to pieces, and fell dead. Then <animal>Ground-Squirrel</animal> and <persName>Obsidian-Old-Man</persName> went home to the sweat-house, and built a fire, and ate the roots, and were happy. Then the old man went to sleep.</p>
-<p>In the morning <persName>Obsidian-Old-Man</persName> woke up, and heard <animal>Ground-Squirrel</animal> groaning. He said, "I am sick. I am bruised because that great fellow sat upon me. Really, I am sick." Then <persName>Obsidian-Old-Man</persName> was sorry, but <animal>Ground-Squirrel</animal> was fooling the old man. After a while the old man said, "I will go and get wood. I'll watch him, for perhaps he <pb n="161"/>is fooling me. These people are very clever." Then he went for wood; and he thought as he went, "I had better go back and look." So he went back softly, and peeped in; but <animal>Ground-Squirrel</animal> lay there quiet, and groaned, and now and then he vomited up <color>green</color> substances. Then <persName>Obsidian-Old-Man</persName> thought, "He is really sick," and he went off to get more wood; but <animal>Ground-Squirrel</animal> was really fooling, for he wanted to steal obsidian. When the old man had gotten far away, <animal>Ground-Squirrel</animal> got up, poured out the finished obsidian points, and pulled out a knife from the wall, did them up in a bundle, and ran off with them. When the old man came back, he carried a heavy load of wood; and as soon as he entered the sweat-house, he missed <animal>Ground-Squirrel</animal>. So he dropped the wood and ran after him. He almost caught him, when <animal>Ground-Squirrel</animal> ran into a hole, and, as he went, kicked the earth into the eyes of the old man, who dug fast, trying to catch him. Soon <animal>Ground-Squirrel</animal> ran out of the other end of the hole; and then the old man gave chase again, but again <animal>Ground-Squirrel</animal> darted into a hole; and after missing him again, <persName>Obsidian-Old-Man</persName> gave up, and went home.</p>
-<p><animal>Ground-Squirrel</animal> crossed the river and left his load of arrow-points, and came back to the house and sat down in his seat. He and <animal>Cocoon</animal> slept together. Then his friend said, "Where have you been?" And <animal>Ground-Squirrel</animal> replied, "I went to get a knife and to get good arrow-points. We had none." Then the people began to come back with <animal>deer</animal>. And when they cooked their meat, they put it on the fire in lumps; but <animal>Ground-Squirrel</animal> and <animal>Cocoon</animal> cut theirs in thin slices, and so cooked it nicely. And <animal>Weasel</animal> saw this, and they told him about how the knife had been secured. In the morning <animal>Ground-Squirrel</animal> went and brought back the bundle of points he had hidden, and handed it down through the smoke-hole to <animal>Wolf</animal>. Then he poured out the points on the ground, and distributed them to every one, and all day long people worked, tying them onto arrows. So they threw away all the old arrows with bark points; and when they went hunting, they killed many <animal>deer</animal>.</p>
-</body></text>
+      <p>In the beginning all was water. In all directions the sky was clear and unobstructed. A cloud formed in the sky, grew lumpy, and turned into <animal>Coyote</animal>. Then a fog arose, grew lumpy, and became <animal>Silver-Fox</animal>. They became persons. Then they thought. They thought a canoe, and they said, "Let us stay here, let us make it our home." Then they floated about, for many years they floated; and the canoe became old and mossy, and they grew weary of it.</p>
+      <p>"Do you go and lie down," said <animal>Silver-Fox</animal> to <animal>Coyote</animal>, and he did so. While he slept, <animal>Silver-Fox</animal> combed his hair, and the combings he saved. When there was much of them, he rolled them in his hands, stretched them out, and flattened them between his hands. When he had done this, he laid them upon the water and spread them out, till they covered all the surface of the water. Then he thought, "There should be a <plant>tree</plant>," and it was there. And he did the same way with <plant>shrubs</plant> and with rocks, and weighted the film down with stones, so that the film did not wave and rise in ripples as it floated in the wind. And thus he made it, that it was just right, this that was to be the world. And then the canoe floated gently up to the edge, and it was the world. Then he cried to <animal>Coyote</animal>, "Wake up! We are going to sink!" And <animal>Coyote</animal> woke, and looked up; and over his head, as he lay, hung <plant>cherries</plant> and <plant>plums</plant>; and from the surface of the world he heard <animal>crickets</animal> chirping. And at once <animal>Coyote</animal> began to cat the <plant>cherries</plant> and the <plant>plums</plant>, and the <animal>crickets</animal> also.</p>
+      <p>After a time <animal>Coyote</animal> said, "Where are we? What place is this that we have come to?" And <animal>Silver-Fox</animal> replied, "I do not know. We are just here. We floated up to the shore." Still all the time he knew; but he denied that he had made the world. He did not want <animal>Coyote</animal> to know that the world was his creation. Then <animal>Silver-Fox</animal> said, "What shall we <pb n="160"/>do? Here is solid ground. I am going ashore, and am going to live here." So they landed, and built a sweat-house and lived in it. They thought about making people; and after a time, they made little sticks of service-berry, and they thrust them all about into the roof of the house on the inside. And by and by all became people of different sorts, <animal>birds</animal> and <animal>animals</animal> and <animal>fish</animal>, all but the <animal>deer</animal>, and he was as the <animal>deer</animal> are to-day. And <animal>Pine-Marten</animal> was the chief of the people; and <animal>Eagle</animal> was the woman chief, for she was <animal>Pine-Marten</animal>'s sister. And this happened at <placeName>Il&#257;&#700;texcag&#275;wa</placeName>.</p>
+      <p>And people went out to hunt from the sweat-house. And they killed <animal>deer</animal>, and brought them home, and had plenty to eat. Arrows with pine-bark points were what they used then, it is said, for there was no obsidian. And <animal>Ground-Squirrel</animal>, of all the people, he only knew where obsidian could be found. So he went to steal it. To <placeName>Medicine Lake</placeName> he went, for there <persName>Obsidian-Old-Man</persName> lived, in a big sweat-house. And <animal>Ground-Squirrel</animal> went in, taking with him roots in a basket of tules. And he gave the old man some to eat; and he liked them so much, that he sent <animal>Ground-Squirrel</animal> out to get more. But while he was digging them <animal>Grizzly-Bear</animal> came, and said, "Sit down! Let me sit in your lap. Feed me those roots by handfuls." So <animal>Ground-Squirrel</animal> sat down, and fed <animal>Grizzly-Bear</animal> as he had asked, for he was afraid. Then <animal>Grizzly-Bear</animal> said, "<persName>Obsidian-Old-Man</persName>'s mother cleaned roots for some one," and went away. <animal>Ground-Squirrel</animal> went back to the sweat-house, but had few roots, for <animal>Grizzly-Bear</animal> had eaten so many. Then he gave them to the old man, and told him what the <animal>bear</animal> had said about him, and how he had robbed him of the roots. Then <persName>Obsidian-Old-Man</persName> was angry. "To-morrow we will go," he said. Then they slept. In the morning they ate breakfast early and went off, and the old man said that <animal>Ground-Squirrel</animal> should go and dig more roots, and that he would wait, and watch for <animal>Grizzly-Bear</animal>. So <animal>Ground-Squirrel</animal> went and dug; and when the basket was filled, <animal>Grizzly-Bear</animal> came, and said, "You have dug all these for me. Sit down!" So <animal>Ground-Squirrel</animal> sat down, and fed <animal>Grizzly-Bear</animal> roots by the handful. But <persName>Obsidian-Old-Man</persName> had come near. And <animal>Grizzly-Bear</animal> got up to fight, and he struck at the old man; but he turned his side to the blow, and <animal>Grizzly-Bear</animal> merely cut off a great slice of his own flesh. And he kept on fighting, till he was all cut to pieces, and fell dead. Then <animal>Ground-Squirrel</animal> and <persName>Obsidian-Old-Man</persName> went home to the sweat-house, and built a fire, and ate the roots, and were happy. Then the old man went to sleep.</p>
+      <p>In the morning <persName>Obsidian-Old-Man</persName> woke up, and heard <animal>Ground-Squirrel</animal> groaning. He said, "I am sick. I am bruised because that great fellow sat upon me. Really, I am sick." Then <persName>Obsidian-Old-Man</persName> was sorry, but <animal>Ground-Squirrel</animal> was fooling the old man. After a while the old man said, "I will go and get wood. I'll watch him, for perhaps he <pb n="161"/>is fooling me. These people are very clever." Then he went for wood; and he thought as he went, "I had better go back and look." So he went back softly, and peeped in; but <animal>Ground-Squirrel</animal> lay there quiet, and groaned, and now and then he vomited up <color>green</color> substances. Then <persName>Obsidian-Old-Man</persName> thought, "He is really sick," and he went off to get more wood; but <animal>Ground-Squirrel</animal> was really fooling, for he wanted to steal obsidian. When the old man had gotten far away, <animal>Ground-Squirrel</animal> got up, poured out the finished obsidian points, and pulled out a knife from the wall, did them up in a bundle, and ran off with them. When the old man came back, he carried a heavy load of wood; and as soon as he entered the sweat-house, he missed <animal>Ground-Squirrel</animal>. So he dropped the wood and ran after him. He almost caught him, when <animal>Ground-Squirrel</animal> ran into a hole, and, as he went, kicked the earth into the eyes of the old man, who dug fast, trying to catch him. Soon <animal>Ground-Squirrel</animal> ran out of the other end of the hole; and then the old man gave chase again, but again <animal>Ground-Squirrel</animal> darted into a hole; and after missing him again, <persName>Obsidian-Old-Man</persName> gave up, and went home.</p>
+      <p><animal>Ground-Squirrel</animal> crossed the river and left his load of arrow-points, and came back to the house and sat down in his seat. He and <animal>Cocoon</animal> slept together. Then his friend said, "Where have you been?" And <animal>Ground-Squirrel</animal> replied, "I went to get a knife and to get good arrow-points. We had none." Then the people began to come back with <animal>deer</animal>. And when they cooked their meat, they put it on the fire in lumps; but <animal>Ground-Squirrel</animal> and <animal>Cocoon</animal> cut theirs in thin slices, and so cooked it nicely. And <animal>Weasel</animal> saw this, and they told him about how the knife had been secured. In the morning <animal>Ground-Squirrel</animal> went and brought back the bundle of points he had hidden, and handed it down through the smoke-hole to <animal>Wolf</animal>. Then he poured out the points on the ground, and distributed them to every one, and all day long people worked, tying them onto arrows. So they threw away all the old arrows with bark points; and when they went hunting, they killed many <animal>deer</animal>.</p>
+    </body>
+  </text>
 </TEI>
