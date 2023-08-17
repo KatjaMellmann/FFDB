@@ -1,44 +1,46 @@
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>The Lion and the Jackal (version 2)</title>
-                <editor ref="p:Dornan24" role="collector">Samuel Shaw Dornan</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
-                <principal>
-                    <persName>Katja Mellmann</persName>
-                    <persName>Michelle Scalise Sugiyama</persName>
-                </principal>
-                <respStmt>
-                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
-                    <persName>Jan Jokisch</persName>
-                </respStmt>
-            </titleStmt>
-            <extent>
-                <measure unit="KB" quantity="9">About 9 kilobytes</measure>
-            </extent>
-            <publicationStmt>
-                <authority>The Forager Folklore Database</authority>
-                <idno type="FFDB">NAF000458</idno>
-                <availability status="free">
-                    <licence target="http://rightsstatements.org/vocab/InC-EDU/1.0/">In Copyright - Educational Use Permitted</licence>
-                </availability>
-                <date when="2025">2025</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>Dornan, Samuel S. (1917): The Tati Bushmen (Masarwas) and their Language. In: Journal of the Royal Anthropological Institute 47, 37-112, pp. 76.</bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Lion and the Jackal (version 2)</title>
+        <editor ref="p:Dornan24" role="collector">Samuel Shaw Dornan</editor>
+        <editor ref="p:unidentified0" role="informant">	- unidentified -</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="9">About 9 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NAF000458</idno>
+        <availability status="free">
+          <licence target="http://rightsstatements.org/vocab/InC-EDU/1.0/">In Copyright - Educational Use Permitted</licence>
+        </availability>
+        <date when="2025">2025</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Dornan, Samuel S. (1917): The Tati Bushmen (Masarwas) and their Language. In: Journal of the Royal Anthropological Institute 47, 37-112., p. 76.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
                     offers a basis for a systematic study of narrative universals,
                     the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
-            </projectDesc>
-            <samplingDecl>
-                <p>The narrative was selected for being a genuine piece of oral literature recorded
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
                     directly (or via the proxy of an interpreter or other immediate intermediary)
                     from an informant who either lived or grew up as a member of a culture whose
                     primary subsistence at the time of recording was or until recently had been
@@ -48,79 +50,90 @@
                     were omitted, cultural clusters and close cultural relations between two groups
                     were negatively taken into account, and it was aimed for the highest degree of
                     diversity.</p>
-            </samplingDecl>
-            <tagsDecl>
-                <namespace name="">
-                    <tagUsage gi="animal" occurs="21">Used to mark animal names in the text.</tagUsage>
-                    <tagUsage gi="plant" occurs="0">Used to mark plant names in the text.</tagUsage>
-                    <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="21">Used to mark animal names in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="0">Used to mark plant names in the text.</tagUsage>
+          <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
                         text.</tagUsage>
-                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+          <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
                         text.</tagUsage>
-                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
-                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+          <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
                         a narrative.</tagUsage>
-                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
-                    <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
                         narrative.</tagUsage>
-                </namespace>
-            </tagsDecl>
-            <listPrefixDef>
-                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
-                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
                         elements in the <name type="file">personography.xml</name> file.</p>
-                </prefixDef>
-                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
-                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
                         Wikidata</orgName> Q-IDs and refer to their entry.</p>
-                </prefixDef>
-                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
-                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
                         collected in the FFDB.</p>
-                </prefixDef>
-            </listPrefixDef>
-            <editorialDecl>
-                <p>Footnotes are generally retained, but no effort has been made to link the
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
                     narratives mentioned in comparative notes with corresponding records within the
                     FFDB.</p>
-                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
                     within a word have been moved either before or after the word (or nominal
                     phrase) with no clear systematic.</p>
-                <normalization method="silent">
-                    <p>In-text explanations by the original editor are set in brackets. In-text
+        <normalization method="silent">
+          <p>In-text explanations by the original editor are set in brackets. In-text
                         additions/excursions by the informant are set in parenthesis.</p>
-                    <p>Latin passages in the original (usually to hide language and themes deemed
+          <p>Latin passages in the original (usually to hide language and themes deemed
                         indecent) are rendered in English.</p>
-                </normalization>
-                <hyphenation eol="none">
-                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
                         retained.</p>
-                </hyphenation>
-                <quotation marks="all">
-                    <p>All quotation marks have been retained. No effort was made to mark quoted
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark quoted
                         passages up as <gi>quote</gi>.</p>
-                </quotation>
-                <interpretation>
-                    <p>Animals, plants, colors, characters, and place names were automatically
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
                         tagged with a semantic tagger based on WordNet and on word lists as well as
                         subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
                         plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
                         respectively.</p>
-                </interpretation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <settingDesc>
-                <setting>
-                    <name type="culture" key="CAF00208">Kua</name>
-                    <date notAfter="1910" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1910.</date>
-                </setting>
-            </settingDesc>
-        <textClass><keywords scheme="URLtoOurTMI"><list><item><idno type="TMI">K361.1</idno><term>K361.1. Jackal ordered to take meat to lion's family takes it to his own.</term></item></list></keywords></textClass></profileDesc>
-    </teiHeader>
-    <text>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CAF00208">Kua</name>
+          <date notAfter="1910" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1910.</date>
+        </setting>
+      </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <list>
+            <item>
+              <idno type="TMI">K361.1</idno>
+              <term>K361.1. Jackal ordered to take meat to lion's family takes it to his own.</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
     <body>
-<p>A <animal latin="Felis leo">lion</animal> and a <animal latin="Canis mesomelas">jackal</animal> went to hunt one day. They came in sight of a lot of <animal latin="Taurotragus oryx">elands</animal>, and the <animal latin="Felis leo">lion</animal> shot with his bow and missed his <animal>buck</animal>. Then the <animal latin="Canis mesomelas">jackal</animal> tried and hit his <animal latin="Taurotragus oryx">eland</animal>. The <animal latin="Felis leo">lion</animal> was angry and called out, "I have hit, you haves missed." Now the <animal latin="Canis mesomelas">jackal</animal> was afraid, and agreed with the <animal latin="Felis leo">lion</animal> and said, "Yes, you have hit." After that they went home to have a sleep, intending to come back, to cut up the meat. As soon as the <animal latin="Felis leo">lion</animal> was asleep, the <animal latin="Canis mesomelas">jackal</animal> went back to the dead <animal>buck</animal>, and tearing out its belly crawled into it, and began to eat all the best part of the fat round the heart.</p>
-<p>The <animal latin="Felis leo">lion</animal> awoke and immediately came to the carcase, and saw the <animal latin="Canis mesomelas">jackal</animal>'s tail sticking out of the dead <animal latin="Taurotragus oryx">eland</animal>. So the <animal latin="Felis leo">lion</animal> caught him by the tail, and swung him out, and ordered him to stand at a distance. Afterwards the <animal latin="Felis leo">lion</animal> gave the <animal latin="Canis mesomelas">jackal</animal> some small pieces of meat to eat, and told him to take some of the best of the fat to the <animal latin="Felis leo">lion</animal>'s wife and children, but the <animal latin="Canis mesomelas">jackal</animal> took the fat to his own wife and children, and then he fled quite away with his own wife and children to another part of the country. <epimyth>The tale is ended.</epimyth></p>
-</body></text>
+      <p>A <animal latin="Felis leo">lion</animal> and a <animal latin="Canis mesomelas">jackal</animal> went to hunt one day. They came in sight of a lot of <animal latin="Taurotragus oryx">elands</animal>, and the <animal latin="Felis leo">lion</animal> shot with his bow and missed his <animal>buck</animal>. Then the <animal latin="Canis mesomelas">jackal</animal> tried and hit his <animal latin="Taurotragus oryx">eland</animal>. The <animal latin="Felis leo">lion</animal> was angry and called out, "I have hit, you haves missed." Now the <animal latin="Canis mesomelas">jackal</animal> was afraid, and agreed with the <animal latin="Felis leo">lion</animal> and said, "Yes, you have hit." After that they went home to have a sleep, intending to come back, to cut up the meat. As soon as the <animal latin="Felis leo">lion</animal> was asleep, the <animal latin="Canis mesomelas">jackal</animal> went back to the dead <animal>buck</animal>, and tearing out its belly crawled into it, and began to eat all the best part of the fat round the heart.</p>
+      <p>The <animal latin="Felis leo">lion</animal> awoke and immediately came to the carcase, and saw the <animal latin="Canis mesomelas">jackal</animal>'s tail sticking out of the dead <animal latin="Taurotragus oryx">eland</animal>. So the <animal latin="Felis leo">lion</animal> caught him by the tail, and swung him out, and ordered him to stand at a distance. Afterwards the <animal latin="Felis leo">lion</animal> gave the <animal latin="Canis mesomelas">jackal</animal> some small pieces of meat to eat, and told him to take some of the best of the fat to the <animal latin="Felis leo">lion</animal>'s wife and children, but the <animal latin="Canis mesomelas">jackal</animal> took the fat to his own wife and children, and then he fled quite away with his own wife and children to another part of the country. <epimyth>The tale is ended.</epimyth></p>
+    </body>
+  </text>
 </TEI>
