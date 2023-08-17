@@ -1,44 +1,46 @@
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Creation Myth</title>
-                <editor ref="p:Dixon1051" role="collector">Roland B. Dixon</editor><editor ref="p:CharleySnook4762" role="informant">Charley Snook</editor><funder>Deutsche Forschungsgemeinschaft</funder>
-                <principal>
-                    <persName>Katja Mellmann</persName>
-                    <persName>Michelle Scalise Sugiyama</persName>
-                </principal>
-                <respStmt>
-                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
-                    <persName>Jan Jokisch</persName>
-                </respStmt>
-            </titleStmt>
-            <extent>
-                <measure unit="KB" quantity="22">About 22 kilobytes</measure>
-            </extent>
-            <publicationStmt>
-                <authority>The Forager Folklore Database</authority>
-                <idno type="FFDB">NNA024307</idno>
-                <availability status="free">
-                    <licence target="http://rightsstatements.org/vocab/InC-NC/1.0/">In Copyright - Non-Commercial Use Permitted</licence>
-                </availability>
-                <date when="2025">2025</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>Dixon, Roland B. (1908): Achomawi and Atsugewi Tales. In: The Journal of American Folk-Lore 21(81), 159-177, pp. 170-174.</bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Creation Myth</title>
+        <editor ref="p:Dixon1051" role="collector">Roland B. Dixon</editor>
+        <editor ref="p:CharleySnook4762" role="informant">Charley Snook</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="22">About 22 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NNA024307</idno>
+        <availability status="free">
+          <licence target="http://rightsstatements.org/vocab/InC-NC/1.0/">In Copyright - Non-Commercial Use Permitted</licence>
+        </availability>
+        <date when="2025">2025</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Dixon, Roland B. (1908): Achomawi and Atsugewi Tales. In: The Journal of American Folk-Lore 21(81), 159-177., pp. 170-174.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
                     offers a basis for a systematic study of narrative universals,
                     the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
-            </projectDesc>
-            <samplingDecl>
-                <p>The narrative was selected for being a genuine piece of oral literature recorded
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
                     directly (or via the proxy of an interpreter or other immediate intermediary)
                     from an informant who either lived or grew up as a member of a culture whose
                     primary subsistence at the time of recording was or until recently had been
@@ -48,87 +50,88 @@
                     were omitted, cultural clusters and close cultural relations between two groups
                     were negatively taken into account, and it was aimed for the highest degree of
                     diversity.</p>
-            </samplingDecl>
-            <tagsDecl>
-                <namespace name="">
-                    <tagUsage gi="animal" occurs="135">Used to mark animal names in the text.</tagUsage>
-                    <tagUsage gi="plant" occurs="32">Used to mark plant names in the text.</tagUsage>
-                    <tagUsage gi="color" occurs="1">Used to mark color names (adjectives and nouns) in the
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="135">Used to mark animal names in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="32">Used to mark plant names in the text.</tagUsage>
+          <tagUsage gi="color" occurs="1">Used to mark color names (adjectives and nouns) in the
                         text.</tagUsage>
-                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+          <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
                         text.</tagUsage>
-                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
-                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+          <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
                         a narrative.</tagUsage>
-                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
-                    <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
                         narrative.</tagUsage>
-                </namespace>
-            </tagsDecl>
-            <listPrefixDef>
-                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
-                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
                         elements in the <name type="file">personography.xml</name> file.</p>
-                </prefixDef>
-                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
-                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
                         Wikidata</orgName> Q-IDs and refer to their entry.</p>
-                </prefixDef>
-                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
-                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
                         collected in the FFDB.</p>
-                </prefixDef>
-            </listPrefixDef>
-            <editorialDecl>
-                <p>Footnotes are generally retained, but no effort has been made to link the
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
                     narratives mentioned in comparative notes with corresponding records within the
                     FFDB.</p>
-                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
                     within a word have been moved either before or after the word (or nominal
                     phrase) with no clear systematic.</p>
-                <normalization method="silent">
-                    <p>In-text explanations by the original editor are set in brackets. In-text
+        <normalization method="silent">
+          <p>In-text explanations by the original editor are set in brackets. In-text
                         additions/excursions by the informant are set in parenthesis.</p>
-                    <p>Latin passages in the original (usually to hide language and themes deemed
+          <p>Latin passages in the original (usually to hide language and themes deemed
                         indecent) are rendered in English.</p>
-                </normalization>
-                <hyphenation eol="none">
-                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
                         retained.</p>
-                </hyphenation>
-                <quotation marks="all">
-                    <p>All quotation marks have been retained. No effort was made to mark quoted
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark quoted
                         passages up as <gi>quote</gi>.</p>
-                </quotation>
-                <interpretation>
-                    <p>Animals, plants, colors, characters, and place names were automatically
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
                         tagged with a semantic tagger based on WordNet and on word lists as well as
                         subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
                         plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
                         respectively.</p>
-                </interpretation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <settingDesc>
-                <setting>
-                    <name type="culture" key="CNA29601">Atsugewi</name>
-                    <date notAfter="1903" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1903.</date>
-                </setting>
-            </settingDesc>
-        </profileDesc>
-    </teiHeader>
-    <text>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CNA29601">Atsugewi</name>
+          <date notAfter="1903" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1903.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
     <body>
-<p>In the beginning there was nothing but water. <animal>Coyote</animal> and <animal>Silver-Fox</animal> lived above in the sky, where there was a world like this one. <animal>Silver-Fox</animal> was anxious to make things, but <animal>Coyote</animal> was opposed to the plan. Finally <animal>Silver-Fox</animal> got tired of <animal>Coyote</animal>'s opposition, and sent him off one day to get wood. While he was gone, <animal>Silver-Fox</animal> took an arrow-flaker and made a hole through the upper world, and looked down on the sea below. When <animal>Coyote</animal> came back, <animal>Silver-Fox</animal> did not tell him about the hole he had made. Next day he sent <animal>Coyote</animal> off again for wood; and in his absence <animal>Silver-Fox</animal> thrust down the arrow-flaker, and found that it reached to the water, and down to the bottom even. So he descended; and as he came near the surface of the water, he made a small round island, on which he stayed. When <animal>Coyote</animal> returned, he could not find <animal>Silver-Fox</animal>, and, after hunting for a long time, began to feel remorse. Finally he found the hole, and peeped through, seeing <animal>Silver-Fox</animal> far below on the island. He called down that he was sorry he had acted as he had, and asked how to get down. Receiving no reply, he said that <animal>Silver-Fox</animal> ought not to treat him this way; and after a while the latter put up the arrow-flaker, and <animal>Coyote</animal> came down.</p>
-<p>The island was very small, and there was not room enough for <animal>Coyote</animal> to stretch out. For some time they slept, and when they woke were very hungry, as there was no food to be had. For five days things continued thus, <animal>Silver-Fox</animal> finally giving <animal>Coyote</animal> some <plant>sunflower</plant>-seeds. This pleased him much, and he asked where they came from, but received no answer. After five days more, <animal>Silver-Fox</animal> made the island a little larger, so that <animal>Coyote</animal> could have room to stretch out. At last he could be comfortable, and went fast asleep. At once <animal>Silver-Fox</animal> got up, dressed himself up finely, and smoked awhile, and then made a big sweat-house. When it was all done, he woke <animal>Coyote</animal>, and the latter was much surprised to find the house there. <animal>Silver-Fox</animal> then told <animal>Coyote</animal> to sweep out the house, spread <plant>grass</plant> down on the floor, and go to sleep again. He did so, and then <animal>Silver-Fox</animal> dressed up again, putting on a finely-beaded [?] shirt and leggings, and sang and smoked some more. Then, going outside, he pushed with his foot, and stretched the earth out in all directions, first to the east, then to the north, then to the west, and last to the south. For five nights he repeated this performance, until the world became as large as it is to-day. Each day <animal>Silver-Fox</animal> told <animal>Coyote</animal> to run around the edge, and see how large it was getting. At first he was able to do this very quickly; but after the last time he grew old and <color>gray</color> before he got back. Then <animal>Silver-Fox</animal> made <plant>trees</plant> and springs, and fixed the world up nicely. He also made all kinds of <animal>animals</animal> merely by thinking them. These <animal>animals</animal>, however, were like people.</p>
-<p>When the world was all made, <animal>Coyote</animal> asked what they were going <pb n="171"/>to have for food, but <animal>Silver-Fox</animal> did not reply. <animal>Coyote</animal> then said that he thought there ought to be ten moons of winter in the year, to which <animal>Silver-Fox</animal> replied that there would not be enough food for so long a winter. <animal>Coyote</animal> declared it would be better not to have much food, that people could make soup out of dirt. To this he received no answer. <animal>Silver-Fox</animal> then said that it was not right that there should be ten moons, that two were enough, and that people could then eat <plant>sunflower</plant>-seeds, <plant>roots</plant>, and <plant>berries</plant>. <animal>Coyote</animal> repeated what he had said before, and they argued about it for a long time. Finally <animal>Silver-Fox</animal> said, "You talk too much! I'm going to make four moons for the whole year. I won't talk about it any more. There are going to be two moons of winter, and one of spring, and one of autumn. That's enough." Then <animal>Silver-Fox</animal> said, "When people get married, they will have children by taking a dentalium-shell and putting it between them, or a disk-bead: the one win make a boy, the other a girl." <animal>Coyote</animal> replied, "Hm! That's not the right way. It will be better for people to get married: they will not be satisfied any other way. People must live as man and wife: they ought not to do as you said." <animal>Silver-Fox</animal> did not want to argue the matter; and finally, after repeating what he said before, he yielded to <animal>Coyote</animal>, and said, "Let it be as you say."</p>
-<p><animal>Silver-Fox</animal> then went out to get some <plant>pine</plant>-nuts. He climbed a <plant>tree</plant> and shook the branches, and the nuts fell down already shelled and ready to eat. He filled a basket with them, and brought them in. <animal>Coyote</animal> had gone to get wood; and when he got back, <animal>Silver-Fox</animal> divided the <plant>pine</plant>-nuts, and gave him half. <animal>Silver-Fox</animal> ate only part of his, and put the rest away; but <animal>Coyote</animal> ate nearly all night, going out and defecating, and then returning and eating more, until he had finished them. Next morning <animal>Silver-Fox</animal> went out and looked for <plant>pines</plant> having large "witch-brooms" on them. When he found one, he would set fire to it, then walk away looking constantly on the ground, and a <animal>grouse</animal> would straightway fall out of the <plant>tree</plant>. Then he placed them in a basket, and brought them back to the house. <animal>Coyote</animal> wanted to begin eating at once, and helped him in with his load. As before, <animal>Coyote</animal> ate all his share up, whereas <animal>Silver-Fox</animal> kept most of his.</p>
-<p>Next day <animal>Coyote</animal> asked <animal>Silver-Fox</animal> how he got his <plant>pine</plant>-nuts. He told him to go to a <plant>tree</plant>, scrape the brush away, climb up, and then shake the boughs with his foot. <animal>Coyote</animal> thought he could do this, so went out to try. He was successful, but, on coming down, ate up all the nuts. Then he went to another <plant>tree</plant> and attempted to repeat the process; but this time no nuts fell, and <animal>Coyote</animal> himself lost his footing, and was badly hurt by the fall. He came back to the house with his neck bent to one side, and in great pain. <animal>Silver-Fox</animal> knew all that had been going on, but said nothing. After a while <animal>Coyote</animal> told him what had happened.</p>
-<p>The next day <animal>Coyote</animal> asked how the <animal>grouse</animal> had been secured, and <pb n="172"/><animal>Silver-Fox</animal> told him to set fire to the <plant>tree</plant>, and then sit with his back to the trunk, and not look up. So <animal>Coyote</animal> went off to get <animal>grouse</animal>. He was successful in his attempt, but opened his eyes and looked up, and saw the <animal>grouse</animal> falling. When he had picked them all up, he cooked and ate them on the spot, and then went to another <plant>tree</plant> to repeat the process. This time, however, it was burning branches that fell, and they hit him and burned him badly. So he ran away back to the house, crying. <animal>Silver-Fox</animal> gave him some of his food, however.</p>
-<p>In the morning <animal>Silver-Fox</animal> went out, and, going up to a <plant>cedar-tree</plant>, pulled off the boughs, which became a sort of <plant>camas</plant> [?]. He brought back a great load of these; and when he got back, as before, <animal>Coyote</animal> ate all his share at once. He then asked how to get them, and was told to make a long hook and pull the limbs off, but to keep his eyes shut all the time. As in the other cases, <animal>Coyote</animal> was very successful the first time, and ate all the <plant>roots</plant> up. When he tried to repeat the plan, however, only big limbs came down, and hit him on the head.</p>
-<p>By and by <animal>Silver-Fox</animal> went rabbit-hunting. He built a brush fence, and drove the <animal>rabbits</animal> into it, where they all piled up. Then he killed them with a club, and carried them to the house. Just as before, <animal>Coyote</animal> ate up all his share at once. <animal>Silver-Fox</animal> could not prevent <animal>Coyote</animal> from eating up all there was in the house, except by not letting him know when he was eating. He would put <plant>pine</plant>-nuts in a <plant>milkweed</plant>-stem, and pretend to be making cord, whereas in reality he was eating the nuts. <animal>Coyote</animal> soon suspected, and asked <animal>Silver-Fox</animal> to let him help make string. He agreed, but gave <animal>Coyote</animal> the stems without any nuts in them. Next night <animal>Coyote</animal> pretended to sleep, and so caught <animal>Silver-Fox</animal> putting the nuts in the stems. He jumped up and seized <animal>Silver-Fox</animal>; but the latter swallowed quickly, and when he opened his mouth there were no nuts there. He told <animal>Coyote</animal> that before people ate nuts, they would put them in a basket, and <animal>Coyote</animal> believed him. <animal>Silver-Fox</animal> then went out to get more <plant>milkweed</plant>, as he said; and while he was gone, <animal>Coyote</animal> took a large stone and struck the roof-beams, trying to find where <animal>Silver-Fox</animal> had hidden the nuts. Finally he found the right one, and the nuts began to pour down. He called out, "Stop! That is enough. I am a chief! That is enough." But the nuts kept falling, and by and by there was a huge pile there. Then <animal>Coyote</animal> said, "Let big baskets come!" and they were there; and he gathered up the nuts, and put them in the baskets, and then ate and ate all the nuts he could. Then he brought in some wood, and was going to say that the nuts fell down when he threw in the wood, as he had hit the beam by accident. Just then <animal>Silver-Fox</animal> came in with a lot of <plant>milkweed</plant>, and began to make string. <animal>Coyote</animal> told him his story, and said that he had been scared when the nuts began to fall, that it was not right to put them in the roof-beams, but in baskets as he had now done. <animal>Silver-Fox</animal>, however, did not reply, until he said, <pb n="173"/>"You eat on that side of the house, and I will eat on this. " Then he went on making string; while <animal>Coyote</animal>, after eating all he could, went to sleep.</p>
-<p>When he had finished making string, <animal>Silver-Fox</animal> got up softly, and measured <animal>Coyote</animal>'s nose. Then he sat down and began to make a net. He had to measure again pretty soon; and then <animal>Coyote</animal> woke up, and asked what was the trouble. <animal>Silver-Fox</animal> said that he was only blowing ashes off <animal>Coyote</animal>'s face, so he went to sleep again. <animal>Coyote</animal> woke up again later, and asked <animal>Silver-Fox</animal> what he was doing; and he said that he was making a net to catch <animal>rabbits</animal> in, so <animal>Coyote</animal> went to sleep once more. Finally the net was complete, and then <animal>Silver-Fox</animal> told <animal>Coyote</animal> to eat breakfast, to eat a big breakfast, and then they would go out and get <animal>rabbits</animal>. They started out, <animal>Silver-Fox</animal> carrying a big club. <animal>Coyote</animal> asked why he took so large a one, but <animal>Silver-Fox</animal> said that it was the right size. By and by <animal>Silver-Fox</animal> set up the net, and showed <animal>Coyote</animal> where it was. Then <animal>Silver-Fox</animal> said, "Now you run off. When you get a little distance away, shut your eyes, and run as fast as you can." <animal>Coyote</animal> said that he would do so, and started off; and then quickly <animal>Silver-Fox</animal> took up the net, and put it where <animal>Coyote</animal> would run into it. Pretty soon <animal>Coyote</animal> came in sight, driving the <animal>rabbits</animal> slowly; and when he got only a little ways off, he shut his eyes, and ran as fast as he could. He ran squarely into the net, and this drew up; and <animal>Silver-Fox</animal> then rushed up and struck him with the club. <animal>Coyote</animal> cried out, "You are hitting me!" and <animal>Silver-Fox</animal> said, "Yes, don't mind that." He kept on hitting him until he had killed him. Then he went back to the house, and started off over the world; and wherever <animal>Coyote</animal> had urinated, <animal>Silver-Fox</animal> scraped up the ground and smoothed it over nicely. He went everywhere thus, and thought he had fixed every place. There was one, however, on a little island in a lake, that he overlooked. This lake lay far off to the northeast. Then <animal>Silver-Fox</animal> came back to the house and went to sleep. At dawn he got up, went up and looked out of the house, and listened. For a while he heard nothing, but then he heard faintly <animal>Coyote</animal> howling far away. He then knew he had missed one place, and felt very sad. He sat down and thought, but did not know what to do. <animal>Coyote</animal> was too smart for him, he thought. Finally he heard the howling coming closer. Then he thought of a plan. He made a lot of <plant>manzanita</plant>, wild <plant>cherries</plant>, <plant>plums</plant>, etc., grow along the road that <animal>Coyote</animal> was following. <animal>Coyote</animal> was very angry, and wanted to kill <animal>Silver-Fox</animal>. He came to the <plant>manzanita</plant>, and <animal>Silver-Fox</animal> thought he would delay him thus; but <animal>Coyote</animal> only took one berry, and continued on his way. He came to the <plant>plums</plant>; and of these <animal>Coyote</animal> ate largely, as he thought he could fight better if he was not hungry. As he ate, he forgot about his anger. Then he started on again. <animal>Silver-Fox</animal> was afraid, however, and pretended to be very sick when <animal>Coyote</animal> got back. <animal>Coyote</animal> told him he had better eat <pb n="174"/>some <plant>plums</plant>, that they were very good, and that it was useless to lie still all day. Finally <animal>Silver-Fox</animal> got up and ate some, and so <animal>Coyote</animal> forgot all about his revenge.</p>
-<p><animal>Coyote</animal> said next day that he was going out to pick fruit. He went, and picked <plant>plums</plant> and <plant>cherries</plant> and <plant>manzanita</plant>, and brought them back, saying that there was plenty of food. <animal>Silver-Fox</animal> told him to go and get some wood; and then he went out and caught some <animal>rabbits</animal>, and they cooked and ate them, and lived without quarrelling any more.</p>
-</body></text>
+      <p>In the beginning there was nothing but water. <animal>Coyote</animal> and <animal>Silver-Fox</animal> lived above in the sky, where there was a world like this one. <animal>Silver-Fox</animal> was anxious to make things, but <animal>Coyote</animal> was opposed to the plan. Finally <animal>Silver-Fox</animal> got tired of <animal>Coyote</animal>'s opposition, and sent him off one day to get wood. While he was gone, <animal>Silver-Fox</animal> took an arrow-flaker and made a hole through the upper world, and looked down on the sea below. When <animal>Coyote</animal> came back, <animal>Silver-Fox</animal> did not tell him about the hole he had made. Next day he sent <animal>Coyote</animal> off again for wood; and in his absence <animal>Silver-Fox</animal> thrust down the arrow-flaker, and found that it reached to the water, and down to the bottom even. So he descended; and as he came near the surface of the water, he made a small round island, on which he stayed. When <animal>Coyote</animal> returned, he could not find <animal>Silver-Fox</animal>, and, after hunting for a long time, began to feel remorse. Finally he found the hole, and peeped through, seeing <animal>Silver-Fox</animal> far below on the island. He called down that he was sorry he had acted as he had, and asked how to get down. Receiving no reply, he said that <animal>Silver-Fox</animal> ought not to treat him this way; and after a while the latter put up the arrow-flaker, and <animal>Coyote</animal> came down.</p>
+      <p>The island was very small, and there was not room enough for <animal>Coyote</animal> to stretch out. For some time they slept, and when they woke were very hungry, as there was no food to be had. For five days things continued thus, <animal>Silver-Fox</animal> finally giving <animal>Coyote</animal> some <plant>sunflower</plant>-seeds. This pleased him much, and he asked where they came from, but received no answer. After five days more, <animal>Silver-Fox</animal> made the island a little larger, so that <animal>Coyote</animal> could have room to stretch out. At last he could be comfortable, and went fast asleep. At once <animal>Silver-Fox</animal> got up, dressed himself up finely, and smoked awhile, and then made a big sweat-house. When it was all done, he woke <animal>Coyote</animal>, and the latter was much surprised to find the house there. <animal>Silver-Fox</animal> then told <animal>Coyote</animal> to sweep out the house, spread <plant>grass</plant> down on the floor, and go to sleep again. He did so, and then <animal>Silver-Fox</animal> dressed up again, putting on a finely-beaded [?] shirt and leggings, and sang and smoked some more. Then, going outside, he pushed with his foot, and stretched the earth out in all directions, first to the east, then to the north, then to the west, and last to the south. For five nights he repeated this performance, until the world became as large as it is to-day. Each day <animal>Silver-Fox</animal> told <animal>Coyote</animal> to run around the edge, and see how large it was getting. At first he was able to do this very quickly; but after the last time he grew old and <color>gray</color> before he got back. Then <animal>Silver-Fox</animal> made <plant>trees</plant> and springs, and fixed the world up nicely. He also made all kinds of <animal>animals</animal> merely by thinking them. These <animal>animals</animal>, however, were like people.</p>
+      <p>When the world was all made, <animal>Coyote</animal> asked what they were going <pb n="171"/>to have for food, but <animal>Silver-Fox</animal> did not reply. <animal>Coyote</animal> then said that he thought there ought to be ten moons of winter in the year, to which <animal>Silver-Fox</animal> replied that there would not be enough food for so long a winter. <animal>Coyote</animal> declared it would be better not to have much food, that people could make soup out of dirt. To this he received no answer. <animal>Silver-Fox</animal> then said that it was not right that there should be ten moons, that two were enough, and that people could then eat <plant>sunflower</plant>-seeds, <plant>roots</plant>, and <plant>berries</plant>. <animal>Coyote</animal> repeated what he had said before, and they argued about it for a long time. Finally <animal>Silver-Fox</animal> said, "You talk too much! I'm going to make four moons for the whole year. I won't talk about it any more. There are going to be two moons of winter, and one of spring, and one of autumn. That's enough." Then <animal>Silver-Fox</animal> said, "When people get married, they will have children by taking a dentalium-shell and putting it between them, or a disk-bead: the one win make a boy, the other a girl." <animal>Coyote</animal> replied, "Hm! That's not the right way. It will be better for people to get married: they will not be satisfied any other way. People must live as man and wife: they ought not to do as you said." <animal>Silver-Fox</animal> did not want to argue the matter; and finally, after repeating what he said before, he yielded to <animal>Coyote</animal>, and said, "Let it be as you say."</p>
+      <p><animal>Silver-Fox</animal> then went out to get some <plant>pine</plant>-nuts. He climbed a <plant>tree</plant> and shook the branches, and the nuts fell down already shelled and ready to eat. He filled a basket with them, and brought them in. <animal>Coyote</animal> had gone to get wood; and when he got back, <animal>Silver-Fox</animal> divided the <plant>pine</plant>-nuts, and gave him half. <animal>Silver-Fox</animal> ate only part of his, and put the rest away; but <animal>Coyote</animal> ate nearly all night, going out and defecating, and then returning and eating more, until he had finished them. Next morning <animal>Silver-Fox</animal> went out and looked for <plant>pines</plant> having large "witch-brooms" on them. When he found one, he would set fire to it, then walk away looking constantly on the ground, and a <animal>grouse</animal> would straightway fall out of the <plant>tree</plant>. Then he placed them in a basket, and brought them back to the house. <animal>Coyote</animal> wanted to begin eating at once, and helped him in with his load. As before, <animal>Coyote</animal> ate all his share up, whereas <animal>Silver-Fox</animal> kept most of his.</p>
+      <p>Next day <animal>Coyote</animal> asked <animal>Silver-Fox</animal> how he got his <plant>pine</plant>-nuts. He told him to go to a <plant>tree</plant>, scrape the brush away, climb up, and then shake the boughs with his foot. <animal>Coyote</animal> thought he could do this, so went out to try. He was successful, but, on coming down, ate up all the nuts. Then he went to another <plant>tree</plant> and attempted to repeat the process; but this time no nuts fell, and <animal>Coyote</animal> himself lost his footing, and was badly hurt by the fall. He came back to the house with his neck bent to one side, and in great pain. <animal>Silver-Fox</animal> knew all that had been going on, but said nothing. After a while <animal>Coyote</animal> told him what had happened.</p>
+      <p>The next day <animal>Coyote</animal> asked how the <animal>grouse</animal> had been secured, and <pb n="172"/><animal>Silver-Fox</animal> told him to set fire to the <plant>tree</plant>, and then sit with his back to the trunk, and not look up. So <animal>Coyote</animal> went off to get <animal>grouse</animal>. He was successful in his attempt, but opened his eyes and looked up, and saw the <animal>grouse</animal> falling. When he had picked them all up, he cooked and ate them on the spot, and then went to another <plant>tree</plant> to repeat the process. This time, however, it was burning branches that fell, and they hit him and burned him badly. So he ran away back to the house, crying. <animal>Silver-Fox</animal> gave him some of his food, however.</p>
+      <p>In the morning <animal>Silver-Fox</animal> went out, and, going up to a <plant>cedar-tree</plant>, pulled off the boughs, which became a sort of <plant>camas</plant> [?]. He brought back a great load of these; and when he got back, as before, <animal>Coyote</animal> ate all his share at once. He then asked how to get them, and was told to make a long hook and pull the limbs off, but to keep his eyes shut all the time. As in the other cases, <animal>Coyote</animal> was very successful the first time, and ate all the <plant>roots</plant> up. When he tried to repeat the plan, however, only big limbs came down, and hit him on the head.</p>
+      <p>By and by <animal>Silver-Fox</animal> went rabbit-hunting. He built a brush fence, and drove the <animal>rabbits</animal> into it, where they all piled up. Then he killed them with a club, and carried them to the house. Just as before, <animal>Coyote</animal> ate up all his share at once. <animal>Silver-Fox</animal> could not prevent <animal>Coyote</animal> from eating up all there was in the house, except by not letting him know when he was eating. He would put <plant>pine</plant>-nuts in a <plant>milkweed</plant>-stem, and pretend to be making cord, whereas in reality he was eating the nuts. <animal>Coyote</animal> soon suspected, and asked <animal>Silver-Fox</animal> to let him help make string. He agreed, but gave <animal>Coyote</animal> the stems without any nuts in them. Next night <animal>Coyote</animal> pretended to sleep, and so caught <animal>Silver-Fox</animal> putting the nuts in the stems. He jumped up and seized <animal>Silver-Fox</animal>; but the latter swallowed quickly, and when he opened his mouth there were no nuts there. He told <animal>Coyote</animal> that before people ate nuts, they would put them in a basket, and <animal>Coyote</animal> believed him. <animal>Silver-Fox</animal> then went out to get more <plant>milkweed</plant>, as he said; and while he was gone, <animal>Coyote</animal> took a large stone and struck the roof-beams, trying to find where <animal>Silver-Fox</animal> had hidden the nuts. Finally he found the right one, and the nuts began to pour down. He called out, "Stop! That is enough. I am a chief! That is enough." But the nuts kept falling, and by and by there was a huge pile there. Then <animal>Coyote</animal> said, "Let big baskets come!" and they were there; and he gathered up the nuts, and put them in the baskets, and then ate and ate all the nuts he could. Then he brought in some wood, and was going to say that the nuts fell down when he threw in the wood, as he had hit the beam by accident. Just then <animal>Silver-Fox</animal> came in with a lot of <plant>milkweed</plant>, and began to make string. <animal>Coyote</animal> told him his story, and said that he had been scared when the nuts began to fall, that it was not right to put them in the roof-beams, but in baskets as he had now done. <animal>Silver-Fox</animal>, however, did not reply, until he said, <pb n="173"/>"You eat on that side of the house, and I will eat on this. " Then he went on making string; while <animal>Coyote</animal>, after eating all he could, went to sleep.</p>
+      <p>When he had finished making string, <animal>Silver-Fox</animal> got up softly, and measured <animal>Coyote</animal>'s nose. Then he sat down and began to make a net. He had to measure again pretty soon; and then <animal>Coyote</animal> woke up, and asked what was the trouble. <animal>Silver-Fox</animal> said that he was only blowing ashes off <animal>Coyote</animal>'s face, so he went to sleep again. <animal>Coyote</animal> woke up again later, and asked <animal>Silver-Fox</animal> what he was doing; and he said that he was making a net to catch <animal>rabbits</animal> in, so <animal>Coyote</animal> went to sleep once more. Finally the net was complete, and then <animal>Silver-Fox</animal> told <animal>Coyote</animal> to eat breakfast, to eat a big breakfast, and then they would go out and get <animal>rabbits</animal>. They started out, <animal>Silver-Fox</animal> carrying a big club. <animal>Coyote</animal> asked why he took so large a one, but <animal>Silver-Fox</animal> said that it was the right size. By and by <animal>Silver-Fox</animal> set up the net, and showed <animal>Coyote</animal> where it was. Then <animal>Silver-Fox</animal> said, "Now you run off. When you get a little distance away, shut your eyes, and run as fast as you can." <animal>Coyote</animal> said that he would do so, and started off; and then quickly <animal>Silver-Fox</animal> took up the net, and put it where <animal>Coyote</animal> would run into it. Pretty soon <animal>Coyote</animal> came in sight, driving the <animal>rabbits</animal> slowly; and when he got only a little ways off, he shut his eyes, and ran as fast as he could. He ran squarely into the net, and this drew up; and <animal>Silver-Fox</animal> then rushed up and struck him with the club. <animal>Coyote</animal> cried out, "You are hitting me!" and <animal>Silver-Fox</animal> said, "Yes, don't mind that." He kept on hitting him until he had killed him. Then he went back to the house, and started off over the world; and wherever <animal>Coyote</animal> had urinated, <animal>Silver-Fox</animal> scraped up the ground and smoothed it over nicely. He went everywhere thus, and thought he had fixed every place. There was one, however, on a little island in a lake, that he overlooked. This lake lay far off to the northeast. Then <animal>Silver-Fox</animal> came back to the house and went to sleep. At dawn he got up, went up and looked out of the house, and listened. For a while he heard nothing, but then he heard faintly <animal>Coyote</animal> howling far away. He then knew he had missed one place, and felt very sad. He sat down and thought, but did not know what to do. <animal>Coyote</animal> was too smart for him, he thought. Finally he heard the howling coming closer. Then he thought of a plan. He made a lot of <plant>manzanita</plant>, wild <plant>cherries</plant>, <plant>plums</plant>, etc., grow along the road that <animal>Coyote</animal> was following. <animal>Coyote</animal> was very angry, and wanted to kill <animal>Silver-Fox</animal>. He came to the <plant>manzanita</plant>, and <animal>Silver-Fox</animal> thought he would delay him thus; but <animal>Coyote</animal> only took one berry, and continued on his way. He came to the <plant>plums</plant>; and of these <animal>Coyote</animal> ate largely, as he thought he could fight better if he was not hungry. As he ate, he forgot about his anger. Then he started on again. <animal>Silver-Fox</animal> was afraid, however, and pretended to be very sick when <animal>Coyote</animal> got back. <animal>Coyote</animal> told him he had better eat <pb n="174"/>some <plant>plums</plant>, that they were very good, and that it was useless to lie still all day. Finally <animal>Silver-Fox</animal> got up and ate some, and so <animal>Coyote</animal> forgot all about his revenge.</p>
+      <p><animal>Coyote</animal> said next day that he was going out to pick fruit. He went, and picked <plant>plums</plant> and <plant>cherries</plant> and <plant>manzanita</plant>, and brought them back, saying that there was plenty of food. <animal>Silver-Fox</animal> told him to go and get some wood; and then he went out and caught some <animal>rabbits</animal>, and they cooked and ate them, and lived without quarrelling any more.</p>
+    </body>
+  </text>
 </TEI>
