@@ -1,44 +1,46 @@
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>The Wrong Rattle, the Bush-hog, and the Baby</title>
-                <editor ref="p:Roth394" role="collector">Walter E. Roth</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
-                <principal>
-                    <persName>Katja Mellmann</persName>
-                    <persName>Michelle Scalise Sugiyama</persName>
-                </principal>
-                <respStmt>
-                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
-                    <persName>Jan Jokisch</persName>
-                </respStmt>
-            </titleStmt>
-            <extent>
-                <measure unit="KB" quantity="17">About 17 kilobytes</measure>
-            </extent>
-            <publicationStmt>
-                <authority>The Forager Folklore Database</authority>
-                <idno type="FFDB">NSA010027</idno>
-                <availability status="free">
-                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
-                </availability>
-                <date when="2025">2025</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office, pp. 186-187.</bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Wrong Rattle, the Bush-hog, and the Baby</title>
+        <editor ref="p:Roth394" role="collector">Walter E. Roth</editor>
+        <editor ref="p:unidentified0" role="informant">	- unidentified -</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="17">About 17 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NSA010027</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2025">2025</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office., pp. 186-187.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
                     offers a basis for a systematic study of narrative universals,
                     the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
-            </projectDesc>
-            <samplingDecl>
-                <p>The narrative was selected for being a genuine piece of oral literature recorded
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
                     directly (or via the proxy of an interpreter or other immediate intermediary)
                     from an informant who either lived or grew up as a member of a culture whose
                     primary subsistence at the time of recording was or until recently had been
@@ -48,78 +50,121 @@
                     were omitted, cultural clusters and close cultural relations between two groups
                     were negatively taken into account, and it was aimed for the highest degree of
                     diversity.</p>
-            </samplingDecl>
-            <tagsDecl>
-                <namespace name="">
-                    <tagUsage gi="animal" occurs="24">Used to mark animal names in the text.</tagUsage>
-                    <tagUsage gi="plant" occurs="3">Used to mark plant names in the text.</tagUsage>
-                    <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="24">Used to mark animal names in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="3">Used to mark plant names in the text.</tagUsage>
+          <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
                         text.</tagUsage>
-                    <tagUsage gi="persName" occurs="14">Used to mark culturally important characters in the
+          <tagUsage gi="persName" occurs="14">Used to mark culturally important characters in the
                         text.</tagUsage>
-                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
-                    <tagUsage gi="anamyth" occurs="2">Used to mark a framing metacommentary at the beginning of
+          <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="2">Used to mark a framing metacommentary at the beginning of
                         a narrative.</tagUsage>
-                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
-                    <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
                         narrative.</tagUsage>
-                </namespace>
-            </tagsDecl>
-            <listPrefixDef>
-                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
-                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
                         elements in the <name type="file">personography.xml</name> file.</p>
-                </prefixDef>
-                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
-                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
                         Wikidata</orgName> Q-IDs and refer to their entry.</p>
-                </prefixDef>
-                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
-                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
                         collected in the FFDB.</p>
-                </prefixDef>
-            </listPrefixDef>
-            <editorialDecl>
-                <p>Footnotes are generally retained, but no effort has been made to link the
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
                     narratives mentioned in comparative notes with corresponding records within the
                     FFDB.</p>
-                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
                     within a word have been moved either before or after the word (or nominal
                     phrase) with no clear systematic.</p>
-                <normalization method="silent">
-                    <p>In-text explanations by the original editor are set in brackets. In-text
+        <normalization method="silent">
+          <p>In-text explanations by the original editor are set in brackets. In-text
                         additions/excursions by the informant are set in parenthesis.</p>
-                    <p>Latin passages in the original (usually to hide language and themes deemed
+          <p>Latin passages in the original (usually to hide language and themes deemed
                         indecent) are rendered in English.</p>
-                </normalization>
-                <hyphenation eol="none">
-                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
                         retained.</p>
-                </hyphenation>
-                <quotation marks="all">
-                    <p>All quotation marks have been retained. No effort was made to mark quoted
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark quoted
                         passages up as <gi>quote</gi>.</p>
-                </quotation>
-                <interpretation>
-                    <p>Animals, plants, colors, characters, and place names were automatically
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
                         tagged with a semantic tagger based on WordNet and on word lists as well as
                         subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
                         plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
                         respectively.</p>
-                </interpretation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <settingDesc>
-                <setting>
-                    <name type="culture" key="CSA36701">Warao</name>
-                    <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
-                </setting>
-            </settingDesc>
-        <textClass><keywords scheme="URLtoOurTMI"><list><item><idno type="TMI">B16</idno><term>B16. Devastating animals.</term></item><item><idno type="TMI">D1440</idno><term>D1440. Magic object gives power over animals.</term></item><item><idno type="TMI">D2074.1</idno><term>D2074.1. Animals magically called. (Cf. D1440, D2156.)</term></item><item><idno type="TMI">J177</idno><term>J177. Wisdom from brother-in-law.</term></item><item><idno type="TMI">J414</idno><term>J414. Marriage with equal or with unequal.</term></item><item><idno type="TMI">Q325</idno><term>Q325. Disobedience punished. (Cf. Q431.3, Q451.7.0.2.3, Q456.0.3, Q458.0.2, Q552.1.0.1.1, Q593.)</term></item><item><idno type="TMI">R311</idno><term>R311. Tree refuge.</term></item><item><idno type="TMI">T111</idno><term>T111. Marriage of mortal and supernatural being.</term></item><item><idno type="TMI">K1839+WS3</idno><term>K1839+WS3. Spirit deceives by imitating bird.</term></item></list></keywords></textClass></profileDesc>
-    </teiHeader>
-    <text>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CSA36701">Warao</name>
+          <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
+        </setting>
+      </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <list>
+            <item>
+              <idno type="TMI">B16</idno>
+              <term>B16. Devastating animals.</term>
+            </item>
+            <item>
+              <idno type="TMI">D1440</idno>
+              <term>D1440. Magic object gives power over animals.</term>
+            </item>
+            <item>
+              <idno type="TMI">D2074.1</idno>
+              <term>D2074.1. Animals magically called. (Cf. D1440, D2156.)</term>
+            </item>
+            <item>
+              <idno type="TMI">J177</idno>
+              <term>J177. Wisdom from brother-in-law.</term>
+            </item>
+            <item>
+              <idno type="TMI">J414</idno>
+              <term>J414. Marriage with equal or with unequal.</term>
+            </item>
+            <item>
+              <idno type="TMI">K1839+WS3</idno>
+              <term>K1839+WS3. Spirit deceives by imitating bird.</term>
+            </item>
+            <item>
+              <idno type="TMI">Q325</idno>
+              <term>Q325. Disobedience punished. (Cf. Q431.3, Q451.7.0.2.3, Q456.0.3, Q458.0.2, Q552.1.0.1.1, Q593.)</term>
+            </item>
+            <item>
+              <idno type="TMI">R311</idno>
+              <term>R311. Tree refuge.</term>
+            </item>
+            <item>
+              <idno type="TMI">T111</idno>
+              <term>T111. Marriage of mortal and supernatural being.</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
     <body>
-<p>A man with his wife and two sons went one day to a neighboring settlement to join a drink-party. In the house they left their two girls, who were busy making <ref target="g:GSA0728.016 q:Q2020335">cassiri</ref>, <anamyth>and this is what happened to them</anamyth>. Going to fetch some more water from the creek, they heard, as they strolled along, a peculiar sort of cry. It was really <persName>Siwara</persName>, the Hebu [Bush Spirit], intentionally misleading them by imitating the call of the <animal>oto</animal>, a <animal>bird</animal> bigger than the <animal>Baridi hawk</animal>. So they challenged it in the usual way [Sect. 130], shouting, "Don't cry, but show yourself, or kill something for us." They saw nothing, and they heard nothing further. However, after reaching home, and resting awhile, a young man approached the house, and greeting them with "Good-day, Cousins!" he entered.<note>Ija-sanuka is Warrau for 'cousin,' the word used by the narrator. An Indian will greet any other female of his tribe in three ways: If older, as 'mother' or 'auntie'; if about the same age, as 'sister' or 'cousin'; and if much younger, as 'child,' 'daughter,' etc.</note> "Where are your parents?" was the next inquiry of the stranger, who of course was no other than <persName>Siwara</persName>, he having put in an appearance in obedience to the challenge to show himself. And the girls, telling him that they were all away at a <ref target="g:GSA0728.054">paiwarri</ref>, offered him <plant>cassava</plant> and drink. When he had partaken of this, <persName>Siwara</persName> told them to go and fetch in the <animal latin="Crax rubra">powis</animal> which he had brought for them: this done, he asked them to bring in his hammock, as he proposed staying over night. They fetched the hammock and slung it at that end of the house farthest removed from their sleeping quarters. "Don't be afraid! I am not going to trouble you." And he spoke true, because the girls slept right through the night without being troubled by him. Next morning early <persName>Siwara</persName> returned to the bush, but before taking his departure warned them not to tell their parents that he had paid them a visit. Not long after, the father and mother came home, and seeing the dried <animal latin="Crax rubra">powis</animal>, exclaimed, "Hullo! How did you manage to get that?" The girls lied, saying, "We came upon an <animal>oto hawk</animal> who had caught it, and we took it away from him." By and by, the <animal latin="Crax rubra">powis</animal> was cooked and eaten, and as the old father was chewing the portion he had just picked out of the pot, he came across a piece of arrow in it, a kokerite one.<note>Kokerite is used only for the blow-pipe, that is, poisoned arrows.</note> Turning to his daughters, he inquired of them: "If an oto killed the <animal>bird</animal>, how did this kokerite arrow get in?" and they had to admit that the <animal latin="Crax rubra">powis</animal> had been brought to them by their "uncle."<note>The Warrau word for 'uncle' as used here is daku: not only does this mean the parents' brother but practically every male of about corresponding age.</note> Then why did you not tell me so at first?" he rejoined. "Why did you not let me know that he had visited you while your mother and I were away? Go straight away now, and call him in!" So they went outside and shouted, Daku! Daku! and who should immediately answer the summons but <persName>Siwara</persName> himself. As he entered, the house-master welcomed him, and he sat himself down on the chair-bench that was offered him. "Thanks! Thanks!" he exclaimed; "I was here yesterday, and kept the girls company." Now the old father, who had been to the drinking party, was still fairly bemuddled and hardly knew what he was doing; at the same time, although he had not the slightest idea who <persName>Siwara</persName> was, he certainly offered his elder daughter to him, provided he liked her. It so happened that <persName>Siwara</persName> liked her very much, and he therefore turned to her mother and asked her whether she would care to have him for son-in-law. She said, "Yes, very much." And thus it came to pass that the Hebu obtained his wife, and arranged to take up his abode with her at her father's place. <persName>Siwara</persName>, however, proved himself a very good husband and son-in-law, and always returned from his hunting expeditions well loaded with <animal>game</animal>. He also took the trouble to teach his wife's brothers how to shoot <animal>bush-hog</animal>. Formerly, whenever these two fellows went out and brought back a <animal>bird</animal>, they would say they had brought back <animal>bush-hog</animal>. You see, they did not know what a <animal>bush-hog</animal> really was. So he took them out one <pb n="187"/>day, and when they reached a suitable spot, he shook his maraka [rattle] and <animal>bush-hogs</animal> came rushing up in obedience to the summons. "This is <animal>hog</animal>; shoot," said <persName>Siwara</persName>, but the two brothers, who had never seen one before, were frightened and climbed up a <plant>tree</plant>, so he had to kill three or four by himself, and these they subsequently took home. Time passed, and, his wife having presented him with a baby, <persName>Siwara</persName> became a recognized heir of her family's possessions, and removed his own property, which he had hitherto kept in the bush, into his father-in-law's house, which henceforth became his own hearth and home.<note>Among all these Indians, the husband becomes a member of his wife's family. His permanent retention of his wife depends on the satisfactory completion by him of various tasks, as the cutting of a field and the building of a house. The recognition of him and his acceptance of the responsibilities or the position as the lawful heir of his wife's family whose interests he has henceforth to protect and safeguard, commence with the appearance of the baby. So-called "marriage" to the Indian is a question of neither morality nor ethics, but one of policy. He takes up with a woman so that she may bear him children, especially daughters, whose husbands will have to provide for his old age, as by custom from time immemorial ordained. If she proves barren, he but naturally takes unto himself another. Without the advent of offspring, no woman is wanted. Hence, in those districts where missionaries have established themselves, the celebration of the marriage contract very generally takes place only after the bride-elect has proved herself an ideal woman by becoming pregnant. Sterility is regarded as a shame and disgrace by both sexes. Any physically developed woman, married or single, so afflicted, is described as a "mule" by English-speaking Indians; the Arawaks speak of such a female as massoronto (barren) in the sense of degradation and reproach.</note> Among the property which he brought with him to his new home were four rattles used for <animal>bush-hog</animal> only. There are two kinds of <animal>hog</animal>, the timid [eburi] and the very savage [eburi-oriassi], and there were a pair of <explan glossary="Maraka. The Calabash-gourd rattle.">marakas</explan> for each kind: one rattle to call the <animal>beast</animal>, the other to drive it away [Sect. 298]. So after he had hung them up <persName>Siwara</persName> warned his wife's people that on no account must they touch these <explan glossary="GSA0728.045">marakas</explan> during his absence, because trouble would be certain to ensue. <persName>Siwara</persName> soon afterward went away to cut a field; during his absence one of the brothers-in-law came home, and, seeing the prettily feathered rattles all in a row, could not resist the temptation of taking one down and scrutinizing it closely. While absorbed in its contemplation, he forgot all about the injunction, and started shaking it. <anamyth>Good Lord! It was the wrong rattle - the one for the wild <animal>bush-hog</animal>!</anamyth> And now these savage <animal>beasts</animal> came trooping in from near and far, leaving the poor mother, her two brothers, and the old people barely time to escape with their lives up the nearest <plant>trees</plant>. In the hurry and excitement, however, the mother had forgotten her baby, which the <animal>hogs</animal> tore in pieces and devoured. On seeing all this happening below, the fugitives yelled and screamed for <persName>Siwara</persName> to come quickly and get rid of all these <animal>beasts</animal>, so that they might descend in safety. <persName>Siwara</persName> came and, shaking the proper rattle, drove the <animal>brutes</animal> away. When they had all dispersed, and his relatives had joined him, he looked for his baby, but of course did not find it. He blamed them for disobeying his orders, and was so angered that he left them. <epimyth>It is very hard for them to get food now.</epimyth></p>
-</body></text>
+      <p>A man with his wife and two sons went one day to a neighboring settlement to join a drink-party. In the house they left their two girls, who were busy making <ref target="g:GSA0728.016 q:Q2020335">cassiri</ref>, <anamyth>and this is what happened to them</anamyth>. Going to fetch some more water from the creek, they heard, as they strolled along, a peculiar sort of cry. It was really <persName>Siwara</persName>, the Hebu [Bush Spirit], intentionally misleading them by imitating the call of the <animal>oto</animal>, a <animal>bird</animal> bigger than the <animal>Baridi hawk</animal>. So they challenged it in the usual way [Sect. 130], shouting, "Don't cry, but show yourself, or kill something for us." They saw nothing, and they heard nothing further. However, after reaching home, and resting awhile, a young man approached the house, and greeting them with "Good-day, Cousins!" he entered.<note>Ija-sanuka is Warrau for 'cousin,' the word used by the narrator. An Indian will greet any other female of his tribe in three ways: If older, as 'mother' or 'auntie'; if about the same age, as 'sister' or 'cousin'; and if much younger, as 'child,' 'daughter,' etc.</note> "Where are your parents?" was the next inquiry of the stranger, who of course was no other than <persName>Siwara</persName>, he having put in an appearance in obedience to the challenge to show himself. And the girls, telling him that they were all away at a <ref target="g:GSA0728.054">paiwarri</ref>, offered him <plant>cassava</plant> and drink. When he had partaken of this, <persName>Siwara</persName> told them to go and fetch in the <animal latin="Crax rubra">powis</animal> which he had brought for them: this done, he asked them to bring in his hammock, as he proposed staying over night. They fetched the hammock and slung it at that end of the house farthest removed from their sleeping quarters. "Don't be afraid! I am not going to trouble you." And he spoke true, because the girls slept right through the night without being troubled by him. Next morning early <persName>Siwara</persName> returned to the bush, but before taking his departure warned them not to tell their parents that he had paid them a visit. Not long after, the father and mother came home, and seeing the dried <animal latin="Crax rubra">powis</animal>, exclaimed, "Hullo! How did you manage to get that?" The girls lied, saying, "We came upon an <animal>oto hawk</animal> who had caught it, and we took it away from him." By and by, the <animal latin="Crax rubra">powis</animal> was cooked and eaten, and as the old father was chewing the portion he had just picked out of the pot, he came across a piece of arrow in it, a kokerite one.<note>Kokerite is used only for the blow-pipe, that is, poisoned arrows.</note> Turning to his daughters, he inquired of them: "If an oto killed the <animal>bird</animal>, how did this kokerite arrow get in?" and they had to admit that the <animal latin="Crax rubra">powis</animal> had been brought to them by their "uncle."<note>The Warrau word for 'uncle' as used here is daku: not only does this mean the parents' brother but practically every male of about corresponding age.</note> Then why did you not tell me so at first?" he rejoined. "Why did you not let me know that he had visited you while your mother and I were away? Go straight away now, and call him in!" So they went outside and shouted, Daku! Daku! and who should immediately answer the summons but <persName>Siwara</persName> himself. As he entered, the house-master welcomed him, and he sat himself down on the chair-bench that was offered him. "Thanks! Thanks!" he exclaimed; "I was here yesterday, and kept the girls company." Now the old father, who had been to the drinking party, was still fairly bemuddled and hardly knew what he was doing; at the same time, although he had not the slightest idea who <persName>Siwara</persName> was, he certainly offered his elder daughter to him, provided he liked her. It so happened that <persName>Siwara</persName> liked her very much, and he therefore turned to her mother and asked her whether she would care to have him for son-in-law. She said, "Yes, very much." And thus it came to pass that the Hebu obtained his wife, and arranged to take up his abode with her at her father's place. <persName>Siwara</persName>, however, proved himself a very good husband and son-in-law, and always returned from his hunting expeditions well loaded with <animal>game</animal>. He also took the trouble to teach his wife's brothers how to shoot <animal>bush-hog</animal>. Formerly, whenever these two fellows went out and brought back a <animal>bird</animal>, they would say they had brought back <animal>bush-hog</animal>. You see, they did not know what a <animal>bush-hog</animal> really was. So he took them out one <pb n="187"/>day, and when they reached a suitable spot, he shook his maraka [rattle] and <animal>bush-hogs</animal> came rushing up in obedience to the summons. "This is <animal>hog</animal>; shoot," said <persName>Siwara</persName>, but the two brothers, who had never seen one before, were frightened and climbed up a <plant>tree</plant>, so he had to kill three or four by himself, and these they subsequently took home. Time passed, and, his wife having presented him with a baby, <persName>Siwara</persName> became a recognized heir of her family's possessions, and removed his own property, which he had hitherto kept in the bush, into his father-in-law's house, which henceforth became his own hearth and home.<note>Among all these Indians, the husband becomes a member of his wife's family. His permanent retention of his wife depends on the satisfactory completion by him of various tasks, as the cutting of a field and the building of a house. The recognition of him and his acceptance of the responsibilities or the position as the lawful heir of his wife's family whose interests he has henceforth to protect and safeguard, commence with the appearance of the baby. So-called "marriage" to the Indian is a question of neither morality nor ethics, but one of policy. He takes up with a woman so that she may bear him children, especially daughters, whose husbands will have to provide for his old age, as by custom from time immemorial ordained. If she proves barren, he but naturally takes unto himself another. Without the advent of offspring, no woman is wanted. Hence, in those districts where missionaries have established themselves, the celebration of the marriage contract very generally takes place only after the bride-elect has proved herself an ideal woman by becoming pregnant. Sterility is regarded as a shame and disgrace by both sexes. Any physically developed woman, married or single, so afflicted, is described as a "mule" by English-speaking Indians; the Arawaks speak of such a female as massoronto (barren) in the sense of degradation and reproach.</note> Among the property which he brought with him to his new home were four rattles used for <animal>bush-hog</animal> only. There are two kinds of <animal>hog</animal>, the timid [eburi] and the very savage [eburi-oriassi], and there were a pair of <explan glossary="Maraka. The Calabash-gourd rattle.">marakas</explan> for each kind: one rattle to call the <animal>beast</animal>, the other to drive it away [Sect. 298]. So after he had hung them up <persName>Siwara</persName> warned his wife's people that on no account must they touch these <explan glossary="GSA0728.045">marakas</explan> during his absence, because trouble would be certain to ensue. <persName>Siwara</persName> soon afterward went away to cut a field; during his absence one of the brothers-in-law came home, and, seeing the prettily feathered rattles all in a row, could not resist the temptation of taking one down and scrutinizing it closely. While absorbed in its contemplation, he forgot all about the injunction, and started shaking it. <anamyth>Good Lord! It was the wrong rattle - the one for the wild <animal>bush-hog</animal>!</anamyth> And now these savage <animal>beasts</animal> came trooping in from near and far, leaving the poor mother, her two brothers, and the old people barely time to escape with their lives up the nearest <plant>trees</plant>. In the hurry and excitement, however, the mother had forgotten her baby, which the <animal>hogs</animal> tore in pieces and devoured. On seeing all this happening below, the fugitives yelled and screamed for <persName>Siwara</persName> to come quickly and get rid of all these <animal>beasts</animal>, so that they might descend in safety. <persName>Siwara</persName> came and, shaking the proper rattle, drove the <animal>brutes</animal> away. When they had all dispersed, and his relatives had joined him, he looked for his baby, but of course did not find it. He blamed them for disobeying his orders, and was so angered that he left them. <epimyth>It is very hard for them to get food now.</epimyth></p>
+    </body>
+  </text>
 </TEI>
