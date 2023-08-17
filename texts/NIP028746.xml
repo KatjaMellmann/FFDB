@@ -1,44 +1,46 @@
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Weedah the Mocking Bird</title>
-                <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
-                <principal>
-                    <persName>Katja Mellmann</persName>
-                    <persName>Michelle Scalise Sugiyama</persName>
-                </principal>
-                <respStmt>
-                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
-                    <persName>Jan Jokisch</persName>
-                </respStmt>
-            </titleStmt>
-            <extent>
-                <measure unit="KB" quantity="16">About 16 kilobytes</measure>
-            </extent>
-            <publicationStmt>
-                <authority>The Forager Folklore Database</authority>
-                <idno type="FFDB">NIP028746</idno>
-                <availability status="free">
-                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
-                </availability>
-                <date when="2025">2025</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade, pp. 30-34.</bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Weedah the Mocking Bird</title>
+        <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor>
+        <editor ref="p:unidentified0" role="informant">	- unidentified -</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="16">About 16 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NIP028746</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2025">2025</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade., pp. 30-34.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
                     offers a basis for a systematic study of narrative universals,
                     the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
-            </projectDesc>
-            <samplingDecl>
-                <p>The narrative was selected for being a genuine piece of oral literature recorded
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
                     directly (or via the proxy of an interpreter or other immediate intermediary)
                     from an informant who either lived or grew up as a member of a culture whose
                     primary subsistence at the time of recording was or until recently had been
@@ -48,87 +50,91 @@
                     were omitted, cultural clusters and close cultural relations between two groups
                     were negatively taken into account, and it was aimed for the highest degree of
                     diversity.</p>
-            </samplingDecl>
-            <tagsDecl>
-                <namespace name="">
-                    <tagUsage gi="animal" occurs="46">Used to mark animal names in the text.</tagUsage>
-                    <tagUsage gi="plant" occurs="7">Used to mark plant names in the text.</tagUsage>
-                    <tagUsage gi="color" occurs="11">Used to mark color names (adjectives and nouns) in the
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="46">Used to mark animal names in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="7">Used to mark plant names in the text.</tagUsage>
+          <tagUsage gi="color" occurs="11">Used to mark color names (adjectives and nouns) in the
                         text.</tagUsage>
-                    <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+          <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
                         text.</tagUsage>
-                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
-                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+          <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
                         a narrative.</tagUsage>
-                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
-                    <tagUsage gi="epimyth" occurs="2">Used to mark a framing metacommentary at the end of a
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="2">Used to mark a framing metacommentary at the end of a
                         narrative.</tagUsage>
-                </namespace>
-            </tagsDecl>
-            <listPrefixDef>
-                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
-                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
                         elements in the <name type="file">personography.xml</name> file.</p>
-                </prefixDef>
-                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
-                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
                         Wikidata</orgName> Q-IDs and refer to their entry.</p>
-                </prefixDef>
-                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
-                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
                         collected in the FFDB.</p>
-                </prefixDef>
-            </listPrefixDef>
-            <editorialDecl>
-                <p>Footnotes are generally retained, but no effort has been made to link the
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
                     narratives mentioned in comparative notes with corresponding records within the
                     FFDB.</p>
-                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
                     within a word have been moved either before or after the word (or nominal
                     phrase) with no clear systematic.</p>
-                <normalization method="silent">
-                    <p>In-text explanations by the original editor are set in brackets. In-text
+        <normalization method="silent">
+          <p>In-text explanations by the original editor are set in brackets. In-text
                         additions/excursions by the informant are set in parenthesis.</p>
-                    <p>Latin passages in the original (usually to hide language and themes deemed
+          <p>Latin passages in the original (usually to hide language and themes deemed
                         indecent) are rendered in English.</p>
-                </normalization>
-                <hyphenation eol="none">
-                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
                         retained.</p>
-                </hyphenation>
-                <quotation marks="all">
-                    <p>All quotation marks have been retained. No effort was made to mark quoted
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark quoted
                         passages up as <gi>quote</gi>.</p>
-                </quotation>
-                <interpretation>
-                    <p>Animals, plants, colors, characters, and place names were automatically
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
                         tagged with a semantic tagger based on WordNet and on word lists as well as
                         subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
                         plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
                         respectively.</p>
-                </interpretation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <settingDesc>
-                <setting>
-                    <name type="culture" key="CIPD0270">Yuwaalaraay</name>
-                    <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
-                </setting>
-            </settingDesc>
-        </profileDesc>
-    </teiHeader>
-    <text>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CIPD0270">Yuwaalaraay</name>
+          <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
     <body>
-<p><animal><ref target="g:GIP0247.124">Weedah</ref></animal> was playing a great trick on the <color>black</color> fellows who lived near him. He had built himself a number of <plant>grass</plant> <ref target="g:GIP0247.110">nyunnoos</ref>, more than twenty. He made fires before each, to make it look as if some one lived in the <ref target="g:GIP0247.110">nyunnoos</ref>. First he would go into one <ref target="g:GIP0247.110">nyunnoo</ref>, or humpy, and cry like a baby, then to another and laugh like a child, then in turn, as he went the round of the humpies he would sing like a maiden, <ref target="g:GIP0247.037">corrobboree</ref> like a man, call out in a quavering voice like an old man, and in a shrill voice like an old woman; in fact, imitate any sort of voice he had ever heard, and imitate them so quickly in succession that any one passing would think there was a great crowd of <color>blacks</color> in that camp. His object was to entice as many strange <color>black</color> fellows into his camp as he could, one at a time; then he would kill them and gradually gain the whole country round for his own. His chance was when he managed to get a single <color>black</color> fellow into his camp, which he very often did, then by his cunning he always gained his end and the <color>black</color> fellow's death. This was how he attained that end. A <color>black</color> fellow, probably separated from his fellows in the excitement of the chase, would be returning home alone; <pb n="31"/>passing within earshot of <animal><ref target="g:GIP0247.124">Weedah</ref></animal>'s camp he would hear the various voices and wonder what tribe could be there. Curiosity would induce him to come near. He would probably peer into the camp, and, only seeing <animal><ref target="g:GIP0247.124">Weedah</ref></animal> standing alone, would advance towards him. <animal><ref target="g:GIP0247.124">Weedah</ref></animal> would be standing at a little distance from a big glowing fire, where he would wait until the strange <color>black</color> fellow came quite close to him. Then he would ask him what he wanted. The stranger would say he had heard many voices and had wondered what tribe it could be, so had come near to find out. <animal><ref target="g:GIP0247.124">Weedah</ref></animal> would say, "But only I am here. How could you have heard voices? See; look round; I am alone." Bewildered, the stranger would look round and say in a puzzled tone of voice: "Where are they all gone? As I came I heard babies crying, men calling, and women laughing; many voices I heard but you only I see."</p>
-<p>"And only I am here. The wind must have stirred the branches of the <plant>balah trees</plant>, and you must have thought it was the wailing of children, the laughing of the <animal><ref target="g:GIP0247.075">gouggourgahgah</ref></animal> you heard, and thought it the laughter of women and mine must have been the voice as of men that you heard. Alone in the <plant>bush</plant>, as the shadows fall, a man breeds strange fancies. See by the light of this fire, where are your fancies now? No women laugh, no babies cry, only I, <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, talk." As <animal><ref target="g:GIP0247.124">Weedah</ref></animal> was talking he kept edging the stranger towards the fire; when they were quite close to it, he turned swiftly, seized him, and threw him right into the middle of the blaze. This scene was repeated time after time, until at last the ranks of the <color>black</color> fellows living round the camp of <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, began to get thin.</p>
-<p><pb n="32"/><animal><ref target="g:GIP0247.102">Mullyan</ref></animal>, the <animal>eagle hawk</animal>, determined to fathom the mystery, for as yet the <color>black</color> fellows had no clue as to how or where their friends had disappeared. <animal><ref target="g:GIP0247.102">Mullyan</ref></animal>, when <animal><ref target="g:GIP0247.002">Beeargah</ref></animal>, his cousin, returned to his camp no more, made up his mind to get on his track and follow it, until at length he solved the mystery. After following the track of <animal><ref target="g:GIP0247.002">Beeargah</ref></animal>, as he had chased the <animal>kangaroo</animal> to where he had slain it, on he followed his homeward trail. Over stony ground he tracked him, and through sand, across plains, and through scrub. At last in a scrub and still on the track of <animal><ref target="g:GIP0247.002">Beeargah</ref></animal>, he heard the sounds of many voices, babies crying, women singing, men talking. Peering through the <plant>bush</plant>, finding the track took him nearer the spot whence came the sounds, he saw the <plant>grass</plant> humpies. "Who can these be?" he thought. The track led him right into the camp, where alone <animal><ref target="g:GIP0247.124">Weedah</ref></animal> was to be seen. <animal><ref target="g:GIP0247.102">Mullyan</ref></animal> advanced towards him and asked where were the people whose voices he had heard as he came through the <plant>bush</plant>.</p>
-<p><animal><ref target="g:GIP0247.124">Weedah</ref></animal> said: "How can I tell you? I know of no people; I live alone."</p>
-<p>"But," said <animal><ref target="g:GIP0247.102">Mullyan</ref></animal>, the <animal>eagle hawk</animal>, "I heard babies crying, women laughing, and men talking, not one but many."</p>
-<p>"And I alone am here. Ask of your ears what trick they played you, or perhaps your eyes fail you now. Can you see any but me? Look for yourself."</p>
-<p>"And if, as indeed it seems, you only are here, what did you with <animal><ref target="g:GIP0247.002">Beeargah</ref></animal> my cousin, and where are my friends? Many are their trails that I see coming into this camp, but none going out. And if you alone live here you alone can answer me."</p>
-<p><pb n="33"/>"What know I of you or your friends? Nothing. Ask of the winds that blow. Ask of <ref target="g:GIP0247.001">Bahloo</ref> the moon, who looks down on the earth by night. Ask of <ref target="g:GIP0247.137">Yhi</ref> the sun, that looks down by day. But ask not <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, who dwells alone, and knows naught of your friends. " But as <animal><ref target="g:GIP0247.124">Weedah</ref></animal> was talking he was carefully edging <animal><ref target="g:GIP0247.102">Mullyan</ref></animal> towards the fire.</p>
-<p><animal><ref target="g:GIP0247.102">Mullyan</ref></animal>, the <animal>eagle hawk</animal>, too, was cunning, and not easy to trap. He saw a blazing fire in front of him, he saw the track of his friend behind him, he saw <animal><ref target="g:GIP0247.124">Weedah</ref></animal> was edging him towards the fire, and it came to him in a moment the thought that if the fire could speak, well could it tell where were his friends. But the time was not yet come to show that he had fathomed the mystery. So he affected to fall into the trap. But when they reached the fire, before <animal><ref target="g:GIP0247.124">Weedah</ref></animal> had time to act his usual part, with a mighty grip <animal><ref target="g:GIP0247.102">Mullyan</ref></animal> the <animal>eagle hawk</animal> seized him, saying, "Even as you served <animal><ref target="g:GIP0247.002">Beeargah</ref></animal> the <animal>hawk</animal>, my cousin, and my friends, so now serve I you." And right into the middle of the blazing fire he threw him. Then he turned homewards in haste, to tell the <color>black</color> fellows that he had solved the fate of their friends, which had so long been a mystery. When he was some distance from the <animal><ref target="g:GIP0247.124">Weedah</ref></animal>'s camp, he heard the sound of a thunder clap. But it was not thunder it was the bursting of the back of <animal><ref target="g:GIP0247.124">Weedah</ref></animal>'s head, which had burst with a bang as of a thunder clap. <epimyth>And as it burst, out from his remains had risen a <animal>bird</animal>, <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, the <animal>mocking bird</animal>; which <animal>bird</animal> to this day has a hole at the back of his head, just in the same place as <animal><ref target="g:GIP0247.124">Weedah</ref></animal> the <color>black</color> fellow's head had burst, and whence the <animal>bird</animal> came forth.</epimyth></p>
-<p><pb n="34"/><epimyth>To this day the <animal><ref target="g:GIP0247.124">Weedah</ref></animal> makes <plant>grass</plant> playgrounds, through which he runs, imitating, as he plays, in quick succession, any voices he has ever heard, from the crying of a child to the laughing of a woman; from the mewing of a <animal>cat</animal> to the barking of a <animal>dog</animal>, and hence his name <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, the <animal>mocking bird</animal>.</epimyth></p>
-</body></text>
+      <p><animal><ref target="g:GIP0247.124">Weedah</ref></animal> was playing a great trick on the <color>black</color> fellows who lived near him. He had built himself a number of <plant>grass</plant> <ref target="g:GIP0247.110">nyunnoos</ref>, more than twenty. He made fires before each, to make it look as if some one lived in the <ref target="g:GIP0247.110">nyunnoos</ref>. First he would go into one <ref target="g:GIP0247.110">nyunnoo</ref>, or humpy, and cry like a baby, then to another and laugh like a child, then in turn, as he went the round of the humpies he would sing like a maiden, <ref target="g:GIP0247.037">corrobboree</ref> like a man, call out in a quavering voice like an old man, and in a shrill voice like an old woman; in fact, imitate any sort of voice he had ever heard, and imitate them so quickly in succession that any one passing would think there was a great crowd of <color>blacks</color> in that camp. His object was to entice as many strange <color>black</color> fellows into his camp as he could, one at a time; then he would kill them and gradually gain the whole country round for his own. His chance was when he managed to get a single <color>black</color> fellow into his camp, which he very often did, then by his cunning he always gained his end and the <color>black</color> fellow's death. This was how he attained that end. A <color>black</color> fellow, probably separated from his fellows in the excitement of the chase, would be returning home alone; <pb n="31"/>passing within earshot of <animal><ref target="g:GIP0247.124">Weedah</ref></animal>'s camp he would hear the various voices and wonder what tribe could be there. Curiosity would induce him to come near. He would probably peer into the camp, and, only seeing <animal><ref target="g:GIP0247.124">Weedah</ref></animal> standing alone, would advance towards him. <animal><ref target="g:GIP0247.124">Weedah</ref></animal> would be standing at a little distance from a big glowing fire, where he would wait until the strange <color>black</color> fellow came quite close to him. Then he would ask him what he wanted. The stranger would say he had heard many voices and had wondered what tribe it could be, so had come near to find out. <animal><ref target="g:GIP0247.124">Weedah</ref></animal> would say, "But only I am here. How could you have heard voices? See; look round; I am alone." Bewildered, the stranger would look round and say in a puzzled tone of voice: "Where are they all gone? As I came I heard babies crying, men calling, and women laughing; many voices I heard but you only I see."</p>
+      <p>"And only I am here. The wind must have stirred the branches of the <plant>balah trees</plant>, and you must have thought it was the wailing of children, the laughing of the <animal><ref target="g:GIP0247.075">gouggourgahgah</ref></animal> you heard, and thought it the laughter of women and mine must have been the voice as of men that you heard. Alone in the <plant>bush</plant>, as the shadows fall, a man breeds strange fancies. See by the light of this fire, where are your fancies now? No women laugh, no babies cry, only I, <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, talk." As <animal><ref target="g:GIP0247.124">Weedah</ref></animal> was talking he kept edging the stranger towards the fire; when they were quite close to it, he turned swiftly, seized him, and threw him right into the middle of the blaze. This scene was repeated time after time, until at last the ranks of the <color>black</color> fellows living round the camp of <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, began to get thin.</p>
+      <p><pb n="32"/><animal><ref target="g:GIP0247.102">Mullyan</ref></animal>, the <animal>eagle hawk</animal>, determined to fathom the mystery, for as yet the <color>black</color> fellows had no clue as to how or where their friends had disappeared. <animal><ref target="g:GIP0247.102">Mullyan</ref></animal>, when <animal><ref target="g:GIP0247.002">Beeargah</ref></animal>, his cousin, returned to his camp no more, made up his mind to get on his track and follow it, until at length he solved the mystery. After following the track of <animal><ref target="g:GIP0247.002">Beeargah</ref></animal>, as he had chased the <animal>kangaroo</animal> to where he had slain it, on he followed his homeward trail. Over stony ground he tracked him, and through sand, across plains, and through scrub. At last in a scrub and still on the track of <animal><ref target="g:GIP0247.002">Beeargah</ref></animal>, he heard the sounds of many voices, babies crying, women singing, men talking. Peering through the <plant>bush</plant>, finding the track took him nearer the spot whence came the sounds, he saw the <plant>grass</plant> humpies. "Who can these be?" he thought. The track led him right into the camp, where alone <animal><ref target="g:GIP0247.124">Weedah</ref></animal> was to be seen. <animal><ref target="g:GIP0247.102">Mullyan</ref></animal> advanced towards him and asked where were the people whose voices he had heard as he came through the <plant>bush</plant>.</p>
+      <p><animal><ref target="g:GIP0247.124">Weedah</ref></animal> said: "How can I tell you? I know of no people; I live alone."</p>
+      <p>"But," said <animal><ref target="g:GIP0247.102">Mullyan</ref></animal>, the <animal>eagle hawk</animal>, "I heard babies crying, women laughing, and men talking, not one but many."</p>
+      <p>"And I alone am here. Ask of your ears what trick they played you, or perhaps your eyes fail you now. Can you see any but me? Look for yourself."</p>
+      <p>"And if, as indeed it seems, you only are here, what did you with <animal><ref target="g:GIP0247.002">Beeargah</ref></animal> my cousin, and where are my friends? Many are their trails that I see coming into this camp, but none going out. And if you alone live here you alone can answer me."</p>
+      <p><pb n="33"/>"What know I of you or your friends? Nothing. Ask of the winds that blow. Ask of <ref target="g:GIP0247.001">Bahloo</ref> the moon, who looks down on the earth by night. Ask of <ref target="g:GIP0247.137">Yhi</ref> the sun, that looks down by day. But ask not <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, who dwells alone, and knows naught of your friends. " But as <animal><ref target="g:GIP0247.124">Weedah</ref></animal> was talking he was carefully edging <animal><ref target="g:GIP0247.102">Mullyan</ref></animal> towards the fire.</p>
+      <p><animal><ref target="g:GIP0247.102">Mullyan</ref></animal>, the <animal>eagle hawk</animal>, too, was cunning, and not easy to trap. He saw a blazing fire in front of him, he saw the track of his friend behind him, he saw <animal><ref target="g:GIP0247.124">Weedah</ref></animal> was edging him towards the fire, and it came to him in a moment the thought that if the fire could speak, well could it tell where were his friends. But the time was not yet come to show that he had fathomed the mystery. So he affected to fall into the trap. But when they reached the fire, before <animal><ref target="g:GIP0247.124">Weedah</ref></animal> had time to act his usual part, with a mighty grip <animal><ref target="g:GIP0247.102">Mullyan</ref></animal> the <animal>eagle hawk</animal> seized him, saying, "Even as you served <animal><ref target="g:GIP0247.002">Beeargah</ref></animal> the <animal>hawk</animal>, my cousin, and my friends, so now serve I you." And right into the middle of the blazing fire he threw him. Then he turned homewards in haste, to tell the <color>black</color> fellows that he had solved the fate of their friends, which had so long been a mystery. When he was some distance from the <animal><ref target="g:GIP0247.124">Weedah</ref></animal>'s camp, he heard the sound of a thunder clap. But it was not thunder it was the bursting of the back of <animal><ref target="g:GIP0247.124">Weedah</ref></animal>'s head, which had burst with a bang as of a thunder clap. <epimyth>And as it burst, out from his remains had risen a <animal>bird</animal>, <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, the <animal>mocking bird</animal>; which <animal>bird</animal> to this day has a hole at the back of his head, just in the same place as <animal><ref target="g:GIP0247.124">Weedah</ref></animal> the <color>black</color> fellow's head had burst, and whence the <animal>bird</animal> came forth.</epimyth></p>
+      <p>
+        <pb n="34"/>
+        <epimyth>To this day the <animal><ref target="g:GIP0247.124">Weedah</ref></animal> makes <plant>grass</plant> playgrounds, through which he runs, imitating, as he plays, in quick succession, any voices he has ever heard, from the crying of a child to the laughing of a woman; from the mewing of a <animal>cat</animal> to the barking of a <animal>dog</animal>, and hence his name <animal><ref target="g:GIP0247.124">Weedah</ref></animal>, the <animal>mocking bird</animal>.</epimyth>
+      </p>
+    </body>
+  </text>
 </TEI>
