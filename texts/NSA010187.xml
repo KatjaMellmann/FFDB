@@ -1,44 +1,46 @@
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>The Adventures of Kororomanna</title>
-                <editor ref="p:Roth394" role="collector">Walter E. Roth</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
-                <principal>
-                    <persName>Katja Mellmann</persName>
-                    <persName>Michelle Scalise Sugiyama</persName>
-                </principal>
-                <respStmt>
-                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
-                    <persName>Jan Jokisch</persName>
-                </respStmt>
-            </titleStmt>
-            <extent>
-                <measure unit="KB" quantity="31">About 31 kilobytes</measure>
-            </extent>
-            <publicationStmt>
-                <authority>The Forager Folklore Database</authority>
-                <idno type="FFDB">NSA010187</idno>
-                <availability status="free">
-                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
-                </availability>
-                <date when="2025">2025</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office, pp. 126-130.</bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Adventures of Kororomanna</title>
+        <editor ref="p:Roth394" role="collector">Walter E. Roth</editor>
+        <editor ref="p:unidentified0" role="informant">	- unidentified -</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="32">About 32 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NSA010187</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2025">2025</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office., pp. 126-130.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
                     offers a basis for a systematic study of narrative universals,
                     the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
-            </projectDesc>
-            <samplingDecl>
-                <p>The narrative was selected for being a genuine piece of oral literature recorded
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
                     directly (or via the proxy of an interpreter or other immediate intermediary)
                     from an informant who either lived or grew up as a member of a culture whose
                     primary subsistence at the time of recording was or until recently had been
@@ -48,87 +50,194 @@
                     were omitted, cultural clusters and close cultural relations between two groups
                     were negatively taken into account, and it was aimed for the highest degree of
                     diversity.</p>
-            </samplingDecl>
-            <tagsDecl>
-                <namespace name="">
-                    <tagUsage gi="animal" occurs="60">Used to mark animal names in the text.</tagUsage>
-                    <tagUsage gi="plant" occurs="29">Used to mark plant names in the text.</tagUsage>
-                    <tagUsage gi="color" occurs="3">Used to mark color names (adjectives and nouns) in the
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="60">Used to mark animal names in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="29">Used to mark plant names in the text.</tagUsage>
+          <tagUsage gi="color" occurs="3">Used to mark color names (adjectives and nouns) in the
                         text.</tagUsage>
-                    <tagUsage gi="persName" occurs="42">Used to mark culturally important characters in the
+          <tagUsage gi="persName" occurs="42">Used to mark culturally important characters in the
                         text.</tagUsage>
-                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
-                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+          <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
                         a narrative.</tagUsage>
-                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
-                    <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
                         narrative.</tagUsage>
-                </namespace>
-            </tagsDecl>
-            <listPrefixDef>
-                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
-                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
                         elements in the <name type="file">personography.xml</name> file.</p>
-                </prefixDef>
-                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
-                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
                         Wikidata</orgName> Q-IDs and refer to their entry.</p>
-                </prefixDef>
-                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
-                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
                         collected in the FFDB.</p>
-                </prefixDef>
-            </listPrefixDef>
-            <editorialDecl>
-                <p>Footnotes are generally retained, but no effort has been made to link the
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
                     narratives mentioned in comparative notes with corresponding records within the
                     FFDB.</p>
-                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
                     within a word have been moved either before or after the word (or nominal
                     phrase) with no clear systematic.</p>
-                <normalization method="silent">
-                    <p>In-text explanations by the original editor are set in brackets. In-text
+        <normalization method="silent">
+          <p>In-text explanations by the original editor are set in brackets. In-text
                         additions/excursions by the informant are set in parenthesis.</p>
-                    <p>Latin passages in the original (usually to hide language and themes deemed
+          <p>Latin passages in the original (usually to hide language and themes deemed
                         indecent) are rendered in English.</p>
-                </normalization>
-                <hyphenation eol="none">
-                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
                         retained.</p>
-                </hyphenation>
-                <quotation marks="all">
-                    <p>All quotation marks have been retained. No effort was made to mark quoted
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark quoted
                         passages up as <gi>quote</gi>.</p>
-                </quotation>
-                <interpretation>
-                    <p>Animals, plants, colors, characters, and place names were automatically
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
                         tagged with a semantic tagger based on WordNet and on word lists as well as
                         subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
                         plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
                         respectively.</p>
-                </interpretation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <settingDesc>
-                <setting>
-                    <name type="culture" key="CSA36701">Warao</name>
-                    <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
-                </setting>
-            </settingDesc>
-        <textClass><keywords scheme="URLtoOurTMI"><list><item><idno type="TMI">A521</idno><term>A521. Culture hero as dupe or trickster.</term></item><item><idno type="TMI">B563</idno><term>B563. Animals direct man on journey.</term></item><item><idno type="TMI">D1283</idno><term>D1283. Magic packet.</term></item><item><idno type="TMI">D1641.7.1</idno><term>D1641.7.1. Self-rolling head.</term></item><item><idno type="TMI">D1841.5.1</idno><term>D1841.5.1. Man proof against weapons.</term></item><item><idno type="TMI">D2061.2.2</idno><term>D2061.2.2. Murder by sympathetic magic. An object or an animal is abused or destroyed to bring about the death of a person.</term></item><item><idno type="TMI">H57.2</idno><term>H57.2. Recognition by missing finger.</term></item><item><idno type="TMI">J1485</idno><term>J1485. Mistaken identity. A bride slips up behind her husband and kisses him. He is annoyed. She: "Pardon me, I did not know it was you"</term></item><item><idno type="TMI">J1967</idno><term>J1967. Numskull bales out the stream. He comes to a stream but not wishing to get his feet wet he sits down to wait for the stream to run down. He helps to bale the stream out with a hazelnut shell and keeps it up for months.</term></item><item><idno type="TMI">K522</idno><term>K522. Escape by shamming death.</term></item><item><idno type="TMI">K547</idno><term>K547. Escape by frightening would-be captors. (Cf. K1710.)</term></item><item><idno type="TMI">K550</idno><term>K550. Escape by false plea. A captive makes a request or proposes an action that permits him eventually to escape.</term></item><item><idno type="TMI">K824.1</idno><term>K824.1. Sham doctor kills ogre (giant).</term></item><item><idno type="TMI">K890</idno><term>K890. Dupe tricked into killing himself.</term></item><item><idno type="TMI">K910</idno><term>K910. Murder by strategy.</term></item><item><idno type="TMI">K1010</idno><term>K1010. Deception through false doctoring.</term></item><item><idno type="TMI">K1887</idno><term>K1887. Illusory sounds.</term></item><item><idno type="TMI">M242</idno><term>M242. Bargains and promises between mortals and supernatural beings. (Cf. M221, M222, M223.)</term></item><item><idno type="TMI">Q42</idno><term>Q42. Generosity rewarded.</term></item><item><idno type="TMI">R261.1</idno><term>R261.1. Pursuit by rolling head.</term></item><item><idno type="TMI">R311</idno><term>R311. Tree refuge.</term></item><item><idno type="TMI">W137</idno><term>W137. Curiosity.</term></item><item><idno type="TMI">J1762+WS</idno><term>J1762+WS. Deer thought to be person.</term></item><item><idno type="TMI">K525+WS</idno><term>K525+WS. Escape by use of substituted monkey.</term></item><item><idno type="TMI">R49+WS</idno><term>R49+WS. Captivity in a piece of wood.</term></item></list></keywords></textClass></profileDesc>
-    </teiHeader>
-    <text>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CSA36701">Warao</name>
+          <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
+        </setting>
+      </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <list>
+            <item>
+              <idno type="TMI">A521</idno>
+              <term>A521. Culture hero as dupe or trickster.</term>
+            </item>
+            <item>
+              <idno type="TMI">B563</idno>
+              <term>B563. Animals direct man on journey.</term>
+            </item>
+            <item>
+              <idno type="TMI">D1283</idno>
+              <term>D1283. Magic packet.</term>
+            </item>
+            <item>
+              <idno type="TMI">D1641.7.1</idno>
+              <term>D1641.7.1. Self-rolling head.</term>
+            </item>
+            <item>
+              <idno type="TMI">D1841.5.1</idno>
+              <term>D1841.5.1. Man proof against weapons.</term>
+            </item>
+            <item>
+              <idno type="TMI">D2061.2.2</idno>
+              <term>D2061.2.2. Murder by sympathetic magic. An object or an animal is abused or destroyed to bring about the death of a person.</term>
+            </item>
+            <item>
+              <idno type="TMI">H57.2</idno>
+              <term>H57.2. Recognition by missing finger.</term>
+            </item>
+            <item>
+              <idno type="TMI">J1485</idno>
+              <term>J1485. Mistaken identity. A bride slips up behind her husband and kisses him. He is annoyed. She: "Pardon me, I did not know it was you"</term>
+            </item>
+            <item>
+              <idno type="TMI">J1762+WS</idno>
+              <term>J1762+WS. Deer thought to be person.</term>
+            </item>
+            <item>
+              <idno type="TMI">J1967</idno>
+              <term>J1967. Numskull bales out the stream. He comes to a stream but not wishing to get his feet wet he sits down to wait for the stream to run down. He helps to bale the stream out with a hazelnut shell and keeps it up for months.</term>
+            </item>
+            <item>
+              <idno type="TMI">K522</idno>
+              <term>K522. Escape by shamming death.</term>
+            </item>
+            <item>
+              <idno type="TMI">K525+WS</idno>
+              <term>K525+WS. Escape by use of substituted monkey.</term>
+            </item>
+            <item>
+              <idno type="TMI">K547</idno>
+              <term>K547. Escape by frightening would-be captors. (Cf. K1710.)</term>
+            </item>
+            <item>
+              <idno type="TMI">K550</idno>
+              <term>K550. Escape by false plea. A captive makes a request or proposes an action that permits him eventually to escape.</term>
+            </item>
+            <item>
+              <idno type="TMI">K824.1</idno>
+              <term>K824.1. Sham doctor kills ogre (giant).</term>
+            </item>
+            <item>
+              <idno type="TMI">K890</idno>
+              <term>K890. Dupe tricked into killing himself.</term>
+            </item>
+            <item>
+              <idno type="TMI">K910</idno>
+              <term>K910. Murder by strategy.</term>
+            </item>
+            <item>
+              <idno type="TMI">K1010</idno>
+              <term>K1010. Deception through false doctoring.</term>
+            </item>
+            <item>
+              <idno type="TMI">K1887</idno>
+              <term>K1887. Illusory sounds.</term>
+            </item>
+            <item>
+              <idno type="TMI">M242</idno>
+              <term>M242. Bargains and promises between mortals and supernatural beings. (Cf. M221, M222, M223.)</term>
+            </item>
+            <item>
+              <idno type="TMI">Q42</idno>
+              <term>Q42. Generosity rewarded.</term>
+            </item>
+            <item>
+              <idno type="TMI">R49+WS</idno>
+              <term>R49+WS. Captivity in a piece of wood.</term>
+            </item>
+            <item>
+              <idno type="TMI">R261.1</idno>
+              <term>R261.1. Pursuit by rolling head.</term>
+            </item>
+            <item>
+              <idno type="TMI">R311</idno>
+              <term>R311. Tree refuge.</term>
+            </item>
+            <item>
+              <idno type="TMI">W137</idno>
+              <term>W137. Curiosity.</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
     <body>
-<p><persName>Kororomanna</persName> went out hunting and shot a "<animal latin="Mycetes">baboon</animal>" [Mycetes], but as it was already late in the afternoon, in trying to make his way home he lost his way in the darkness. And there he had to make his banab, and to lie down, with the <animal latin="Mycetes">baboon</animal> beside him. But where he lay was a Hebu road; you can always distinguish a Spirit road from any other pathway in the forest because the Hebus occupying the <plant>trees</plant> that lie alongside it are always, especially at night, striking the branches and trunks, and so producing short sharp crackling noises [Sect. 104]. It was not pleasant for poor <persName>Kororomanna</persName>, especially as the <animal latin="Mycetes">baboon</animal>'s body was now beginning to swell with all the noxious humors inside; lest the Hebus should steal it from him, he was obliged to keep the carcass alongside and watch over it with a stick. At last he fell asleep, but in the middle of the night the Hebus, what with the knocking on the <plant>trees</plant>, aroused him from his slumbers. Now that he was awake, he mimicked the Spirits, blow for blow, and as they struck the limb of a <plant>tree</plant>, <persName>Kororomanna</persName> would strike the belly of the <animal latin="Mycetes">baboon</animal>. But what with the air inside, each time he struck the <animal>animal</animal>, there came a resonant Boom! Boom! just like the beating of a drum.<note>One end of the drum is commonly closed with <animal latin="Mycetes">baboon</animal> hide.</note> The Hebu leader heard the curious sound, and became a bit frightened: "What can it be? When before I knocked a <plant>tree</plant>, it never made a noise like that." To make sure, however, he struck the <plant>tree</plant> hard again, and Boom! came once more from the carcass. Hebu was really frightened now, and began to search all around to find out where the extraordinary noise could possibly come from; at last he recognized the little <plant latin="Euterpe sp.">manicole</plant> banab, and saw <persName>Kororomanna</persName> laughing. Indeed, the latter could not help laughing, considering that it was the first time he had heard such a funny sound come out of any <animal>animal</animal>.</p>
-<p>Hebu then said to him, "Who are you? Show me your hand," to which <persName>Kororomanna</persName> replied, "I am Warrau, and here is my hand," but instead of putting out his own, he shoved forward one of the <animal latin="Mycetes">baboon</animal>'s, and then held forward the <animal>animal</animal>'s other hand, and finally both feet. Hebu was much puzzled and said he had never seen before a Warrau with so <color>black</color> a hand, and would not be satisfied until he saw the face. <persName>Kororomanna</persName> accordingly deceived him again and held out the <animal>monkey</animal>'s, which caused Hebu to make the same remark about his face as he had done about his hands and feet.</p>
-<p>The Spirit became more frightened than ever, but his curiosity exceeded his fear, because he next wanted to know where all that Boom! Boom! sound had come from. And when he learnt its source of origin [breaking wind], he regretted that he had not been made like ordinary mortals, he and all his family having no proper posteriors, but just a <color>red</color> spot [Sect. 99]. He thereupon begged <persName>Kororomanna</persName> to make for him a posterior which would allow of his producing a similar sound. So with his bow <persName>Kororomanna</persName> split the Spirit's hind quarters, and completed the task <pb n="127"/>by impaling him, but so rough was he in his methods, that the weapon transfixed the whole body even piercing the unfortunate Hebu's head. The Hebu cursed <persName>Kororomanna</persName> for having killed him, and threatened that the other Spirits would avenge his death; he then disappeared.</p>
-<p>Our hero, becoming a bit anxious on his own account, and, recognizing by the gradually increasing hullaballoo in the <plant>trees</plant> that swarms of Hebus were approaching the scene of the outrage, now climbed the <plant latin="Euterpe sp.">manicole tree</plant> sheltering his banab, leaving the <animal latin="Mycetes">baboon</animal>'s corpse inside. The Spirits then entered the banab, and believing the dead <animal>animal</animal> to be <persName>Kororomanna</persName>, began hitting it with their sticks, and with each blow, there came Boom! Our friend up the <plant>tree</plant>, whence he could watch their every movement, and their surprise at the acoustic results of the flogging, could not refrain from cracking a smile, which soon gave way to a hearty laugh. The Spirits, unfortunately for him, heard it, and looking at the dead <animal latin="Mycetes">baboon</animal>, said, "This cannot be the person who is laughing at us." They looked all around, but could see nothing, until one of them stood on his head, and peeped up into the <plant>tree</plant>.<note>The Hebus of the Warraus are believed to possess eye-brows so prominent that it is possible for them to look directly upward only when in this upside-down position. (Sect. 99.)</note> And there, sure enough, he saw <persName>Kororomanna</persName> laughing at them. All the others then put themselves in the same posture around the <plant>tree</plant>, and had a good look at him. The question they next had to decide was how to catch him. This they concluded could most easily be managed by hewing down the <plant>tree</plant>. They accordingly started with their axes on the trunk, but since the implements were but <animal>water-turtle</animal> shells, it was not long before they broke.<note>On the Amazons, before the advent of Europeans, we have Acu&#241;a's authority for stating that all the tools which the Indians employed for making their canoes, huts, etc., were axes and hatchets made of <animal>tortoise</animal>-shell (Ac, 90).</note> They then sent for their knives, but as these were merely the seed-pods of the <plant>buari tree</plant>, they also soon broke.<note>The seed-pod in question is about 10 in. long, much flattened, hard-shelled, with a curved surface, so that when the halves are split asunder, each bears a somewhat fanciful resemblance to a cutlass.</note> The Hebus then sent for a rope, but what they called a rope was really a <animal>snake</animal>. At any rate, as the <animal>serpent</animal> made its way farther and farther up the <plant>tree</plant>, and finally came within reach, <persName>Kororomanna</persName> cut its head off; the <animal>animal</animal> fell to the ground again, and the Hebus cried "Our rope has burst." Another consultation was held, and it was decided that one of their number should climb the <plant>tree</plant>, seize the man, and throw him down, and that those below might be ready to receive him when dislodged, the Hebu was to shout out, when throwing him down, the following signal: Tura-buna-s&#233; mahara-ko na-kai.<note>The first word is in Spirit language, i. e., not understood by the Warraus, who tell me that it is nothing more than a watch-word; the second means "to kill with the arm;" the third indicates "to fall down." - W. E. R.</note> The biggest of the Spirits being chosen to carry the project into execution, he started on his climb, but head downward of course, so as to be able to see where he was going. <persName>Kororomanna</persName>, however, was on the alert, and, waiting for him, killed him in the same peculiar manner as that in which he had despatched the other Spirit just a little while before; more than this, having heard them fix upon the preconcerted signal, he hurled the dead Spirit's body down with the cry of Tura-buna-s&#233; mahara-ko na-kai! The Hebus below were quite prepared, and as soon as the body fell to the ground, clubbed it to pieces. <persName>Kororomanna</persName> then slipped down and helped in the dissolution. "Wait a bit," he said to the Spirits; "I am just going in the bush, but will soon return." It was not very long, however, before the Spirits saw that they had been tricked, and yelled with rage on finding that they had really destroyed one of themselves; they hunted high and low for their man, but with approaching daylight were reluctantly compelled to give up the chase.</p>
-<p>In the meantime, <persName>Kororomanna</persName> had no sooner got out of their sight than he started running at topmost speed, and finally found shelter in a hollow <plant>tree</plant>. Here he discovered a woman [she was not old either], so he told her that he would remain with her till "the day cleaned" [i. e., till dawn broke]. But she said, "No! No! my <pb n="128"/>man is <animal>Snake</animal> and he will be back before the dawn. If he were to find you here, he would certainly kill you." But her visitor was not to be frightened, and he stayed where he was. True enough, before dawn, <animal>Snake</animal> came wending his way home, and as he crawled into the <plant>tree</plant>, he was heard to exclaim, "Hallo! I can smell some one." <persName>Kororomanna</persName> was indeed frightened now, and was at his wits' end to know what to do. Just then dawn broke, and they heard a <animal>hummingbird</animal>. "That is my uncle," said our hero. They then heard the <animal latin="Odontophorus Guianensis">doroquarra</animal>: "That also is an uncle of mine," he added.<note>This bird is the Odontophorus Guianensis. "The notes of this bird, from which it takes its name, are usually the first heard in the morning, and frequently before dawn" (BW, 183).</note> He purposely told <animal>Snake</animal> all this to make him believe that, if he killed and swallowed his visitor, all the other <animal>hummingbirds</animal> and <animal latin="Odontophorus Guianensis">doroquarras</animal> would come and avenge his death. But <animal>Snake</animal> said, "I am not afraid of either of your uncles, but will gobble them up." Just then, a <animal latin="Urubitinga">chicken-hawk</animal> [Urubitinga] flew along, which made <animal>Snake</animal> ask whether that also was an uncle of his. "To be sure" was the reply, "and when I am dead, he also will come and search for me." It was now <animal>Snake</animal>'s turn to be frightened, because <animal>Chicken-hawk</animal> used always to get the better of him; so he let <persName>Kororomanna</persName> go in peace, who ran out of that hollow <plant>tree</plant> pretty quick.</p>
-<p>It was full daylight now, but this made little odds, because he had still lost his way, and knew not how to find the road home. After wandering on and on, he at last came across a track, recognizable by the footprints in it: following this up, he came upon a hollow <plant>tree</plant> that had fallen across the path, and inside the trunk he saw a baby. This being a Hebu's child, he slaughtered it, but he had no sooner done so than he heard approaching footsteps, which caused him promptly to climb a neighboring <plant>tree</plant> and await developments. These were not long in coming, for the mother soon put in her appearance; as soon as she recognized her dead infant, she was much angered, and, looking around, carefully examined the fresh tracks, and said, "This is the man who has killed my child." Her next move was to dig up a bit of the soil marked by one of the fresh footprints, wrap it up in a leaf tied with <plant>bush</plant>-rope, and hang it on a branch while she went for firewood. Directly her back was turned, <persName>Kororomanna</persName> slid down from his hiding place, undid the bundle, and threw away the contents, substituting a footprint of the Spirit woman. Then, tying up the parcel as before, he hung it where it had been left, and hid himself once more. When the woman returned with the firewood, she made a big fire, and threw the bundle into the flames, saying as she did so: "Curse the person whose footprint I now burn. May the owner fall into this fire also!" She thought that if she burnt the "foot-mark" so would the person's shadow be drawn to the fire. But no one came, and she felt that her own shadow was being impelled. "Oh! It seems that I am hurting myself; the fire is drawing me near," she exclaimed. Twice was she thus dragged toward it against her will, and yet she succeeded in resisting. But on the third occasion she could not draw back; she fell in, and was burnt to ashes; she "roasted herself dead."<note>Present-day cursing, the h&#243;-a of the Warraus and Arawaks, is done on somewhat different lines, usually by medicine-men or by very old people only.</note></p>
-<p><persName>Kororomanna</persName> was again free to travel, but which direction to follow was the puzzle; he had still lost his way home. All he could do was to walk more or less aimlessly on, passing creek after creek and back into the bush again, until he emerged on a beautiful, clean roadway. But no sooner had he put his foot on it, than it stuck there, just like a <animal>fish</animal> caught in a spring-trap. And this is exactly what the trap really was, save that it had been set by the Hebus. He pulled and he tugged and he twisted, but try as he might, he could not get away. He fouled himself over completely, and then lay quite still, pretending to be dead. The <animal>flies</animal> gathered on him and these were followed by the <animal>worms</animal>, but he continued to lie quite still. By and by two of the Spirits came along, and one of them said, "Hallo! I have luck today. My spring-trap has caught a <animal>fish</animal> at last," but when he got closer, he added, "Oh! I <pb n="129"/>have left it too long. It stinks." However, they let loose their <animal>fish</animal>, as they thought it was, and carried it down to the riverside to wash and clean it. After they had washed it, one of the Hebus said, "Let us slit its belly now, and remove the entrails," but the other one remarked, "No, let us make a waiyarri [basket] first, to put the flesh in." This was very fortunate for <persName>Kororomanna</persName>, who, seizing the opportunity while they went collecting strands to plait with, rolled down the river bank into the water and so made good his escape. But when he succeeded in landing on the other side, he was, in a sense, just as badly off as before, not knowing how to get home.</p>
-<p><persName>Kororomanna</persName> next came across a man's skull lying on the ground, and what must he do but go and jerk his arrow into its eye-ball? Now this skull, <persName>Kwa-muhu</persName>, was a Hebu, who thereupon called out: "You must not do that. But now that you have injured me, you will have to carry me." So <persName>Kororomanna</persName> had to get a strip of bark, the same kind which our women employ for fastening on their field quakes, and carry the skull wherever he went, and feed it too. If he shot <animal>bird</animal> or <animal>beast</animal>, he always had to give a bit to <persName>Kwa-muhu</persName>, with the result that the latter soon became gradually and inconveniently heavier, until one day he became so great a dead weight as to break the bark-strip support. The accident occurred not very far from a creek, and <persName>Kororomanna</persName> told <persName>Kwa-muhu</persName> to stay still while he went to look for a stronger strip of bark. Of course this was only an excuse, because directly he had put the skull on the ground, he ran as fast as he could toward the creek, overtaking on the way a <animal>deer</animal> that was running in exactly the same direction, swam across, and rested himself on the opposite side. In the meantime <persName>Kwa-muhu</persName>, suspecting that he was about to be forsaken, ran after <persName>Kororomanna</persName>, and seeing but the <animal>deer</animal> in front of him, mistook it for his man and killed it just as it reached the water. On examining the carcass, the Hebu exclaimed, when he got to its toes [Sect. 126]: "Well, that is indeed very strange. You have only two fingers;" and though he reckoned again and again, he could make no more - "but the man I am after had five fingers, and a long nose. You must be somebody else."<note>The account given of <persName>Kororomanna</persName>'s doings in this paragraph forms the complete story of an unnamed Indian, as related by the Caribs, who give the name <persName>Pupombo</persName> to the Skull Spirit.</note> Now <persName>Kororomanna</persName>, who was squatting just over on the opposite bank, heard all this, and burst out laughing. This enraged <persName>Kwa-muhu</persName>, who left the <animal>deer</animal>, and made a move as if to leap across the creek, but, having no legs, he could not jump properly, and hence fell into the water and was drowned. All the <animal>ants</animal> then came out of his skull.<note>Ehrenreich refers to the many examples of such individual giant heads or skulls in the North American legends (PE, 71).</note></p>
-<p>Poor <persName>Kororomanna</persName> was still as badly off as before; he was unable to find his way home. But he bravely kept on his way and at last came upon an old man bailing water out of a pond. The latter was really a Hebu, whose name was <persName>Huta-Kurakura</persName>, '<color>Red</color>-back' [Sect. 99]. <persName>Huta-Kurakura</persName>, being anxious to get the <animal>fish</animal>, was bailing away at the water side as hard as he could go, but having no calabash had to make use of his purse [scrotum], which was very large. And while thus bending down, he was so preoccupied that he did not hear the footfall of <persName>Kororomanna</persName> coming up behind. The latter, not knowing what sort of a <animal>creature</animal> it was, stuck him twice in the back with an arrow, but <persName>Huta-Kurakura</persName>, thinking it to be a <animal latin="Tabanus">cow-fly</animal> [Tabanus], just slapped the spot where he felt it. When, however, he found himself stuck a third time, he turned round and, seeing who it was, became so enraged that he seized the wanderer and hurled him into a piece of wood with such force that only his eye projected from out the timber. Anxious to be freed from his unenviable position <persName>Kororomanna</persName> offered everything he could think of - crystals, rattles, <ref target="g:GSA0728.054">paiwarri</ref>, women, etc., but the Spirit wanted none of them. As a last chance, he offered tobacco, and this the Hebu eagerly accepted, the result being that they fast became good friends. They then both emptied the pond and collected a heap of <animal>fish</animal>, much too large for <pb n="130"/><persName>Kororomanna</persName> to carry home. So the Spirit in some peculiar way bound them all up into quite a small bundle, small enough for <persName>Kororomanna</persName> to carry in his hand.</p>
-<p><persName>Kororomanna</persName> now soon managed to find the right path home, because each and every <animal>animal</animal> that he met gave him news of his mother. One after the other, he met a <animal>rat</animal> with a <plant>potato</plant>, an <animal>acouri</animal> with <plant>cassava</plant> root, a <animal>labba</animal> with a <plant>yam</plant>, a <animal>deer</animal> with a <plant>cassava</plant> leaf, a <animal>kushi-ant</animal> with a similar leaf on its head, and a <animal>bush-cow [tapir]</animal> eating a <plant>pineapple</plant>. And as he asked each in turn whence it had come, the <animal>animal</animal> said, "I have been to your mother, and have begged <plant>potato</plant>, <plant>cassava</plant>, <plant>yam</plant>, and other things from her." When at length he reached home, and his wife and mother asked what he had brought, he told them a lot of <animal>fish</animal>, and they laughed right heartily at what they thought was his little joke. So he bade them open the parcel, and as they opened it, sure enough out came <animal>fish</animal> after <animal>fish</animal>, small and large, <animal>fish</animal> of all kinds, so many in fact that the house speedily became filled, and the occupants had to shift outside. [Cf. Sect. 303.] <note>In a Carib version of the story the hero's name is given as <persName>Kere-Kere&#700;-miyu-au</persName>, and he finds his way back home to his mother's place through the help of a <animal>butterfly</animal>. When I happened to mention to the narrator that this was the first time I had ever heard a "Nancy" story about this <animal>insect</animal>, he told me that the <animal>butterfly</animal> was always a good friend of the Caribs. "Does it not," he added, "come and drink of the washings from the <ref target="g:GSA0728.016 q:Q2020335">cassiri</ref> jar, and remain stuck in the mess?" (i. e., "Does it not come and join in our feasts, and get so drunk that it cannot fly away?"). - W. E. R.</note></p>
-</body></text>
+      <p><persName>Kororomanna</persName> went out hunting and shot a "<animal latin="Mycetes">baboon</animal>" [Mycetes], but as it was already late in the afternoon, in trying to make his way home he lost his way in the darkness. And there he had to make his banab, and to lie down, with the <animal latin="Mycetes">baboon</animal> beside him. But where he lay was a Hebu road; you can always distinguish a Spirit road from any other pathway in the forest because the Hebus occupying the <plant>trees</plant> that lie alongside it are always, especially at night, striking the branches and trunks, and so producing short sharp crackling noises [Sect. 104]. It was not pleasant for poor <persName>Kororomanna</persName>, especially as the <animal latin="Mycetes">baboon</animal>'s body was now beginning to swell with all the noxious humors inside; lest the Hebus should steal it from him, he was obliged to keep the carcass alongside and watch over it with a stick. At last he fell asleep, but in the middle of the night the Hebus, what with the knocking on the <plant>trees</plant>, aroused him from his slumbers. Now that he was awake, he mimicked the Spirits, blow for blow, and as they struck the limb of a <plant>tree</plant>, <persName>Kororomanna</persName> would strike the belly of the <animal latin="Mycetes">baboon</animal>. But what with the air inside, each time he struck the <animal>animal</animal>, there came a resonant Boom! Boom! just like the beating of a drum.<note>One end of the drum is commonly closed with <animal latin="Mycetes">baboon</animal> hide.</note> The Hebu leader heard the curious sound, and became a bit frightened: "What can it be? When before I knocked a <plant>tree</plant>, it never made a noise like that." To make sure, however, he struck the <plant>tree</plant> hard again, and Boom! came once more from the carcass. Hebu was really frightened now, and began to search all around to find out where the extraordinary noise could possibly come from; at last he recognized the little <plant latin="Euterpe sp.">manicole</plant> banab, and saw <persName>Kororomanna</persName> laughing. Indeed, the latter could not help laughing, considering that it was the first time he had heard such a funny sound come out of any <animal>animal</animal>.</p>
+      <p>Hebu then said to him, "Who are you? Show me your hand," to which <persName>Kororomanna</persName> replied, "I am Warrau, and here is my hand," but instead of putting out his own, he shoved forward one of the <animal latin="Mycetes">baboon</animal>'s, and then held forward the <animal>animal</animal>'s other hand, and finally both feet. Hebu was much puzzled and said he had never seen before a Warrau with so <color>black</color> a hand, and would not be satisfied until he saw the face. <persName>Kororomanna</persName> accordingly deceived him again and held out the <animal>monkey</animal>'s, which caused Hebu to make the same remark about his face as he had done about his hands and feet.</p>
+      <p>The Spirit became more frightened than ever, but his curiosity exceeded his fear, because he next wanted to know where all that Boom! Boom! sound had come from. And when he learnt its source of origin [breaking wind], he regretted that he had not been made like ordinary mortals, he and all his family having no proper posteriors, but just a <color>red</color> spot [Sect. 99]. He thereupon begged <persName>Kororomanna</persName> to make for him a posterior which would allow of his producing a similar sound. So with his bow <persName>Kororomanna</persName> split the Spirit's hind quarters, and completed the task <pb n="127"/>by impaling him, but so rough was he in his methods, that the weapon transfixed the whole body even piercing the unfortunate Hebu's head. The Hebu cursed <persName>Kororomanna</persName> for having killed him, and threatened that the other Spirits would avenge his death; he then disappeared.</p>
+      <p>Our hero, becoming a bit anxious on his own account, and, recognizing by the gradually increasing hullaballoo in the <plant>trees</plant> that swarms of Hebus were approaching the scene of the outrage, now climbed the <plant latin="Euterpe sp.">manicole tree</plant> sheltering his banab, leaving the <animal latin="Mycetes">baboon</animal>'s corpse inside. The Spirits then entered the banab, and believing the dead <animal>animal</animal> to be <persName>Kororomanna</persName>, began hitting it with their sticks, and with each blow, there came Boom! Our friend up the <plant>tree</plant>, whence he could watch their every movement, and their surprise at the acoustic results of the flogging, could not refrain from cracking a smile, which soon gave way to a hearty laugh. The Spirits, unfortunately for him, heard it, and looking at the dead <animal latin="Mycetes">baboon</animal>, said, "This cannot be the person who is laughing at us." They looked all around, but could see nothing, until one of them stood on his head, and peeped up into the <plant>tree</plant>.<note>The Hebus of the Warraus are believed to possess eye-brows so prominent that it is possible for them to look directly upward only when in this upside-down position. (Sect. 99.)</note> And there, sure enough, he saw <persName>Kororomanna</persName> laughing at them. All the others then put themselves in the same posture around the <plant>tree</plant>, and had a good look at him. The question they next had to decide was how to catch him. This they concluded could most easily be managed by hewing down the <plant>tree</plant>. They accordingly started with their axes on the trunk, but since the implements were but <animal>water-turtle</animal> shells, it was not long before they broke.<note>On the Amazons, before the advent of Europeans, we have Acu&#241;a's authority for stating that all the tools which the Indians employed for making their canoes, huts, etc., were axes and hatchets made of <animal>tortoise</animal>-shell (Ac, 90).</note> They then sent for their knives, but as these were merely the seed-pods of the <plant>buari tree</plant>, they also soon broke.<note>The seed-pod in question is about 10 in. long, much flattened, hard-shelled, with a curved surface, so that when the halves are split asunder, each bears a somewhat fanciful resemblance to a cutlass.</note> The Hebus then sent for a rope, but what they called a rope was really a <animal>snake</animal>. At any rate, as the <animal>serpent</animal> made its way farther and farther up the <plant>tree</plant>, and finally came within reach, <persName>Kororomanna</persName> cut its head off; the <animal>animal</animal> fell to the ground again, and the Hebus cried "Our rope has burst." Another consultation was held, and it was decided that one of their number should climb the <plant>tree</plant>, seize the man, and throw him down, and that those below might be ready to receive him when dislodged, the Hebu was to shout out, when throwing him down, the following signal: Tura-buna-s&#233; mahara-ko na-kai.<note>The first word is in Spirit language, i. e., not understood by the Warraus, who tell me that it is nothing more than a watch-word; the second means "to kill with the arm;" the third indicates "to fall down." - W. E. R.</note> The biggest of the Spirits being chosen to carry the project into execution, he started on his climb, but head downward of course, so as to be able to see where he was going. <persName>Kororomanna</persName>, however, was on the alert, and, waiting for him, killed him in the same peculiar manner as that in which he had despatched the other Spirit just a little while before; more than this, having heard them fix upon the preconcerted signal, he hurled the dead Spirit's body down with the cry of Tura-buna-s&#233; mahara-ko na-kai! The Hebus below were quite prepared, and as soon as the body fell to the ground, clubbed it to pieces. <persName>Kororomanna</persName> then slipped down and helped in the dissolution. "Wait a bit," he said to the Spirits; "I am just going in the bush, but will soon return." It was not very long, however, before the Spirits saw that they had been tricked, and yelled with rage on finding that they had really destroyed one of themselves; they hunted high and low for their man, but with approaching daylight were reluctantly compelled to give up the chase.</p>
+      <p>In the meantime, <persName>Kororomanna</persName> had no sooner got out of their sight than he started running at topmost speed, and finally found shelter in a hollow <plant>tree</plant>. Here he discovered a woman [she was not old either], so he told her that he would remain with her till "the day cleaned" [i. e., till dawn broke]. But she said, "No! No! my <pb n="128"/>man is <animal>Snake</animal> and he will be back before the dawn. If he were to find you here, he would certainly kill you." But her visitor was not to be frightened, and he stayed where he was. True enough, before dawn, <animal>Snake</animal> came wending his way home, and as he crawled into the <plant>tree</plant>, he was heard to exclaim, "Hallo! I can smell some one." <persName>Kororomanna</persName> was indeed frightened now, and was at his wits' end to know what to do. Just then dawn broke, and they heard a <animal>hummingbird</animal>. "That is my uncle," said our hero. They then heard the <animal latin="Odontophorus Guianensis">doroquarra</animal>: "That also is an uncle of mine," he added.<note>This bird is the Odontophorus Guianensis. "The notes of this bird, from which it takes its name, are usually the first heard in the morning, and frequently before dawn" (BW, 183).</note> He purposely told <animal>Snake</animal> all this to make him believe that, if he killed and swallowed his visitor, all the other <animal>hummingbirds</animal> and <animal latin="Odontophorus Guianensis">doroquarras</animal> would come and avenge his death. But <animal>Snake</animal> said, "I am not afraid of either of your uncles, but will gobble them up." Just then, a <animal latin="Urubitinga">chicken-hawk</animal> [Urubitinga] flew along, which made <animal>Snake</animal> ask whether that also was an uncle of his. "To be sure" was the reply, "and when I am dead, he also will come and search for me." It was now <animal>Snake</animal>'s turn to be frightened, because <animal>Chicken-hawk</animal> used always to get the better of him; so he let <persName>Kororomanna</persName> go in peace, who ran out of that hollow <plant>tree</plant> pretty quick.</p>
+      <p>It was full daylight now, but this made little odds, because he had still lost his way, and knew not how to find the road home. After wandering on and on, he at last came across a track, recognizable by the footprints in it: following this up, he came upon a hollow <plant>tree</plant> that had fallen across the path, and inside the trunk he saw a baby. This being a Hebu's child, he slaughtered it, but he had no sooner done so than he heard approaching footsteps, which caused him promptly to climb a neighboring <plant>tree</plant> and await developments. These were not long in coming, for the mother soon put in her appearance; as soon as she recognized her dead infant, she was much angered, and, looking around, carefully examined the fresh tracks, and said, "This is the man who has killed my child." Her next move was to dig up a bit of the soil marked by one of the fresh footprints, wrap it up in a leaf tied with <plant>bush</plant>-rope, and hang it on a branch while she went for firewood. Directly her back was turned, <persName>Kororomanna</persName> slid down from his hiding place, undid the bundle, and threw away the contents, substituting a footprint of the Spirit woman. Then, tying up the parcel as before, he hung it where it had been left, and hid himself once more. When the woman returned with the firewood, she made a big fire, and threw the bundle into the flames, saying as she did so: "Curse the person whose footprint I now burn. May the owner fall into this fire also!" She thought that if she burnt the "foot-mark" so would the person's shadow be drawn to the fire. But no one came, and she felt that her own shadow was being impelled. "Oh! It seems that I am hurting myself; the fire is drawing me near," she exclaimed. Twice was she thus dragged toward it against her will, and yet she succeeded in resisting. But on the third occasion she could not draw back; she fell in, and was burnt to ashes; she "roasted herself dead."<note>Present-day cursing, the h&#243;-a of the Warraus and Arawaks, is done on somewhat different lines, usually by medicine-men or by very old people only.</note></p>
+      <p><persName>Kororomanna</persName> was again free to travel, but which direction to follow was the puzzle; he had still lost his way home. All he could do was to walk more or less aimlessly on, passing creek after creek and back into the bush again, until he emerged on a beautiful, clean roadway. But no sooner had he put his foot on it, than it stuck there, just like a <animal>fish</animal> caught in a spring-trap. And this is exactly what the trap really was, save that it had been set by the Hebus. He pulled and he tugged and he twisted, but try as he might, he could not get away. He fouled himself over completely, and then lay quite still, pretending to be dead. The <animal>flies</animal> gathered on him and these were followed by the <animal>worms</animal>, but he continued to lie quite still. By and by two of the Spirits came along, and one of them said, "Hallo! I have luck today. My spring-trap has caught a <animal>fish</animal> at last," but when he got closer, he added, "Oh! I <pb n="129"/>have left it too long. It stinks." However, they let loose their <animal>fish</animal>, as they thought it was, and carried it down to the riverside to wash and clean it. After they had washed it, one of the Hebus said, "Let us slit its belly now, and remove the entrails," but the other one remarked, "No, let us make a waiyarri [basket] first, to put the flesh in." This was very fortunate for <persName>Kororomanna</persName>, who, seizing the opportunity while they went collecting strands to plait with, rolled down the river bank into the water and so made good his escape. But when he succeeded in landing on the other side, he was, in a sense, just as badly off as before, not knowing how to get home.</p>
+      <p><persName>Kororomanna</persName> next came across a man's skull lying on the ground, and what must he do but go and jerk his arrow into its eye-ball? Now this skull, <persName>Kwa-muhu</persName>, was a Hebu, who thereupon called out: "You must not do that. But now that you have injured me, you will have to carry me." So <persName>Kororomanna</persName> had to get a strip of bark, the same kind which our women employ for fastening on their field quakes, and carry the skull wherever he went, and feed it too. If he shot <animal>bird</animal> or <animal>beast</animal>, he always had to give a bit to <persName>Kwa-muhu</persName>, with the result that the latter soon became gradually and inconveniently heavier, until one day he became so great a dead weight as to break the bark-strip support. The accident occurred not very far from a creek, and <persName>Kororomanna</persName> told <persName>Kwa-muhu</persName> to stay still while he went to look for a stronger strip of bark. Of course this was only an excuse, because directly he had put the skull on the ground, he ran as fast as he could toward the creek, overtaking on the way a <animal>deer</animal> that was running in exactly the same direction, swam across, and rested himself on the opposite side. In the meantime <persName>Kwa-muhu</persName>, suspecting that he was about to be forsaken, ran after <persName>Kororomanna</persName>, and seeing but the <animal>deer</animal> in front of him, mistook it for his man and killed it just as it reached the water. On examining the carcass, the Hebu exclaimed, when he got to its toes [Sect. 126]: "Well, that is indeed very strange. You have only two fingers;" and though he reckoned again and again, he could make no more - "but the man I am after had five fingers, and a long nose. You must be somebody else."<note>The account given of <persName>Kororomanna</persName>'s doings in this paragraph forms the complete story of an unnamed Indian, as related by the Caribs, who give the name <persName>Pupombo</persName> to the Skull Spirit.</note> Now <persName>Kororomanna</persName>, who was squatting just over on the opposite bank, heard all this, and burst out laughing. This enraged <persName>Kwa-muhu</persName>, who left the <animal>deer</animal>, and made a move as if to leap across the creek, but, having no legs, he could not jump properly, and hence fell into the water and was drowned. All the <animal>ants</animal> then came out of his skull.<note>Ehrenreich refers to the many examples of such individual giant heads or skulls in the North American legends (PE, 71).</note></p>
+      <p>Poor <persName>Kororomanna</persName> was still as badly off as before; he was unable to find his way home. But he bravely kept on his way and at last came upon an old man bailing water out of a pond. The latter was really a Hebu, whose name was <persName>Huta-Kurakura</persName>, '<color>Red</color>-back' [Sect. 99]. <persName>Huta-Kurakura</persName>, being anxious to get the <animal>fish</animal>, was bailing away at the water side as hard as he could go, but having no calabash had to make use of his purse [scrotum], which was very large. And while thus bending down, he was so preoccupied that he did not hear the footfall of <persName>Kororomanna</persName> coming up behind. The latter, not knowing what sort of a <animal>creature</animal> it was, stuck him twice in the back with an arrow, but <persName>Huta-Kurakura</persName>, thinking it to be a <animal latin="Tabanus">cow-fly</animal> [Tabanus], just slapped the spot where he felt it. When, however, he found himself stuck a third time, he turned round and, seeing who it was, became so enraged that he seized the wanderer and hurled him into a piece of wood with such force that only his eye projected from out the timber. Anxious to be freed from his unenviable position <persName>Kororomanna</persName> offered everything he could think of - crystals, rattles, <ref target="g:GSA0728.054">paiwarri</ref>, women, etc., but the Spirit wanted none of them. As a last chance, he offered tobacco, and this the Hebu eagerly accepted, the result being that they fast became good friends. They then both emptied the pond and collected a heap of <animal>fish</animal>, much too large for <pb n="130"/><persName>Kororomanna</persName> to carry home. So the Spirit in some peculiar way bound them all up into quite a small bundle, small enough for <persName>Kororomanna</persName> to carry in his hand.</p>
+      <p><persName>Kororomanna</persName> now soon managed to find the right path home, because each and every <animal>animal</animal> that he met gave him news of his mother. One after the other, he met a <animal>rat</animal> with a <plant>potato</plant>, an <animal>acouri</animal> with <plant>cassava</plant> root, a <animal>labba</animal> with a <plant>yam</plant>, a <animal>deer</animal> with a <plant>cassava</plant> leaf, a <animal>kushi-ant</animal> with a similar leaf on its head, and a <animal>bush-cow [tapir]</animal> eating a <plant>pineapple</plant>. And as he asked each in turn whence it had come, the <animal>animal</animal> said, "I have been to your mother, and have begged <plant>potato</plant>, <plant>cassava</plant>, <plant>yam</plant>, and other things from her." When at length he reached home, and his wife and mother asked what he had brought, he told them a lot of <animal>fish</animal>, and they laughed right heartily at what they thought was his little joke. So he bade them open the parcel, and as they opened it, sure enough out came <animal>fish</animal> after <animal>fish</animal>, small and large, <animal>fish</animal> of all kinds, so many in fact that the house speedily became filled, and the occupants had to shift outside. [Cf. Sect. 303.] <note>In a Carib version of the story the hero's name is given as <persName>Kere-Kere&#700;-miyu-au</persName>, and he finds his way back home to his mother's place through the help of a <animal>butterfly</animal>. When I happened to mention to the narrator that this was the first time I had ever heard a "Nancy" story about this <animal>insect</animal>, he told me that the <animal>butterfly</animal> was always a good friend of the Caribs. "Does it not," he added, "come and drink of the washings from the <ref target="g:GSA0728.016 q:Q2020335">cassiri</ref> jar, and remain stuck in the mess?" (i. e., "Does it not come and join in our feasts, and get so drunk that it cannot fly away?"). - W. E. R.</note></p>
+    </body>
+  </text>
 </TEI>
