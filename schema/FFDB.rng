@@ -7850,33 +7850,16 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
          <ref name="att.typed.attribute.subtype"/>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the identifier, for example as an ISBN, Social Security number, etc.
-Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7] OCLC</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the identifier, for example as an internal FFDB ID or according to the TMI</a:documentation>
                <choice>
                   <value>FFDB</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Internal narrative ID of the <a xmlns="http://www.w3.org/1999/xhtml"
                         href="FFDB">Forager Folklore Database</a>.
                   </a:documentation>
-                  <value>ISBN</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the <a xmlns="http://www.w3.org/1999/xhtml"
-                        href="https://www.isbn-international.org"> International ISBN Agency.</a>
+                  <value>TMI</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Thompson's Motif Index motif number. References containing a + were taken from extensions to the TMI. All entries contained within the <a xmlns="http://www.w3.org/1999/xhtml"
+                        href="FFDB">extended Thompson's Motif Index</a>.
                   </a:documentation>
-                  <value>ISSN</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">International Standard Serial Number: an eight-digit number to uniquely identify a serial publication.</a:documentation>
-                  <value>DOI</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Digital Object Identifier: a unique string of letters and numbers assigned to an electronic document.</a:documentation>
-                  <value>URI</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Uniform Resource Identifier: a string of characters to uniquely identify a resource, following the syntax of <a xmlns="http://www.w3.org/1999/xhtml"
-                        href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a>.</a:documentation>
-                  <value>VIAF</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A data number in the Virtual Internet Authority File assigned to link different names in catalogs around the world for the same entity.</a:documentation>
-                  <value>ESTC</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">English Short-Title Catalogue number: an identifying number assigned to a document in English printed in the British Isles or North America before 1801.</a:documentation>
-                  <value>OCLC</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">OCLC control number (record number) for the union catalog record in WorldCat, a union catalog for member libraries in the Online Computer Library Center global cooperative.</a:documentation>
-                  <data type="token">
-                     <param name="pattern">[^\p{C}\p{Z}]+</param>
-                  </data>
                </choice>
             </attribute>
          </optional>
