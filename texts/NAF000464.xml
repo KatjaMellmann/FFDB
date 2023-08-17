@@ -1,0 +1,154 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Why the Hare has a Cleft Lip</title>
+        <editor ref="p:Dornan24" role="collector">Samuel Shaw Dornan</editor>
+        <editor ref="p:unidentified0" role="informant">	- unidentified -</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="10">About 10 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NAF000464</idno>
+        <availability status="free">
+          <licence target="http://rightsstatements.org/vocab/InC-EDU/1.0/">In Copyright - Educational Use Permitted</licence>
+        </availability>
+        <date when="2025">2025</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Dornan, Samuel S. (1917): The Tati Bushmen (Masarwas) and their Language. In: Journal of the Royal Anthropological Institute 47, 37-112., p. 80.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly (or via the proxy of an interpreter or other immediate intermediary)
+                    from an informant who either lived or grew up as a member of a culture whose
+                    primary subsistence at the time of recording was or until recently had been
+                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
+                    recording and the relative freedom from external cultural influences. To create
+                    a corpus with high representability, multiple versions of the same narrative
+                    were omitted, cultural clusters and close cultural relations between two groups
+                    were negatively taken into account, and it was aimed for the highest degree of
+                    diversity.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="10">Used to mark animal names in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="1">Used to mark plant names in the text.</tagUsage>
+          <tagUsage gi="color" occurs="0">Used to mark color names (adjectives and nouns) in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="0">Used to mark culturally important characters in the
+                        text.</tagUsage>
+          <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="1">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+                        collected in the FFDB.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) with no clear systematic.</p>
+        <normalization method="silent">
+          <p>In-text explanations by the original editor are set in brackets. In-text
+                        additions/excursions by the informant are set in parenthesis.</p>
+          <p>Latin passages in the original (usually to hide language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark quoted
+                        passages up as <gi>quote</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged with a semantic tagger based on WordNet and on word lists as well as
+                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
+                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
+                        respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CAF00208">Kua</name>
+          <date notAfter="1910" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1910.</date>
+        </setting>
+      </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <list>
+            <item>
+              <idno type="TMI">A751.5.1</idno>
+              <term>A751.5.1. Man in the moon: moon's face scratched by hare in retaliation for injury to hare. (Cf. A2216.3.)</term>
+            </item>
+            <item>
+              <idno type="TMI">A1335</idno>
+              <term>A1335. Origin of death.</term>
+            </item>
+            <item>
+              <idno type="TMI">A1335.1</idno>
+              <term>A1335.1. Origin of death from falsified message.</term>
+            </item>
+            <item>
+              <idno type="TMI">A2216.3</idno>
+              <term>A2216.3. Moon splits hare's lip with hatchet: hence hare-lip. (Cf. A2211.2, A751.5.1, A2342.1.)</term>
+            </item>
+            <item>
+              <idno type="TMI">A2342.1</idno>
+              <term>A2342.1. Why hare's lip is split. (Cf. A2234.4, A2216.3, A2211.2.)</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><anamyth>The men of the old time told this story:</anamyth> The moon wanted to send a message to the men of the early race, to tell them that as she died and came to life again, so they would die, and dying come to life again. So the moon called the <animal>tortoise</animal>; the moon said to the <animal>tortoise</animal>: "You go over to those men there, and give them this message from me. Tell them that as I dying live again, so they dying will live again." Now the <animal>tortoise</animal> was very slow, and he kept repeating the message to himself, so as not to forget it. But he forgot it, and so he turned back to ask the moon to repeat it to him. The moon was very vexed with his slowness, and with his forgetting, so she called the <animal>hare</animal>, and said to the <animal>hare</animal>, "You are a swift runner. Take this message to the men over yonder: 'As I dying live again, so you will dying live again.'" So off the <animal>hare</animal> started, but in her great haste she forgot the message, and as she did not wish to show the moon that she had forgot, she delivered the message to the men in this way: "As I dying live again, so you dying will die for ever." This was the message. In the meantime the <animal>tortoise</animal> had remembered the message, and he started off a second time. "This time," said he to himself, "I won't forget." He got to the place where the men were, and he delivered his message. When the men heard his message, they were very angry with the <animal>hare</animal>, who was sitting at some distance. She was nibbling the <plant>grass</plant> after her race. One of them ran and lifted a stone, and threw it at the <animal>hare</animal>. It struck her right in the mouth, and cleft her upper lip, so that it has remained so ever since. <epimyth>This is why every <animal>hare</animal> has a cleft upper lip, and it is the end of the tale.</epimyth></p>
+    </body>
+  </text>
+</TEI>
