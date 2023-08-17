@@ -1,44 +1,46 @@
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Meamei the Seven Sisters</title>
-                <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
-                <principal>
-                    <persName>Katja Mellmann</persName>
-                    <persName>Michelle Scalise Sugiyama</persName>
-                </principal>
-                <respStmt>
-                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
-                    <persName>Jan Jokisch</persName>
-                </respStmt>
-            </titleStmt>
-            <extent>
-                <measure unit="KB" quantity="20">About 20 kilobytes</measure>
-            </extent>
-            <publicationStmt>
-                <authority>The Forager Folklore Database</authority>
-                <idno type="FFDB">NIP028747</idno>
-                <availability status="free">
-                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
-                </availability>
-                <date when="2025">2025</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade, pp. 40-46.</bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Meamei the Seven Sisters</title>
+        <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor>
+        <editor ref="p:unidentified0" role="informant">	- unidentified -</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="20">About 20 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NIP028747</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2025">2025</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade., pp. 40-46.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
                     offers a basis for a systematic study of narrative universals,
                     the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
-            </projectDesc>
-            <samplingDecl>
-                <p>The narrative was selected for being a genuine piece of oral literature recorded
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
                     directly (or via the proxy of an interpreter or other immediate intermediary)
                     from an informant who either lived or grew up as a member of a culture whose
                     primary subsistence at the time of recording was or until recently had been
@@ -48,94 +50,97 @@
                     were omitted, cultural clusters and close cultural relations between two groups
                     were negatively taken into account, and it was aimed for the highest degree of
                     diversity.</p>
-            </samplingDecl>
-            <tagsDecl>
-                <namespace name="">
-                    <tagUsage gi="animal" occurs="12">Used to mark animal names in the text.</tagUsage>
-                    <tagUsage gi="plant" occurs="12">Used to mark plant names in the text.</tagUsage>
-                    <tagUsage gi="color" occurs="4">Used to mark color names (adjectives and nouns) in the
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="12">Used to mark animal names in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="12">Used to mark plant names in the text.</tagUsage>
+          <tagUsage gi="color" occurs="4">Used to mark color names (adjectives and nouns) in the
                         text.</tagUsage>
-                    <tagUsage gi="persName" occurs="22">Used to mark culturally important characters in the
+          <tagUsage gi="persName" occurs="22">Used to mark culturally important characters in the
                         text.</tagUsage>
-                    <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
-                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+          <tagUsage gi="placeName" occurs="0">Used to mark named places in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
                         a narrative.</tagUsage>
-                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
-                    <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
                         narrative.</tagUsage>
-                </namespace>
-            </tagsDecl>
-            <listPrefixDef>
-                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
-                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
                         elements in the <name type="file">personography.xml</name> file.</p>
-                </prefixDef>
-                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
-                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
                         Wikidata</orgName> Q-IDs and refer to their entry.</p>
-                </prefixDef>
-                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
-                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
                         collected in the FFDB.</p>
-                </prefixDef>
-            </listPrefixDef>
-            <editorialDecl>
-                <p>Footnotes are generally retained, but no effort has been made to link the
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
                     narratives mentioned in comparative notes with corresponding records within the
                     FFDB.</p>
-                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
                     within a word have been moved either before or after the word (or nominal
                     phrase) with no clear systematic.</p>
-                <normalization method="silent">
-                    <p>In-text explanations by the original editor are set in brackets. In-text
+        <normalization method="silent">
+          <p>In-text explanations by the original editor are set in brackets. In-text
                         additions/excursions by the informant are set in parenthesis.</p>
-                    <p>Latin passages in the original (usually to hide language and themes deemed
+          <p>Latin passages in the original (usually to hide language and themes deemed
                         indecent) are rendered in English.</p>
-                </normalization>
-                <hyphenation eol="none">
-                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
                         retained.</p>
-                </hyphenation>
-                <quotation marks="all">
-                    <p>All quotation marks have been retained. No effort was made to mark quoted
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark quoted
                         passages up as <gi>quote</gi>.</p>
-                </quotation>
-                <interpretation>
-                    <p>Animals, plants, colors, characters, and place names were automatically
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
                         tagged with a semantic tagger based on WordNet and on word lists as well as
                         subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
                         plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
                         respectively.</p>
-                </interpretation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <settingDesc>
-                <setting>
-                    <name type="culture" key="CIPD0270">Yuwaalaraay</name>
-                    <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
-                </setting>
-            </settingDesc>
-        </profileDesc>
-    </teiHeader>
-    <text>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CIPD0270">Yuwaalaraay</name>
+          <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
     <body>
-<p><persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> had had a long day's hunting, and he came back to the camp tired and hungry. He asked his old mother for <ref target="g:GIP0247.054">durrie</ref>, but she said there was none left. Then he asked some of the other <color>blacks</color> to give him some <plant><ref target="g:GIP0247.049">doonburr</ref></plant> seeds that he might make <ref target="g:GIP0247.054">durrie</ref> for himself. But no one would give him anything. He flew into a rage and he said, "I will go to a far country and live with strangers; my own people would starve me." And while he was yet hot and angry, he went. Gathering up his weapons, he strode forth to find a new people in a new country. After he had gone some distance, he saw, a long way off, an old man chopping out <animal>bees</animal>' nests. The old man turned his face towards <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName>, and watched him coming, but when <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> came close to him he saw that the old man had no eyes, though he had seemed to be watching him long before he could have heard him. It frightened <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> to see a stranger having no eyes, yet turning his face towards him as if seeing him all the time. But he determined not to show his fear, but go straight on towards him, which he did. When he came up to him, the stranger told him that his name was <persName><ref target="g:GIP0247.099">Mooroonumildah</ref></persName>, <pb n="41"/>and that his tribe were so-called because they had no eyes, but saw through their noses. <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> thought it very strange and still felt rather frightened, though <persName><ref target="g:GIP0247.099">Mooroonumildah</ref></persName> seemed hospitable and kind, for he gave <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName>, whom he said looked hungry, a bark <ref target="g:GIP0247.128">wirree</ref> filled with honey, told him where his camp was, and gave him leave to go there and stay with him. <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> took the honey and turned as if to go to the camp, but when he got out of sight he thought it wiser to turn in another direction. He journeyed on for some time, until he came to a large lagoon, where he decided to camp. He took a long drink of water, and then lay down to sleep. When he woke in the morning, he looked towards the lagoon, but saw only a big plain. He thought he must be dreaming; he rubbed his eyes and looked again.</p>
-<p>"This is a strange country," he said. "First I meet a man who has no eyes and yet can see. Then at night I see a large lagoon full of water, I wake in the morning and see none. The water was surely there, for I drank some, and yet now there is no water." As he was wondering how the water could have disappeared so quickly, he saw a big storm coming up; he hurried to get into the thick bush for shelter. When he had gone a little way into the bush, he saw a quantity of cut bark lying on the ground.</p>
-<p>"Now I am right," he said. "I shall get some poles and with them and this bark make a <ref target="g:GIP0247.041">dardurr</ref> in which to shelter myself from the storm I see coming."</p>
-<p>He quickly cut the poles he wanted, stuck them up as a framework for his <ref target="g:GIP0247.041">dardurr</ref>. Then he went to lift up the bark. As he lifted up a sheet of it he saw a strange-looking object of no tribe that he had ever seen before.</p>
-<p><pb n="42"/>This strange object cried out: "I am <ref target="g:GIP0247.026">Bulgahnunnoo</ref>," in such a terrifying tone that <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> dropped the bark, picked up his weapons and ran away as hard as he could, quite forgetting the storm. His one idea was to get as far as he could from <ref target="g:GIP0247.026">Bulgahnunnoo</ref>.</p>
-<p>On he ran until he came to a big river, which hemmed him in on three sides. The river was too big to cross, so he had to turn back, yet he did not retrace his steps but turned in another direction. As he turned to leave the river he saw a flock of <animal>emus</animal> coming to water. The first half of the flock were covered with feathers, but the last half had the form of <animal>emus</animal>, but no feathers.</p>
-<p><persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> decided to spear one for food. For that purpose he climbed up a <plant>tree</plant>, so that they should not see him; he got his spear ready to kill one of the featherless <animal>birds</animal>. As they passed by, he picked out the one he meant to have, threw his spear and killed it, then climbed down to go and get it.</p>
-<p>As he was running up to the dead <animal>emu</animal>, he saw that they were not <animal>emus</animal> at all but <color>black</color> fellows of a strange tribe. They were all standing round their dead friend making <pb n="43"/>savage signs, as to what they would do by way of vengeance. <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> saw that little would avail him the excuse that he had killed the <color>black</color> fellow in mistake for an <animal>emu</animal>; his only hope lay in flight. Once more he took to his heels, hardly daring to look round for fear he would see an enemy behind him. On he sped, until at last he reached a camp, which he was almost into before he saw it; he had only been thinking of danger behind him, unheeding what was before him.</p>
-<p>However, he had nothing to fear in the camp he reached so suddenly, for in it were only seven young girls. They did not look very terrifying, in fact, seemed more startled than he was. They were quite friendly towards him when they found that he was alone and hungry. They gave him food and allowed him to camp there that night. He asked them where the rest of their tribe were, and what their name was. They answered that their name was <ref target="g:GIP0247.091">Meamei</ref>, and that their tribe were in a far country. They had only come to this country to see what it was like; they would stay for a while and then return whence they had come.</p>
-<p>The next day <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> made a fresh start, and left the camp of the <ref target="g:GIP0247.091">Meamei</ref>, as if he were leaving for good. But he determined to hide near and watch what they did, and if he could get a chance he would steal a wife from amongst them. He was tired of travelling alone. He saw the seven sisters all start out with their yam sticks in hand. He followed at a distance, taking care not to be seen. He saw them stop by the nests of some <animal>flying ants</animal>. With their yam sticks they dug all round these <animal>ant</animal> holes. When they had successfully unearthed the <animal>ants</animal> they sat down, <pb n="44"/>throwing their yam sticks on one side, to enjoy a feast, for these <animal>ants</animal> were esteemed by them a great delicacy.</p>
-<p>While the sisters were busy at their feast, <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> sneaked up to their yam sticks and stole two of them; then, taking the sticks with him, sneaked back to his hiding-place. When at length the <ref target="g:GIP0247.091">Meamei</ref> had satisfied their appetites, they picked up their sticks and turned towards their camp again. But only five could find their sticks; so those five started off, leaving the other two to find theirs, supposing they must be somewhere near, and, finding them, they would soon catch them up. The two girls hunted all round the <animal>ants</animal>' nests, but could find no sticks. At last, when their backs were turned towards him, <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> crept out and stuck the lost yam sticks near together in the ground; then he slipt back into his hiding-place. When the two girls turned round, there in front of them they saw their sticks. With a cry of joyful surprise they ran to them and caught hold of them to pull them out of the ground, in which they were firmly stuck. As they were doing so, out from his hiding-place jumped <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName>. He seized both girls round their waists, holding them tightly. They struggled and screamed, but to no purpose. There were none near to hear them, and the more they struggled the tighter <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> held them. Finding their screams and struggles in vain they quietened at length, and then <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> told them not to be afraid, he would take care of them. He was lonely, he said, and wanted two wives. They must come quietly with him, and he would be good to them. But they must do as he told them. If they were not quiet, he would swiftly quieten them with his <ref target="g:GIP0247.100">moorillah</ref>. But if they would come quietly with him he <pb n="45"/>would be good to them. Seeing that resistance was useless, the two young girls complied with his wish, and travelled quietly on with him. They told him that some day their tribe would come and steal them back again; to avoid which he travelled quickly on and on still further, hoping to elude all pursuit. Some weeks passed, and, outwardly, the two <ref target="g:GIP0247.091">Meamei</ref> seemed settled down to their new life, and quite content in it, though when they were alone together they often talked of their sisters, and wondered what they had done when they realised their loss. They wondered if the five were still hunting for them, or whether they had gone back to their tribe to get assistance. That they might be in time forgotten and left with <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> for ever, they never once for a moment thought. One day when they were camped <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> said: "This fire will not burn well. Go you two and get some bark from those two <plant>pine trees</plant> over there."</p>
-<p>"No," they said, "we must not cut pine bark. If we did, you would never more see us."</p>
-<p>"Go! I tell you, cut pine bark. I want it. See you not the fire burns but slowly?"</p>
-<p>"If we go, <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName>, we shall never return. You will see us no more in this country. We know it."</p>
-<p>"Go, women, stay not to talk. Did ye ever see talk make a fire burn? Then why stand ye there talking? Go; do as I bid you. Talk not so foolishly; if you ran away soon should I catch you, and, catching you, would beat you hard. Go! talk no more."</p>
-<p>The <ref target="g:GIP0247.091">Meamei</ref> went, taking with them their <ref target="g:GIP0247.034">combos</ref> with which to cut the bark. <pb n="46"/>They went each to a different <plant>tree</plant>, and each, with a strong hit, drove her <ref target="g:GIP0247.034">combo</ref> into the bark. As she did so, each felt the <plant>tree</plant> that her <ref target="g:GIP0247.034">combo</ref> had struck rising higher out of the ground and bearing her upward with it. Higher and higher grew the <plant>pine trees</plant>, and still on them, higher and higher from the earth, went the two girls. Hearing no chopping after the first hits, <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> came towards the <plant>pines</plant> to see what was keeping the girls so long. As he came near them he saw that the <plant>pine trees</plant> were growing taller even as he looked at them, and clinging to the trunks of the <plant>trees</plant> high in the air he saw his two wives. He called to them to come down, but they made no answer. Time after time he called to them as higher and higher they went, but still they made no answer. Steadily taller grew the two <plant>pines</plant>, until at last their tops touched the sky. As they did so, from the sky the five <ref target="g:GIP0247.091">Meamei</ref> looked out, called to their two sisters on the <plant>pine trees</plant>, bidding them not to be afraid but to come to them. Quickly the two girls climbed up when they heard the voices of their sisters. When they reached the tops of the <plant>pines</plant> the five sisters in the sky stretched forth their hands, and drew them in to live with them there in the sky for ever.</p>
-<p><epimyth>And there, if you look, you may see the seven sisters together. You perhaps know them as the Pleiades, but the <color>black</color> fellows call them the <ref target="g:GIP0247.091">Meamei</ref>.</epimyth></p>
-</body></text>
+      <p><persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> had had a long day's hunting, and he came back to the camp tired and hungry. He asked his old mother for <ref target="g:GIP0247.054">durrie</ref>, but she said there was none left. Then he asked some of the other <color>blacks</color> to give him some <plant><ref target="g:GIP0247.049">doonburr</ref></plant> seeds that he might make <ref target="g:GIP0247.054">durrie</ref> for himself. But no one would give him anything. He flew into a rage and he said, "I will go to a far country and live with strangers; my own people would starve me." And while he was yet hot and angry, he went. Gathering up his weapons, he strode forth to find a new people in a new country. After he had gone some distance, he saw, a long way off, an old man chopping out <animal>bees</animal>' nests. The old man turned his face towards <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName>, and watched him coming, but when <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> came close to him he saw that the old man had no eyes, though he had seemed to be watching him long before he could have heard him. It frightened <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> to see a stranger having no eyes, yet turning his face towards him as if seeing him all the time. But he determined not to show his fear, but go straight on towards him, which he did. When he came up to him, the stranger told him that his name was <persName><ref target="g:GIP0247.099">Mooroonumildah</ref></persName>, <pb n="41"/>and that his tribe were so-called because they had no eyes, but saw through their noses. <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> thought it very strange and still felt rather frightened, though <persName><ref target="g:GIP0247.099">Mooroonumildah</ref></persName> seemed hospitable and kind, for he gave <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName>, whom he said looked hungry, a bark <ref target="g:GIP0247.128">wirree</ref> filled with honey, told him where his camp was, and gave him leave to go there and stay with him. <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> took the honey and turned as if to go to the camp, but when he got out of sight he thought it wiser to turn in another direction. He journeyed on for some time, until he came to a large lagoon, where he decided to camp. He took a long drink of water, and then lay down to sleep. When he woke in the morning, he looked towards the lagoon, but saw only a big plain. He thought he must be dreaming; he rubbed his eyes and looked again.</p>
+      <p>"This is a strange country," he said. "First I meet a man who has no eyes and yet can see. Then at night I see a large lagoon full of water, I wake in the morning and see none. The water was surely there, for I drank some, and yet now there is no water." As he was wondering how the water could have disappeared so quickly, he saw a big storm coming up; he hurried to get into the thick bush for shelter. When he had gone a little way into the bush, he saw a quantity of cut bark lying on the ground.</p>
+      <p>"Now I am right," he said. "I shall get some poles and with them and this bark make a <ref target="g:GIP0247.041">dardurr</ref> in which to shelter myself from the storm I see coming."</p>
+      <p>He quickly cut the poles he wanted, stuck them up as a framework for his <ref target="g:GIP0247.041">dardurr</ref>. Then he went to lift up the bark. As he lifted up a sheet of it he saw a strange-looking object of no tribe that he had ever seen before.</p>
+      <p><pb n="42"/>This strange object cried out: "I am <ref target="g:GIP0247.026">Bulgahnunnoo</ref>," in such a terrifying tone that <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> dropped the bark, picked up his weapons and ran away as hard as he could, quite forgetting the storm. His one idea was to get as far as he could from <ref target="g:GIP0247.026">Bulgahnunnoo</ref>.</p>
+      <p>On he ran until he came to a big river, which hemmed him in on three sides. The river was too big to cross, so he had to turn back, yet he did not retrace his steps but turned in another direction. As he turned to leave the river he saw a flock of <animal>emus</animal> coming to water. The first half of the flock were covered with feathers, but the last half had the form of <animal>emus</animal>, but no feathers.</p>
+      <p><persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> decided to spear one for food. For that purpose he climbed up a <plant>tree</plant>, so that they should not see him; he got his spear ready to kill one of the featherless <animal>birds</animal>. As they passed by, he picked out the one he meant to have, threw his spear and killed it, then climbed down to go and get it.</p>
+      <p>As he was running up to the dead <animal>emu</animal>, he saw that they were not <animal>emus</animal> at all but <color>black</color> fellows of a strange tribe. They were all standing round their dead friend making <pb n="43"/>savage signs, as to what they would do by way of vengeance. <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> saw that little would avail him the excuse that he had killed the <color>black</color> fellow in mistake for an <animal>emu</animal>; his only hope lay in flight. Once more he took to his heels, hardly daring to look round for fear he would see an enemy behind him. On he sped, until at last he reached a camp, which he was almost into before he saw it; he had only been thinking of danger behind him, unheeding what was before him.</p>
+      <p>However, he had nothing to fear in the camp he reached so suddenly, for in it were only seven young girls. They did not look very terrifying, in fact, seemed more startled than he was. They were quite friendly towards him when they found that he was alone and hungry. They gave him food and allowed him to camp there that night. He asked them where the rest of their tribe were, and what their name was. They answered that their name was <ref target="g:GIP0247.091">Meamei</ref>, and that their tribe were in a far country. They had only come to this country to see what it was like; they would stay for a while and then return whence they had come.</p>
+      <p>The next day <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> made a fresh start, and left the camp of the <ref target="g:GIP0247.091">Meamei</ref>, as if he were leaving for good. But he determined to hide near and watch what they did, and if he could get a chance he would steal a wife from amongst them. He was tired of travelling alone. He saw the seven sisters all start out with their yam sticks in hand. He followed at a distance, taking care not to be seen. He saw them stop by the nests of some <animal>flying ants</animal>. With their yam sticks they dug all round these <animal>ant</animal> holes. When they had successfully unearthed the <animal>ants</animal> they sat down, <pb n="44"/>throwing their yam sticks on one side, to enjoy a feast, for these <animal>ants</animal> were esteemed by them a great delicacy.</p>
+      <p>While the sisters were busy at their feast, <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> sneaked up to their yam sticks and stole two of them; then, taking the sticks with him, sneaked back to his hiding-place. When at length the <ref target="g:GIP0247.091">Meamei</ref> had satisfied their appetites, they picked up their sticks and turned towards their camp again. But only five could find their sticks; so those five started off, leaving the other two to find theirs, supposing they must be somewhere near, and, finding them, they would soon catch them up. The two girls hunted all round the <animal>ants</animal>' nests, but could find no sticks. At last, when their backs were turned towards him, <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> crept out and stuck the lost yam sticks near together in the ground; then he slipt back into his hiding-place. When the two girls turned round, there in front of them they saw their sticks. With a cry of joyful surprise they ran to them and caught hold of them to pull them out of the ground, in which they were firmly stuck. As they were doing so, out from his hiding-place jumped <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName>. He seized both girls round their waists, holding them tightly. They struggled and screamed, but to no purpose. There were none near to hear them, and the more they struggled the tighter <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> held them. Finding their screams and struggles in vain they quietened at length, and then <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> told them not to be afraid, he would take care of them. He was lonely, he said, and wanted two wives. They must come quietly with him, and he would be good to them. But they must do as he told them. If they were not quiet, he would swiftly quieten them with his <ref target="g:GIP0247.100">moorillah</ref>. But if they would come quietly with him he <pb n="45"/>would be good to them. Seeing that resistance was useless, the two young girls complied with his wish, and travelled quietly on with him. They told him that some day their tribe would come and steal them back again; to avoid which he travelled quickly on and on still further, hoping to elude all pursuit. Some weeks passed, and, outwardly, the two <ref target="g:GIP0247.091">Meamei</ref> seemed settled down to their new life, and quite content in it, though when they were alone together they often talked of their sisters, and wondered what they had done when they realised their loss. They wondered if the five were still hunting for them, or whether they had gone back to their tribe to get assistance. That they might be in time forgotten and left with <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> for ever, they never once for a moment thought. One day when they were camped <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> said: "This fire will not burn well. Go you two and get some bark from those two <plant>pine trees</plant> over there."</p>
+      <p>"No," they said, "we must not cut pine bark. If we did, you would never more see us."</p>
+      <p>"Go! I tell you, cut pine bark. I want it. See you not the fire burns but slowly?"</p>
+      <p>"If we go, <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName>, we shall never return. You will see us no more in this country. We know it."</p>
+      <p>"Go, women, stay not to talk. Did ye ever see talk make a fire burn? Then why stand ye there talking? Go; do as I bid you. Talk not so foolishly; if you ran away soon should I catch you, and, catching you, would beat you hard. Go! talk no more."</p>
+      <p>The <ref target="g:GIP0247.091">Meamei</ref> went, taking with them their <ref target="g:GIP0247.034">combos</ref> with which to cut the bark. <pb n="46"/>They went each to a different <plant>tree</plant>, and each, with a strong hit, drove her <ref target="g:GIP0247.034">combo</ref> into the bark. As she did so, each felt the <plant>tree</plant> that her <ref target="g:GIP0247.034">combo</ref> had struck rising higher out of the ground and bearing her upward with it. Higher and higher grew the <plant>pine trees</plant>, and still on them, higher and higher from the earth, went the two girls. Hearing no chopping after the first hits, <persName><ref target="g:GIP0247.135">Wurrunnah</ref></persName> came towards the <plant>pines</plant> to see what was keeping the girls so long. As he came near them he saw that the <plant>pine trees</plant> were growing taller even as he looked at them, and clinging to the trunks of the <plant>trees</plant> high in the air he saw his two wives. He called to them to come down, but they made no answer. Time after time he called to them as higher and higher they went, but still they made no answer. Steadily taller grew the two <plant>pines</plant>, until at last their tops touched the sky. As they did so, from the sky the five <ref target="g:GIP0247.091">Meamei</ref> looked out, called to their two sisters on the <plant>pine trees</plant>, bidding them not to be afraid but to come to them. Quickly the two girls climbed up when they heard the voices of their sisters. When they reached the tops of the <plant>pines</plant> the five sisters in the sky stretched forth their hands, and drew them in to live with them there in the sky for ever.</p>
+      <p>
+        <epimyth>And there, if you look, you may see the seven sisters together. You perhaps know them as the Pleiades, but the <color>black</color> fellows call them the <ref target="g:GIP0247.091">Meamei</ref>.</epimyth>
+      </p>
+    </body>
+  </text>
 </TEI>
