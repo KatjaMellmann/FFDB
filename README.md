@@ -23,6 +23,7 @@ Since one of our general ambitions is to preserve all work done by previous scho
 [Jan Jokisch](https://www.ae.mpg.de/en/the-institute/people/jan-jokisch.html) (Max Planck Institute for Empirical Aesthetics)
 ### Funding
 Deutsche Forschungsgemeinschaft (DFG) (Project no. [463393271](https://gepris.dfg.de/gepris/projekt/463393271?language=en), Funding Period: 2022-2025)
+
 ![grafik](https://github.com/KatjaMellmann/FFDB/assets/85835484/f35598b2-f5d1-477f-82f3-32ce1344a1ab)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
