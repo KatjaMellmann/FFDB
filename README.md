@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-# The Folklore Forager Database (FFDB) 
+# The Forager Folklore Database (FFDB) 
 ![grafik](https://github.com/KatjaMellmann/FFDB/assets/85835484/f35598b2-f5d1-477f-82f3-32ce1344a1ab)
 ## Project Description
 The Forager Folklore Database (FFDB) registers bibliographical references to published myths and folktales from hunter-gatherer (forager[^1]) societies as recorded by anthropologists, linguists, missionaries and others during the past c.150 years. It shall serve as a starting point for empirical investigations pursuing interests as diverse as in narrative universals, evolutionary origins of storytelling, or comparative mythology and folklore studies.
