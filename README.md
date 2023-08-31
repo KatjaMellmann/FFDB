@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-# The Folklore Forager Database (FFDB)
+# The Folklore Forager Database (FFDB) ![grafik](https://github.com/KatjaMellmann/FFDB/assets/85835484/f35598b2-f5d1-477f-82f3-32ce1344a1ab)
 ## Project Description
 The Forager Folklore Database (FFDB) registers bibliographical references to published myths and folktales from hunter-gatherer (forager[^1]) societies as recorded by anthropologists, linguists, missionaries and others during the past c.150 years. It shall serve as a starting point for empirical investigations pursuing interests as diverse as in narrative universals, evolutionary origins of storytelling, or comparative mythology and folklore studies.
 
@@ -23,8 +23,6 @@ Since one of our general ambitions is to preserve all work done by previous scho
 [Jan Jokisch](https://www.ae.mpg.de/en/the-institute/people/jan-jokisch.html) (Max Planck Institute for Empirical Aesthetics)
 ### Funding
 Deutsche Forschungsgemeinschaft (DFG) (Project no. [463393271](https://gepris.dfg.de/gepris/projekt/463393271?language=en), Funding Period: 2022-2025)
-
-![grafik](https://github.com/KatjaMellmann/FFDB/assets/85835484/f35598b2-f5d1-477f-82f3-32ce1344a1ab)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
