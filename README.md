@@ -9,7 +9,7 @@ Out of the total number of thusly source-tracked narratives, the FFDB will also 
 
 In addition, and as far as copyright licences allow, we will provide digital texts of the narratives as [TEI-P5](https://tei-c.org/guidelines/p5/)-encoded XML, enriched by semi-automatic tagging.
 
-This is a work-in-progress repository. Until the first official release it is not citable and only contains a few specimens of our efforts in preparing the XMLs. We are happy about comments and advise of all sorts.
+This is a work-in-progress repository. Until the first official release it is not citable and only contains a few specimens of our efforts in preparing the XMLs. We are happy to receive comments and advise of all sorts.
 ## Tags
 While many of the semantic and narratological features of the tales can only be identified by a human eye and are best indicated in the form of metadata, some of them can also be tracked on the lexical level and are thus indicated in the form of in-line tags in the digital texts. We are employing a manual and semi-automatic (via WordNet synsets, wordlists, and glossaries) annotation of animal, plant, color, personal, and place names. Also, as the texts are transcriptions of oral performances, we mark the difference between the diegetic level of the actual narrative on the one hand, and interjections, framing and explanatory comments on the other. For the latter, we distinguish between meta-commentaries in the beginning of (tag "anamyth"), during (tag "apartmyth"), and in concluding (tag "epimyth") the narrative. 
 ## Classifications
