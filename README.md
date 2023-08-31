@@ -30,4 +30,4 @@ Deutsche Forschungsgemeinschaft (DFG) (Project no. [463393271](https://gepris.df
 
 [^1]: Cf. Ember, Carol R. (2020): Hunter-Gatherers (Foragers). Human Relations Area Files, https://hraf.yale.edu/ehc/summaries/hunter-gatherers.
 [^2]: Thompson, Stith (1955-58): Motif-Index of Folk-Literature. 6 vls. Bloomington/London: Indiana University Press; Uther, Hans-Jörg (2004): The Types of International Folktales. A Classification and Bibliography, based on the system of Antti Aarne and Stith Thompson. 3 vls. Helsinki: Suomalainen Tiedeakatemia.
-[^3]: E.g., Wilbert, Johannes/Simoneau, Karin (1970-1992): Folk Literature of the South American Indians. Los Angeles: UCLA Latin American Center Publications; Schmidt, Sigrid (2089/13): Catalogue of the Khoisan Folktales of Southern Africa [1989]. 2., completely rev. ed. 2 vls. Köln: Köppe, 2013.
+[^3]: E.g., Wilbert, Johannes/Simoneau, Karin (1970-1992): Folk Literature of the South American Indians. Los Angeles: UCLA Latin American Center Publications; Schmidt, Sigrid (1989/2013): Catalogue of the Khoisan Folktales of Southern Africa [1989]. 2., completely rev. ed. 2 vls. Köln: Köppe, 2013.
