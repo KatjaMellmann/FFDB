@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:f="http://www.filemaker.com/fmpxmlresult"
+  xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:tb="http://www.wwp.brown.edu/ns/textbase/1.0"
+  xmlns:wwp="http://www.wwp.brown.edu/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- this file is a work in progress -->
+  <!-- it is an example of what a future personography for the FFDB might look like-->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>FFDB Personography</title>
+      </titleStmt>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
+            Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2025">2025</date>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Generated automatically from the Folklore Forager Database.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <!-- write a relevant xslt-->
+      </appInfo>
+    </encodingDesc>
+  </teiHeader>
+  <text type="ography">
+    <body>
+      <person n="1" xml:id="Biesele23" role="collector">
+        <persName>
+          <surname>Biesele</surname>
+          <forename>Megan</forename>
+        </persName>
+        <idno type="VIAF">66494499</idno>
+      </person>
+      <person n="2" xml:id="Dornan24" role="collector">
+        <persName>
+          <surname>Dornan</surname>
+          <forename>Samuel</forename>
+          <forename>Shaw</forename>
+        </persName>
+        <birth when="1871">1871</birth>
+        <death when="1941">1941</death>
+        <idno type="VIAF">73954199</idno>
+      </person>
+      <person n="3" xml:id="Howell48" role="collector">
+        <persName>
+          <surname>Howell</surname>
+          <forename>Signe</forename>
+        </persName>
+        <birth when="1942">1942</birth>
+        <idno type="VIAF">92962592</idno>
+        <idno type="Wikidata">Q18573455</idno>
+      </person>
+      <person n="4" xml:id="Roth394" role="collector">
+        <persName>
+          <surname>Roth</surname>
+          <forename>Walter</forename>
+          <forename full="init">E.</forename>
+        </persName>
+        <birth when="1861">1861</birth>
+        <death when="1933">1933</death>
+        <idno type="VIAF">66574799</idno>
+        <idno type="Wikidata">Q1233339</idno>
+      </person>
+      <person n="5" xml:id="Dixon1051" role="collector">
+        <persName>
+          <surname>Dixon</surname>
+          <forename>Roland</forename>
+          <forename full="init">B.</forename>
+        </persName>
+        <birth when="1875">1875</birth>
+        <death when="1934">1934</death>
+        <idno type="VIAF">12456290</idno>
+        <idno type="Wikidata">Q1238154</idno>
+      </person>
+      <person n="6" xml:id="Curtin1091" role="collector">
+        <persName>
+          <surname>Curtin</surname>
+          <forename>Jeremiah</forename>
+        </persName>
+        <birth when="1835">1835</birth>
+        <death when="1906">1906</death>
+        <idno type="VIAF">37277243</idno>
+        <idno type="Wikidata">Q6180799</idno>
+      </person>
+      <person n="7" xml:id="Parker1451" role="collector">
+        <persName>
+          <surname>Parker</surname>
+          <forename full="init">K.</forename>
+          <forename>Langloh</forename>
+        </persName>
+        <birth when="1856">1856</birth>
+        <death when="1940">1940</death>
+        <note type="notes">publishing name of Catherine Eliza Sommerville Stow</note>
+        <idno type="VIAF">12667435</idno>
+      </person>
+      <person n="8" xml:id="Gifford1471" role="collector">
+        <persName>
+          <surname>Gifford</surname>
+          <forename>Edward</forename>
+          <forename>Winslow</forename>
+        </persName>
+        <birth when="1887">1887</birth>
+        <death when="1959">1959</death>
+        <idno type="VIAF">110120530</idno>
+        <idno type="Wikidata">Q5345957</idno>
+      </person>
+      <person n="9" xml:id="unidentified0" role="informant">
+        <persName>
+          <name type="main"> - unidentified -</name>
+        </persName>
+        <note>The informant is either unidentified or identified so generally, e.g., "a Warao," that
+          no meaningful features (name, age, gender, lifestyle, upbringing, mental faculties) could
+          be determined.</note>
+      </person>
+      <person n="10" xml:id="Təbona12" role="informant">
+        <persName>
+          <name type="main">ǂTəbo nǃa</name>
+        </persName>
+        <note type="notes">an old ǃKung (?) of Ghanzi</note>
+      </person>
+      <person n="11" xml:id="Kanana38" role="informant">
+        <persName>
+          <name type="main">Kanǁa nǃa</name>
+          <name type="alt">Kashe nǃa</name>
+          <name type="alt">Kãǁka nǃa (?)</name>
+        </persName>
+        <sex value="M">male</sex>
+        <note type="notes">an old ǃKung of Kauri, husband of ǃKunǀobe nǃa</note>
+      </person>
+      <person n="12" xml:id="Kunobena121" role="informant">
+        <persName>
+          <name type="main">ǃKunǀobe nǃa</name>
+          <name type="alt">ǃUnnǀobe Nǃaʼan</name>
+        </persName>
+        <sex value="F">female</sex>
+        <note type="notes">an old ǃKung of Kauri, wife of Kanǁa nǃa</note>
+      </person>
+      <person n="13" xml:id="UkxaNaan122" role="informant">
+        <persName>
+          <name type="main">ǁUkxa Nǃaʼan</name>
+          <name type="alt">ǀUkxa Nǃaʼan</name>
+          <name type="alt">ǀukxa nǃa</name>
+        </persName>
+        <note type="notes">an old ǃKung of Kauri (?) / Dobe (?)</note>
+      </person>
+      <person n="14" xml:id="Tshuona123" role="informant">
+        <persName>
+          <name type="main">Tshuǃo nǃa</name>
+          <name type="alt">Tciǃxo Nǃaʼan</name>
+        </persName>
+        <note type="notes">an old ǃKung (?) of ǃGoshe</note>
+      </person>
+      <person n="15" xml:id="XukxaNaʼan159" role="informant">
+        <persName>
+          <name type="main">ǁXukxa Nǃaʼan</name>
+          <name type="alt">ǁoka nǃa</name>
+          <name type="alt">ǀXoan Nǃaʼan</name>
+        </persName>
+        <sex value="F">female</sex>
+        <note type="notes">a ǃKung of Dobe</note>
+      </person>
+      <person n="16" xml:id="AsaNaan160" role="informant">
+        <persName>
+          <name type="main">ǀAsa Nǃaʼan</name>
+          <name type="alt">ǀasa nǃa</name>
+        </persName>
+        <note type="notes">an old ǃKung of Kauri, repeating tales origially told by ǀˮaiǀˮai</note>
+      </person>
+      <person n="17" xml:id="CharleyGreen4760" role="informant">
+        <persName>
+          <name type="main">Charley Green</name>
+        </persName>
+        <sex value="M">male</sex>
+        <note type="notes">an Achomawi</note>
+      </person>
+      <person n="18" xml:id="OldWool4761" role="informant">
+        <persName>
+          <name type="main">"Old Wool"</name>
+        </persName>
+        <sex value="M">male</sex>
+        <note type="notes">an Achomawi</note>
+      </person>
+      <person n="19" xml:id="CharleySnook4762" role="informant">
+        <persName>
+          <name type="main">Charley Snook</name>
+        </persName>
+        <sex value="M">male</sex>
+        <note type="notes">an Atsugewi</note>
+      </person>
+      <person n="20" xml:id="ThomasWilliams4900" role="informant">
+        <persName>
+          <name type="main">Thomas Williams</name>
+        </persName>
+        <sex value="M">male</sex>
+        <note type="notes">a Central Sierra Miwok of Jamestown, a former utentbe (travelling myth
+          teller); cf. Gifford 1917, p. 284 (photo ibid., plate 6)</note>
+      </person>
+    </body>
+  </text>
+</TEI>
