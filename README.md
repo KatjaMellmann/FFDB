@@ -19,7 +19,7 @@ Since one of our general ambitions is to preserve all work done by previous scho
 [Katja Mellmann](https://www.ae.mpg.de/en/the-institute/people/katja-mellmann.html) (Max Planck Institute for Empirical Aesthetics)
 
 [Michelle Scalise Sugiyama](https://cas.uoregon.edu/directory/social-sciences/all/mscalise) (University of Oregon)
-### Doctoral Student
+### Doctoral Researcher
 [Jan Jokisch](https://www.ae.mpg.de/en/the-institute/people/jan-jokisch.html) (Max Planck Institute for Empirical Aesthetics)
 ### Funding
 Deutsche Forschungsgemeinschaft (DFG) (Project no. [463393271](https://gepris.dfg.de/gepris/projekt/463393271?language=en), Funding Period: 2022-2025)
