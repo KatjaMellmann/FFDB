@@ -15,7 +15,7 @@
           <persName>Michelle Scalise Sugiyama</persName>
         </principal>
         <respStmt>
-          <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
           <persName>Jan Jokisch</persName>
         </respStmt>
       </titleStmt>
@@ -28,10 +28,10 @@
         <availability status="free">
           <licence target="http://rightsstatements.org/vocab/InC-NC/1.0/">In Copyright - Non-Commercial Use Permitted</licence>
         </availability>
-        <date when="2025">2025</date>
+        <date when="2023">2023</date>
       </publicationStmt>
       <sourceDesc>
-        <bibl>Dixon, Roland B. (1908): Achomawi and Atsugewi Tales. In: The Journal of American Folk-Lore 21(81), 159-177., pp. 159-161.</bibl>
+        <bibl>Dixon, Roland B. (1908): Achomawi and Atsugewi Tales. In: The Journal of American Folk-Lore 21(81), 159-177. Quot. pp. 159-161.</bibl>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -42,28 +42,25 @@
       </projectDesc>
       <samplingDecl>
         <p>The narrative was selected for being a genuine piece of oral literature recorded
-                    directly (or via the proxy of an interpreter or other immediate intermediary)
-                    from an informant who either lived or grew up as a member of a culture whose
-                    primary subsistence at the time of recording was or until recently had been
-                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
-                    recording and the relative freedom from external cultural influences. To create
-                    a corpus with high representability, multiple versions of the same narrative
-                    were omitted, cultural clusters and close cultural relations between two groups
-                    were negatively taken into account, and it was aimed for the highest degree of
-                    diversity.</p>
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
       </samplingDecl>
       <tagsDecl>
         <namespace name="">
-          <tagUsage gi="animal" occurs="61">Used to mark animal names in the text.</tagUsage>
-          <tagUsage gi="plant" occurs="6">Used to mark plant names in the text.</tagUsage>
-          <tagUsage gi="color" occurs="1">Used to mark color names (adjectives and nouns) in the
+          <tagUsage gi="animal" occurs="61">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="6">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="1">Used to mark colors (adjectives and nouns) mentioned in the
                         text.</tagUsage>
-          <tagUsage gi="persName" occurs="9">Used to mark culturally important characters in the
-                        text.</tagUsage>
-          <tagUsage gi="placeName" occurs="2">Used to mark named places in the text.</tagUsage>
+          <tagUsage gi="persName" occurs="9">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="2">Used to mark named place names mentioned in the text.</tagUsage>
           <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
                         a narrative.</tagUsage>
-          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
           <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
                         narrative.</tagUsage>
         </namespace>
@@ -74,25 +71,26 @@
                         elements in the <name type="file">personography.xml</name> file.</p>
         </prefixDef>
         <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
-          <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
-                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
         </prefixDef>
         <prefixDef ident="g" matchPattern=".*" replacementPattern="">
-          <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
-                        collected in the FFDB.</p>
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
         </prefixDef>
       </listPrefixDef>
       <editorialDecl>
         <p>Footnotes are generally retained, but no effort has been made to link the
                     narratives mentioned in comparative notes with corresponding records within the
                     FFDB.</p>
-        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
                     within a word have been moved either before or after the word (or nominal
-                    phrase) with no clear systematic.</p>
+                    phrase) on a case to case basis, without general rule.</p>
         <normalization method="silent">
-          <p>In-text explanations by the original editor are set in brackets. In-text
-                        additions/excursions by the informant are set in parenthesis.</p>
-          <p>Latin passages in the original (usually to hide language and themes deemed
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
                         indecent) are rendered in English.</p>
         </normalization>
         <hyphenation eol="none">
@@ -100,15 +98,16 @@
                         retained.</p>
         </hyphenation>
         <quotation marks="all">
-          <p>All quotation marks have been retained. No effort was made to mark quoted
-                        passages up as <gi>quote</gi>.</p>
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
         </quotation>
         <interpretation>
           <p>Animals, plants, colors, characters, and place names were automatically
-                        tagged with a semantic tagger based on WordNet and on word lists as well as
-                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
-                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
-                        respectively.</p>
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
         </interpretation>
       </editorialDecl>
     </encodingDesc>
