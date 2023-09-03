@@ -1,9 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:f="http://www.filemaker.com/fmpxmlresult"
-  xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:tb="http://www.wwp.brown.edu/ns/textbase/1.0"
-  xmlns:wwp="http://www.wwp.brown.edu/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <!-- this file is a work in progress -->
-  <!-- it is an example of what a future personography for the FFDB might look like-->
+<!-- this file is a work in progress -->
+<!-- it is an example of what a future personography for the FFDB might look like-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:f="http://www.filemaker.com/fmpxmlresult" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:tb="http://www.wwp.brown.edu/ns/textbase/1.0" xmlns:wwp="http://www.wwp.brown.edu/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,8 +9,8 @@
       <publicationStmt>
         <authority>The Forager Folklore Database</authority>
         <availability status="free">
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
-            Attribution NonCommercial (CC BY-NC)</licence>
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative
+                        Commons Attribution NonCommercial (CC BY-NC)</licence>
         </availability>
         <date when="2025">2025</date>
       </publicationStmt>
@@ -23,7 +20,10 @@
     </fileDesc>
     <encodingDesc>
       <appInfo>
-        <!-- write a relevant xslt-->
+        <!-- write an xslt to replace references in the files with the personography entries -->
+        <application ident="names_database2listPerson.xslt" version="2.2.1">
+          <desc>File created <date when="2022-12-10T01:08:22.532+02:00"/>.</desc>
+        </application>
       </appInfo>
     </encodingDesc>
   </teiHeader>
@@ -111,65 +111,63 @@
       </person>
       <person n="9" xml:id="unidentified0" role="informant">
         <persName>
-          <name type="main"> - unidentified -</name>
+          <name type="main">unidentified</name>
         </persName>
-        <note>The informant is either unidentified or identified so generally, e.g., "a Warao," that
-          no meaningful features (name, age, gender, lifestyle, upbringing, mental faculties) could
-          be determined.</note>
+        <note type="notes">The informant is either unidentified or identified so generally, e.g., "a Warao," that no meaningful features (name, age, gender, lifestyle, upbringing, mental faculties) could be determined.</note>
       </person>
-      <person n="10" xml:id="Təbona12" role="informant">
+      <person n="10" xml:id="T&#601;bona12" role="informant">
         <persName>
-          <name type="main">ǂTəbo nǃa</name>
+          <name type="main">&#450;T&#601;bo n&#451;a</name>
         </persName>
-        <note type="notes">an old ǃKung (?) of Ghanzi</note>
+        <note type="notes">an old &#451;Kung (?) of Ghanzi</note>
       </person>
       <person n="11" xml:id="Kanana38" role="informant">
         <persName>
-          <name type="main">Kanǁa nǃa</name>
-          <name type="alt">Kashe nǃa</name>
-          <name type="alt">Kãǁka nǃa (?)</name>
+          <name type="main">Kan&#449;a n&#451;a</name>
+          <name type="alt">Kashe n&#451;a</name>
+          <name type="alt">K&#227;&#449;ka n&#451;a (?)</name>
         </persName>
         <sex value="M">male</sex>
-        <note type="notes">an old ǃKung of Kauri, husband of ǃKunǀobe nǃa</note>
+        <note type="notes">an old &#451;Kung of Kauri, husband of &#451;Kun&#448;obe n&#451;a</note>
       </person>
       <person n="12" xml:id="Kunobena121" role="informant">
         <persName>
-          <name type="main">ǃKunǀobe nǃa</name>
-          <name type="alt">ǃUnnǀobe Nǃaʼan</name>
+          <name type="main">&#451;Kun&#448;obe n&#451;a</name>
+          <name type="alt">&#451;Unn&#448;obe N&#451;a&#700;an</name>
         </persName>
         <sex value="F">female</sex>
-        <note type="notes">an old ǃKung of Kauri, wife of Kanǁa nǃa</note>
+        <note type="notes">an old &#451;Kung of Kauri, wife of Kan&#449;a n&#451;a</note>
       </person>
       <person n="13" xml:id="UkxaNaan122" role="informant">
         <persName>
-          <name type="main">ǁUkxa Nǃaʼan</name>
-          <name type="alt">ǀUkxa Nǃaʼan</name>
-          <name type="alt">ǀukxa nǃa</name>
+          <name type="main">&#449;Ukxa N&#451;a&#700;an</name>
+          <name type="alt">&#448;Ukxa N&#451;a&#700;an</name>
+          <name type="alt">&#448;ukxa n&#451;a</name>
         </persName>
-        <note type="notes">an old ǃKung of Kauri (?) / Dobe (?)</note>
+        <note type="notes">an old &#451;Kung of Kauri (?) / Dobe (?)</note>
       </person>
       <person n="14" xml:id="Tshuona123" role="informant">
         <persName>
-          <name type="main">Tshuǃo nǃa</name>
-          <name type="alt">Tciǃxo Nǃaʼan</name>
+          <name type="main">Tshu&#451;o n&#451;a</name>
+          <name type="alt">Tci&#451;xo N&#451;a&#700;an</name>
         </persName>
-        <note type="notes">an old ǃKung (?) of ǃGoshe</note>
+        <note type="notes">an old &#451;Kung (?) of &#451;Goshe</note>
       </person>
-      <person n="15" xml:id="XukxaNaʼan159" role="informant">
+      <person n="15" xml:id="XukxaNaan159" role="informant">
         <persName>
-          <name type="main">ǁXukxa Nǃaʼan</name>
-          <name type="alt">ǁoka nǃa</name>
-          <name type="alt">ǀXoan Nǃaʼan</name>
+          <name type="main">&#449;Xukxa N&#451;a&#700;an</name>
+          <name type="alt">&#449;oka n&#451;a</name>
+          <name type="alt">&#448;Xoan N&#451;a&#700;an</name>
         </persName>
         <sex value="F">female</sex>
-        <note type="notes">a ǃKung of Dobe</note>
+        <note type="notes">a &#451;Kung of Dobe</note>
       </person>
       <person n="16" xml:id="AsaNaan160" role="informant">
         <persName>
-          <name type="main">ǀAsa Nǃaʼan</name>
-          <name type="alt">ǀasa nǃa</name>
+          <name type="main">&#448;Asa N&#451;a&#700;an</name>
+          <name type="alt">&#448;asa n&#451;a</name>
         </persName>
-        <note type="notes">an old ǃKung of Kauri, repeating tales origially told by ǀˮaiǀˮai</note>
+        <note type="notes">an old &#451;Kung of Kauri, repeating tales origially told by &#448;&#750;ai&#448;&#750;ai</note>
       </person>
       <person n="17" xml:id="CharleyGreen4760" role="informant">
         <persName>
@@ -197,8 +195,7 @@
           <name type="main">Thomas Williams</name>
         </persName>
         <sex value="M">male</sex>
-        <note type="notes">a Central Sierra Miwok of Jamestown, a former utentbe (travelling myth
-          teller); cf. Gifford 1917, p. 284 (photo ibid., plate 6)</note>
+        <note type="notes">a Central Sierra Miwok of Jamestown, a former utentbe (travelling myth teller); cf. Gifford 1917, p. 284 (photo ibid., plate 6)</note>
       </person>
     </body>
   </text>
