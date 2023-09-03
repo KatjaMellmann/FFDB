@@ -1,5 +1,5 @@
 <!-- this file is a work in progress -->
-<!-- it is an example of what a future personography for the FFDB might look like-->
+<!-- it is an example of what a future personography for the FFDB might look like -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:f="http://www.filemaker.com/fmpxmlresult" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:tb="http://www.wwp.brown.edu/ns/textbase/1.0" xmlns:wwp="http://www.wwp.brown.edu/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <teiHeader>
     <fileDesc>
@@ -12,7 +12,7 @@
           <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative
                         Commons Attribution NonCommercial (CC BY-NC)</licence>
         </availability>
-        <date when="2025">2025</date>
+        <date when="2023">2023</date>
       </publicationStmt>
       <sourceDesc>
         <p>Generated automatically from the Folklore Forager Database.</p>
@@ -21,9 +21,6 @@
     <encodingDesc>
       <appInfo>
         <!-- write an xslt to replace references in the files with the personography entries -->
-        <application ident="names_database2listPerson.xslt" version="2.2.1">
-          <desc>File created <date when="2022-12-10T01:08:22.532+02:00"/>.</desc>
-        </application>
       </appInfo>
     </encodingDesc>
   </teiHeader>
