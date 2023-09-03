@@ -1,130 +1,132 @@
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/Schema/FFDB.rng" type="application/xml" 
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>The Origin of the Narran Lake</title>
-                <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor><editor ref="p:unidentified0" role="informant">	- unidentified -</editor><funder>Deutsche Forschungsgemeinschaft</funder>
-                <principal>
-                    <persName>Katja Mellmann</persName>
-                    <persName>Michelle Scalise Sugiyama</persName>
-                </principal>
-                <respStmt>
-                    <resp>XML templates, digitization infrastructure, and automated inline tagging</resp>
-                    <persName>Jan Jokisch</persName>
-                </respStmt>
-            </titleStmt>
-            <extent>
-                <measure unit="KB" quantity="16">About 16 kilobytes</measure>
-            </extent>
-            <publicationStmt>
-                <authority>The Forager Folklore Database</authority>
-                <idno type="FFDB">NIP028732</idno>
-                <availability status="free">
-                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
-                </availability>
-                <date when="2025">2025</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade, pp. 11-14.</bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
-                <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Origin of the Narran Lake</title>
+        <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor>
+        <editor ref="p:unidentified0" role="informant">unidentified</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="15">About 15 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NIP028732</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade. Quot. pp. 11-14.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
                     offers a basis for a systematic study of narrative universals,
                     the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
-            </projectDesc>
-            <samplingDecl>
-                <p>The narrative was selected for being a genuine piece of oral literature recorded
-                    directly (or via the proxy of an interpreter or other immediate intermediary)
-                    from an informant who either lived or grew up as a member of a culture whose
-                    primary subsistence at the time of recording was or until recently had been
-                    hunting, gathering, and/or fishing. Care was taken to ensure the quality of the
-                    recording and the relative freedom from external cultural influences. To create
-                    a corpus with high representability, multiple versions of the same narrative
-                    were omitted, cultural clusters and close cultural relations between two groups
-                    were negatively taken into account, and it was aimed for the highest degree of
-                    diversity.</p>
-            </samplingDecl>
-            <tagsDecl>
-                <namespace name="">
-                    <tagUsage gi="animal" occurs="27">Used to mark animal names in the text.</tagUsage>
-                    <tagUsage gi="plant" occurs="7">Used to mark plant names in the text.</tagUsage>
-                    <tagUsage gi="color" occurs="4">Used to mark color names (adjectives and nouns) in the
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="27">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="7">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="4">Used to mark colors (adjectives and nouns) mentioned in the
                         text.</tagUsage>
-                    <tagUsage gi="persName" occurs="16">Used to mark culturally important characters in the
-                        text.</tagUsage>
-                    <tagUsage gi="placeName" occurs="15">Used to mark named places in the text.</tagUsage>
-                    <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+          <tagUsage gi="persName" occurs="16">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="15">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
                         a narrative.</tagUsage>
-                    <tagUsage gi="apartmyth" occurs="0">Used to mark comments or any asides during a narrative.</tagUsage>
-                    <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
                         narrative.</tagUsage>
-                </namespace>
-            </tagsDecl>
-            <listPrefixDef>
-                <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
-                    <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+          <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
                         elements in the <name type="file">personography.xml</name> file.</p>
-                </prefixDef>
-                <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
-                    <p>URIs using the <code>q</code> are <orgName ref="https://www.wikidata.org/">
-                        Wikidata</orgName> Q-IDs and refer to their entry.</p>
-                </prefixDef>
-                <prefixDef ident="g" matchPattern=".*" replacementPattern="">
-                    <p>Private URIs using the <code>g</code> prefix are pointers to glossary entries
-                        collected in the FFDB.</p>
-                </prefixDef>
-            </listPrefixDef>
-            <editorialDecl>
-                <p>Footnotes are generally retained, but no effort has been made to link the
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
                     narratives mentioned in comparative notes with corresponding records within the
                     FFDB.</p>
-                <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occuring
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
                     within a word have been moved either before or after the word (or nominal
-                    phrase) with no clear systematic.</p>
-                <normalization method="silent">
-                    <p>In-text explanations by the original editor are set in brackets. In-text
-                        additions/excursions by the informant are set in parenthesis.</p>
-                    <p>Latin passages in the original (usually to hide language and themes deemed
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
                         indecent) are rendered in English.</p>
-                </normalization>
-                <hyphenation eol="none">
-                    <p>End-of-line hyphenation has been removed. All other hyphenation has been
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
                         retained.</p>
-                </hyphenation>
-                <quotation marks="all">
-                    <p>All quotation marks have been retained. No effort was made to mark quoted
-                        passages up as <gi>quote</gi>.</p>
-                </quotation>
-                <interpretation>
-                    <p>Animals, plants, colors, characters, and place names were automatically
-                        tagged with a semantic tagger based on WordNet and on word lists as well as
-                        subsequently checked manually. They are tagged with <gi>animal</gi> , <gi>
-                        plant</gi>, <gi>color</gi>, <gi>persName</gi> and <gi>placeName</gi>,
-                        respectively.</p>
-                </interpretation>
-            </editorialDecl>
-        </encodingDesc>
-        <profileDesc>
-            <settingDesc>
-                <setting>
-                    <name type="culture" key="CIPD0270">Yuwaalaraay</name>
-                    <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
-                </setting>
-            </settingDesc>
-        </profileDesc>
-    </teiHeader>
-    <text>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CIPD0270">Yuwaalaraay</name>
+          <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
     <body>
-<p>Old <persName><ref target="g:GIP0247.032">Byamee</ref></persName> said to his two young wives, <persName><ref target="g:GIP0247.011">Birrahgnooloo</ref></persName> and <persName><ref target="g:GIP0247.038">Cunnunbeillee</ref></persName>, "I have stuck a <color>white</color> feather between the hind legs of a <animal>bee</animal>, and am going to let it go and then follow it to its nest, that I may get honey. While I go for the honey, go you two out and get <animal>frogs</animal> and <plant>yams</plant>, then meet me at <placeName>Coorigel Spring</placeName>, where we will camp, for sweet and clear is the water there." The wives, taking their goolays and <plant>yam</plant> sticks, went out as he told them. Having gone far, and dug out many <plant>yams</plant> and <animal>frogs</animal>, they were tired when they reached <placeName>Coorigel</placeName>, and, seeing the cool, fresh water, they longed to bathe. But first they built a bough shade, and there left their goolays holding their food, and the <plant>yams</plant> and <animal>frogs</animal> they had found. When their camp was ready for the coming of <persName><ref target="g:GIP0247.032">Byamee</ref></persName>, who having wooed his wives with a <ref target="g:GIP0247.108">nullah-nullah</ref>, kept them obedient by fear of the same weapon, then went the girls to the spring to bathe. Gladly they plunged in, having first divested themselves of their <ref target="g:GIP0247.073">goomillahs</ref>, which they were still young enough to wear, and which they left on the ground near the spring. Scarcely were they enjoying the cool rest the water gave their hot, tired limbs, when they were seized <pb n="12"/>and swallowed by two <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>. Having swallowed the girls, the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> dived into an opening in the side of the spring, which was the entrance to an underground watercourse leading to the <placeName>Narran River</placeName>. Through this passage they went, taking all the water from the spring with them into the <placeName>Narran</placeName>, whose course they also dried as they went along.</p>
-<p>Meantime <persName><ref target="g:GIP0247.032">Byamee</ref></persName>, unwitting the fate of his wives, was honey hunting. He had followed the <animal>bee</animal> with the <color>white</color> feather on it for some distance; then the <animal>bee</animal> flew on to some <plant><ref target="g:GIP0247.058">budtha</ref> flowers</plant>, and would move no further. <persName><ref target="g:GIP0247.032">Byamee</ref></persName> said, "Something has happened, or the <animal>bee</animal> would not stay here and refuse to be moved on towards its nest. I must go to <placeName>Coorigel Spring</placeName> and see if my wives are safe. Something terrible has surely happened." And <persName><ref target="g:GIP0247.032">Byamee</ref></persName> turned in haste towards the spring. When he reached there he saw the bough shed his wives had made, he saw the <plant>yams</plant> they had dug from the ground, and he saw the <animal>frogs</animal>, but <persName><ref target="g:GIP0247.011">Birrahgnooloo</ref></persName> and <persName><ref target="g:GIP0247.038">Cunnunbeillee</ref></persName> he saw not. He called aloud for them. But no answer. He went towards the spring; on the edge of it he saw the <ref target="g:GIP0247.073">goomillahs</ref> of his wives. He looked into the spring and, seeing it dry, he said, "It is the work of the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>; they have opened the underground passage and gone with my wives to the river, and opening the passage has dried the spring. Well do I know where the passage joins the <placeName>Narran</placeName>, and there will I swiftly go." Arming himself with spears and woggarahs he started in pursuit. He soon reached the deep hole where the underground channel of the <placeName>Coorigel</placeName> joined the <placeName>Narran</placeName>. There he saw what he had never seen before, namely, this deep hole dry. And he said: <pb n="13"/>"They have emptied the holes as they went along, taking the water with them. But well know I the deep holes of the river. I will not follow the bend, thus trebling the distance I have to go, but I will cut across from big hole to big hole, and by so doing I may yet get ahead of the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>. " On swiftly sped <persName><ref target="g:GIP0247.032">Byamee</ref></persName>, making short cuts from big hole to big hole, and his track is still marked by the <ref target="g:GIP0247.100">morilla</ref> ridges that stretch down the <placeName>Narran</placeName>, pointing in towards the deep holes. Every hole as he came to it he found dry, until at last he reached the end of the <placeName>Narran</placeName>; the hole there was still quite wet and muddy, then he knew he was near his enemies, and soon he saw them. He managed to get, unseen, a little way ahead of the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>. He hid himself behind a big <plant><ref target="g:GIP0247.046">dheal</ref> tree</plant>. As the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> came near they separated, one turning to go in another direction. Quickly <persName><ref target="g:GIP0247.032">Byamee</ref></persName> hurled one spear after another, wounding both <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>, who writhed with pain and lashed their tails furiously, making great hollows in the ground, which the water they had brought with them quickly filled. Thinking they might again escape him, <persName><ref target="g:GIP0247.032">Byamee</ref></persName> drove them from the water with his spears, and then, at close quarters, he killed them with his woggarahs. And ever afterwards at flood time, the <placeName>Narran</placeName> flowed into this hollow which the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> in their writhings had made.</p>
-<p>When <persName><ref target="g:GIP0247.032">Byamee</ref></persName> saw that the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> were quite dead, he cut them open and took out the bodies of his wives. They were covered with wet slime, and seemed quite lifeless; but he carried them and laid them on two nests of <color>red</color> <animal>ants</animal>. Then he sat down at some little distance and watched them. The <animal>ants</animal> quickly covered the bodies, <pb n="14"/>cleaned them rapidly of the wet slime, and soon <persName><ref target="g:GIP0247.032">Byamee</ref></persName> noticed the muscles of the girls twitching. "Ah," he said, "there is life, they feel the sting of the <animal>ants</animal>."</p>
-<p>Almost as he spoke came a sound as of a thunder-clap, but the sound seemed to come from the ears of the girls. And as the echo was dying away, slowly the girls rose to their feet. For a moment they stood apart, a dazed expression on their faces. Then they clung together, shaking as if stricken with a deadly fear. But <persName><ref target="g:GIP0247.032">Byamee</ref></persName> came to them and explained how they had been rescued from the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> by him. He bade them to beware of ever bathing in the deep holes of the <placeName>Narran</placeName>, lest such holes be the haunt of <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>.</p>
-<p>Then he bade them look at the water now at <placeName>Boogira</placeName>, and he said:</p>
-<p>"Soon will the <animal><color>black</color> swans</animal> find their way here, the <animal>pelicans</animal> and the <animal>ducks</animal>; where there was dry land and stones in the past, in the future there will be water and <animal>water-fowl</animal>, from henceforth; when the <placeName>Narran</placeName> runs it will run into this hole, and by the spreading of its waters will a big lake be made." <epimyth>And what <persName><ref target="g:GIP0247.032">Byamee</ref></persName> said has come to pass, as the <placeName>Narran Lake</placeName> shows, with its large sheet of water, spreading for miles, the home of thousands of wild <animal>fowl</animal>.</epimyth></p>
-</body></text>
+      <p>Old <persName><ref target="g:GIP0247.032">Byamee</ref></persName> said to his two young wives, <persName><ref target="g:GIP0247.011">Birrahgnooloo</ref></persName> and <persName><ref target="g:GIP0247.038">Cunnunbeillee</ref></persName>, "I have stuck a <color>white</color> feather between the hind legs of a <animal>bee</animal>, and am going to let it go and then follow it to its nest, that I may get honey. While I go for the honey, go you two out and get <animal>frogs</animal> and <plant>yams</plant>, then meet me at <placeName>Coorigel Spring</placeName>, where we will camp, for sweet and clear is the water there." The wives, taking their goolays and <plant>yam</plant> sticks, went out as he told them. Having gone far, and dug out many <plant>yams</plant> and <animal>frogs</animal>, they were tired when they reached <placeName>Coorigel</placeName>, and, seeing the cool, fresh water, they longed to bathe. But first they built a bough shade, and there left their goolays holding their food, and the <plant>yams</plant> and <animal>frogs</animal> they had found. When their camp was ready for the coming of <persName><ref target="g:GIP0247.032">Byamee</ref></persName>, who having wooed his wives with a <ref target="g:GIP0247.108">nullah-nullah</ref>, kept them obedient by fear of the same weapon, then went the girls to the spring to bathe. Gladly they plunged in, having first divested themselves of their <ref target="g:GIP0247.073">goomillahs</ref>, which they were still young enough to wear, and which they left on the ground near the spring. Scarcely were they enjoying the cool rest the water gave their hot, tired limbs, when they were seized <pb n="12"/>and swallowed by two <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>. Having swallowed the girls, the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> dived into an opening in the side of the spring, which was the entrance to an underground watercourse leading to the <placeName>Narran River</placeName>. Through this passage they went, taking all the water from the spring with them into the <placeName>Narran</placeName>, whose course they also dried as they went along.</p>
+      <p>Meantime <persName><ref target="g:GIP0247.032">Byamee</ref></persName>, unwitting the fate of his wives, was honey hunting. He had followed the <animal>bee</animal> with the <color>white</color> feather on it for some distance; then the <animal>bee</animal> flew on to some <plant><ref target="g:GIP0247.058">budtha</ref> flowers</plant>, and would move no further. <persName><ref target="g:GIP0247.032">Byamee</ref></persName> said, "Something has happened, or the <animal>bee</animal> would not stay here and refuse to be moved on towards its nest. I must go to <placeName>Coorigel Spring</placeName> and see if my wives are safe. Something terrible has surely happened." And <persName><ref target="g:GIP0247.032">Byamee</ref></persName> turned in haste towards the spring. When he reached there he saw the bough shed his wives had made, he saw the <plant>yams</plant> they had dug from the ground, and he saw the <animal>frogs</animal>, but <persName><ref target="g:GIP0247.011">Birrahgnooloo</ref></persName> and <persName><ref target="g:GIP0247.038">Cunnunbeillee</ref></persName> he saw not. He called aloud for them. But no answer. He went towards the spring; on the edge of it he saw the <ref target="g:GIP0247.073">goomillahs</ref> of his wives. He looked into the spring and, seeing it dry, he said, "It is the work of the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>; they have opened the underground passage and gone with my wives to the river, and opening the passage has dried the spring. Well do I know where the passage joins the <placeName>Narran</placeName>, and there will I swiftly go." Arming himself with spears and woggarahs he started in pursuit. He soon reached the deep hole where the underground channel of the <placeName>Coorigel</placeName> joined the <placeName>Narran</placeName>. There he saw what he had never seen before, namely, this deep hole dry. And he said: <pb n="13"/>"They have emptied the holes as they went along, taking the water with them. But well know I the deep holes of the river. I will not follow the bend, thus trebling the distance I have to go, but I will cut across from big hole to big hole, and by so doing I may yet get ahead of the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>. " On swiftly sped <persName><ref target="g:GIP0247.032">Byamee</ref></persName>, making short cuts from big hole to big hole, and his track is still marked by the <ref target="g:GIP0247.100">morilla</ref> ridges that stretch down the <placeName>Narran</placeName>, pointing in towards the deep holes. Every hole as he came to it he found dry, until at last he reached the end of the <placeName>Narran</placeName>; the hole there was still quite wet and muddy, then he knew he was near his enemies, and soon he saw them. He managed to get, unseen, a little way ahead of the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>. He hid himself behind a big <plant><ref target="g:GIP0247.046">dheal</ref> tree</plant>. As the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> came near they separated, one turning to go in another direction. Quickly <persName><ref target="g:GIP0247.032">Byamee</ref></persName> hurled one spear after another, wounding both <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>, who writhed with pain and lashed their tails furiously, making great hollows in the ground, which the water they had brought with them quickly filled. Thinking they might again escape him, <persName><ref target="g:GIP0247.032">Byamee</ref></persName> drove them from the water with his spears, and then, at close quarters, he killed them with his woggarahs. And ever afterwards at flood time, the <placeName>Narran</placeName> flowed into this hollow which the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> in their writhings had made.</p>
+      <p>When <persName><ref target="g:GIP0247.032">Byamee</ref></persName> saw that the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> were quite dead, he cut them open and took out the bodies of his wives. They were covered with wet slime, and seemed quite lifeless; but he carried them and laid them on two nests of <color>red</color> <animal>ants</animal>. Then he sat down at some little distance and watched them. The <animal>ants</animal> quickly covered the bodies, <pb n="14"/>cleaned them rapidly of the wet slime, and soon <persName><ref target="g:GIP0247.032">Byamee</ref></persName> noticed the muscles of the girls twitching. "Ah," he said, "there is life, they feel the sting of the <animal>ants</animal>."</p>
+      <p>Almost as he spoke came a sound as of a thunder-clap, but the sound seemed to come from the ears of the girls. And as the echo was dying away, slowly the girls rose to their feet. For a moment they stood apart, a dazed expression on their faces. Then they clung together, shaking as if stricken with a deadly fear. But <persName><ref target="g:GIP0247.032">Byamee</ref></persName> came to them and explained how they had been rescued from the <animal><ref target="g:GIP0247.085">kurreahs</ref></animal> by him. He bade them to beware of ever bathing in the deep holes of the <placeName>Narran</placeName>, lest such holes be the haunt of <animal><ref target="g:GIP0247.085">kurreahs</ref></animal>.</p>
+      <p>Then he bade them look at the water now at <placeName>Boogira</placeName>, and he said:</p>
+      <p>"Soon will the <animal><color>black</color> swans</animal> find their way here, the <animal>pelicans</animal> and the <animal>ducks</animal>; where there was dry land and stones in the past, in the future there will be water and <animal>water-fowl</animal>, from henceforth; when the <placeName>Narran</placeName> runs it will run into this hole, and by the spreading of its waters will a big lake be made." <epimyth>And what <persName><ref target="g:GIP0247.032">Byamee</ref></persName> said has come to pass, as the <placeName>Narran Lake</placeName> shows, with its large sheet of water, spreading for miles, the home of thousands of wild <animal>fowl</animal>.</epimyth></p>
+    </body>
+  </text>
 </TEI>
