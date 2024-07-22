@@ -5,7 +5,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Why the Hare has a Cleft Lip</title>
+        <title>Why the Hare has a Cleft Lip (The Origin of Death)</title>
         <editor ref="p:Dornan24" role="collector">Samuel Shaw Dornan</editor>
         <editor ref="p:unidentified0" role="informant">unidentified</editor>
         <funder>Deutsche Forschungsgemeinschaft</funder>
@@ -113,7 +113,7 @@
     <profileDesc>
       <settingDesc>
         <setting>
-          <name type="culture" key="CAF00208">Kua</name>
+          <name type="culture" key="CAF00209">Hiecheware</name>
           <date notAfter="1910" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1910.</date>
         </setting>
       </settingDesc>
