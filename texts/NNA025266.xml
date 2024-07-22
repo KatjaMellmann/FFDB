@@ -1,0 +1,132 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pine-Marten Marries the Bead Sisters</title>
+        <editor ref="p:Curtin1091" role="collector">Jeremiah Curtin</editor>
+        <editor ref="p:unidentified0" role="informant">unidentified</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="9">About 9 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NNA025266</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Curtin, Jeremiah/Dixon, Roland B. (1909): Achomawi Myths. In: The Journal of American Folk-Lore 22(85), 283-287. Quot. pp. 283-284.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="9">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="1">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="0">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="8">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="1">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CNA29602">Achumawi</name>
+          <date notAfter="1906" notBefore="1835" type="recorded">Recorded sometime between 1835 and 1906.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>The two Bead girls were sent by their mother to marry <persName>Cocoon-Man</persName>'s son. He was wrapped up and put away. He had never been outside, and had never eaten anything.</p>
+      <p>The Bead sisters came from a place far off in the ocean. They came on the water, brought by the wind, and they always sang the song of the wind. It took just one day for them to reach <persName>Cocoon-Man</persName>'s house. His daughters liked the two girls and gave them food. All the men were out hunting, and the daughters sent the two girls into the sweathouse and told them to sit by <animal>pine-marten</animal>'s bed.</p>
+      <p>They could not get <persName>Cocoon-Man</persName>'s son, the one their mother had sent them for. <persName>Cocoon-Man</persName> would not listen to it, so they took <animal>pine-marten</animal>, and stayed three days with him. At the end of that time they wanted to go home. <animal>pine-marten</animal> asked all his people for blankets and shells to give his wives to carry home. They started. <persName>Cocoon-Man</persName> made a trail to the west to walk on. He sent his words out west, put his hand out west and east to make a trail, and immediately it was open. <persName>Cocoon-Man</persName> sat on the ground in the centre, and made a rainbow reaching from the place where he sat to the home of the girls.</p>
+      <p>The company started. <animal>Weasel</animal> went with <animal>pine-marten</animal> up to the top of the rainbow, and the women went under it. While they were travelling, <animal>Weasel</animal> made a flute out of a <plant>reed</plant>, and made sweet music that sounded through the world and was heard by every living being.</p>
+      <p>The two sisters walked on the lower rainbow, the reflection, and reached home safely. Next year <animal>pine-marten</animal> had children. He made a boy of bead-shells, and from a round shell which he threw into his wife a girl was born. In the spring of the second year, he came back on the same trail that <persName>Cocoon-Man</persName> had made. His children grew very fast. Then he left his boy at home, and sent his girl to her grandmother in the ocean. The boy stayed with <persName>Cocoon-Man</persName>. The third year he had two sons and two daughters.</p>
+      <p>Now <animal>pine-marten</animal>'s wife took one son and one daughter to her mother <pb n="284"/>in the ocean; and <animal>pine-marten</animal> kept one son and one daughter, and they lived with him at <placeName>Fall River</placeName>.</p>
+    </body>
+  </text>
+</TEI>
