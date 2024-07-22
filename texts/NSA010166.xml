@@ -1,0 +1,259 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Sun, the Frog, and the Firesticks</title>
+        <editor ref="p:Roth394" role="collector">Walter E. Roth</editor>
+        <editor ref="p:unidentified0" role="informant">unidentified</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="26">About 26 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NSA010166</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Roth, Walter E. (1915): An Inquiry into the Animism and Folk-Lore of the Guiana Indians. Extract from the Thirteenth Annual Report of the Bureau of American Ethnology, Washington, D.C.: Government Printing Office. Quot. pp. 130-133.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="30">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="20">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="3">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="25">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="0">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CSA36701">Warao</name>
+          <date notAfter="1913" notBefore="1906" type="recorded">Recorded sometime between 1906 and 1913.</date>
+        </setting>
+      </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <!-- link to our TMI once its online -->
+          <list>
+            <item>
+              <idno type="TMI">A512.4</idno>
+              <term>A512.4. Sun as father of culture hero.</term>
+            </item>
+            <item>
+              <idno type="TMI">A515.1.1</idno>
+              <term>A515.1.1. Twin culture heroes. (Cf. A511.1.2.1.)</term>
+            </item>
+            <item>
+              <idno type="TMI">A751.3</idno>
+              <term>A751.3. Frog in moon.</term>
+            </item>
+            <item>
+              <idno type="TMI">A1251+WS</idno>
+              <term>A1251+WS. Man carves daughter from tree.</term>
+            </item>
+            <item>
+              <idno type="TMI">A1414.2</idno>
+              <term>A1414.2. Origin of fire &#8211; found in person's own body.</term>
+            </item>
+            <item>
+              <idno type="TMI">A2782</idno>
+              <term>A2782. Origin of combustible property of wood.</term>
+            </item>
+            <item>
+              <idno type="TMI">B98</idno>
+              <term>B98. Mythical frog.</term>
+            </item>
+            <item>
+              <idno type="TMI">B200</idno>
+              <term>B200. Animals with human traits. See in general the literature dealing with fables, with the Romance of Reynard, with the bear-fox cycle of Europe, with the rabbit fox cycle of America, etc.</term>
+            </item>
+            <item>
+              <idno type="TMI">B341</idno>
+              <term>B341. Helpful animal's injunctions disobeyed. Disaster follows.</term>
+            </item>
+            <item>
+              <idno type="TMI">B530.1</idno>
+              <term>B530.1. Mythical frog as host to woman.</term>
+            </item>
+            <item>
+              <idno type="TMI">B535.0.6</idno>
+              <term>B535.0.6. Frog as nurse for child.</term>
+            </item>
+            <item>
+              <idno type="TMI">B620</idno>
+              <term>B620. Animal suitor.</term>
+            </item>
+            <item>
+              <idno type="TMI">B784.1.2</idno>
+              <term>B784.1.2. Person swallows pebble on beach; snake grows in stomach.</term>
+            </item>
+            <item>
+              <idno type="TMI">C921</idno>
+              <term>C921. Immediate death for breaking tabu. (Cf. C52, C51.3, C453, C533.)</term>
+            </item>
+            <item>
+              <idno type="TMI">D197</idno>
+              <term>D197. Transformation: man to lizard.</term>
+            </item>
+            <item>
+              <idno type="TMI">D420</idno>
+              <term>D420. Transformation: animal to object.</term>
+            </item>
+            <item>
+              <idno type="TMI">H335.5</idno>
+              <term>H335.5. Suitor task: to bring back food as a marriage present.</term>
+            </item>
+            <item>
+              <idno type="TMI">H973</idno>
+              <term>H973. Tasks performed by helpful forest spirits.</term>
+            </item>
+            <item>
+              <idno type="TMI">H1010</idno>
+              <term>H1010. Impossible tasks.</term>
+            </item>
+            <item>
+              <idno type="TMI">H1023.2.1</idno>
+              <term>H1023.2.1. Task: carrying water in leaky vessel.</term>
+            </item>
+            <item>
+              <idno type="TMI">R135</idno>
+              <term>R135. Abandoned children (wife, etc.) find way back by clue (bread-crumb, grain, pebble, etc.). They have dropped the objects while being led away.</term>
+            </item>
+            <item>
+              <idno type="TMI">R135.1.1</idno>
+              <term>R135.1.1. Feathers left to mark trail blown away by wind.</term>
+            </item>
+            <item>
+              <idno type="TMI">S37</idno>
+              <term>S37. Cruel foster son. (Cf. S22.1.1.)</term>
+            </item>
+            <item>
+              <idno type="TMI">S112</idno>
+              <term>S112. Burning to death. (See notes to K955 and Q414.)</term>
+            </item>
+            <item>
+              <idno type="TMI">T111.2.3</idno>
+              <term>T111.2.3. Sun has a woman for his wife.</term>
+            </item>
+            <item>
+              <idno type="TMI">T471</idno>
+              <term>T471. Rape.</term>
+            </item>
+            <item>
+              <idno type="TMI">T575.1</idno>
+              <term>T575.1. Child speaks in mother's womb.</term>
+            </item>
+            <item>
+              <idno type="TMI">T575.1.6</idno>
+              <term>T575.1.6. Child in mother's belly guides her.</term>
+            </item>
+            <item>
+              <idno type="TMI">T575.1.6.1</idno>
+              <term>T575.1.6.1. Unborn child directs his mother on journey.</term>
+            </item>
+            <item>
+              <idno type="TMI">T584.7</idno>
+              <term>T584.7. Hero is born by splitting mother's womb.</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><persName>Nahakoboni</persName> [lit., the one who eats plenty] was an old man who, never having had a daughter, was beginning to feel anxious about his declining years, for, unlike the other old people around, he of course had no son-in-law to care for him. He therefore carved a daughter for himself out of a <plant>plum tree</plant>, and being a medicine-man, so skilfully did he cut and carve the timber that by the time the task was completed there was indeed a woman lovely to gaze upon. Her name was <persName>Usi-diu</persName> [lit., <plant>seed-tree</plant>] and her physical charms were almost, but, as we shall presently see, not quite, perfect. So attractive was she that all the <animal>animals</animal>, <animal>bird</animal> and <animal>beast</animal>, came from far to court her, but the old man liked none of them, and when they asked him for her as wife he gave them a curt refusal. The old man had a very poor opinion of the abilities of these prospective sons-in-law. But when <persName>Yar</persName>, the Sun himself, stopped on his journey, and paid the old man a visit, it was quite clear what his purpose was, and proof was not long in coming that his advances would meet with encouragement.</p>
+      <p><persName>Nahakoboni</persName> thought he would try <persName>Yar</persName>'s mettle, and see what stuff he was made of. He told <persName>Yar</persName> to feed him, and made him fetch along all the barbecued meat that he had brought with him on his journey, and had left at the edge of the bush. He ate very heartily, as might have been expected from the name given him, leaving only a quarter of the meat for his visitor. He next told <persName>Yar</persName> to give him drink; the latter emptied a big jugful down his throat. His next order to <persName>Yar</persName> was to bring <pb n="131"/>him water to bathe with, and for this purpose gave him a quake.<note>It would seem to be an invariable practice with the Indians to bathe after a meal.</note> But when the poor fellow put the quake into the water-hole, and pulled it out again, the water of course all escaped; he tried many times, but it continued to escape. Just then he heard a rushing sound proceeding from the bush, and there appeared a Hebu: when the latter learned what he was trying to do, he offered his assistance, and made the water remain in the quake. The would-be bridegroom carried it to his prospective father-in-law, and bathed him. The old man then told <persName>Yar</persName> to shoot some <animal>fish</animal> for him; that he would find the corial at the waterside, a bench for it under the roots of a particular <plant>tree</plant>, and an arrow lying in the shade of another. It is true the corial was at the waterside; it was really lying under water and was a very heavy one - but the young man managed to haul it up at last, and then bail it out. Proceeding to the particular <plant>tree</plant> indicated, and looking in and among the roots he was surprised and frightened at seeing an <animal>alligator</animal> there; he held on to its neck, and it changed into a bench which fitted the boat.<note>A very common form of house-bench is one in the shape of this reptile.</note> In the shade of the other <plant>tree</plant> he was similarly taken aback when a big <animal>snake</animal> came into view; he seized its neck, however, and it changed into a <animal>fish</animal>-arrow. The old man now joined him; they got into the corial and paddled down the stream. "I want some <animal latin="Cichla ocellaris sp.">kwabaihi</animal><note>The name of a big species of lukunanni (Cichla ocellaris).</note> fish," said the old man, "but you must not look into the water. Shoot up into the air." His companion did as he was told, and so skilful was he with the bow that the arrow pierced the <animal>fish</animal> and killed it. So big was the <animal>fish</animal> that when hauled in it almost sunk the corial; they managed to get it home, however.</p>
+      <p>The old man was now thoroughly satisfied with <plant>plum-tree</plant>'s worth, and gave him his <plant>plum-tree</plant> daughter, <persName>Usidiu</persName>. Next morning the young couple went out hunting in the bush.<note>Previous to the advent of civilizing influences among the Indians, the jus connubii was usually exercised during the waking hours.</note> When they returned late in the afternoon, father and daughter had a long and earnest conversation of a private and somewhat delicate nature, the outcome of which was that the old man learnt for the first time that the masterpiece upon which he had expended so much time, skill, and cunning, was not quite perfect. Her husband had found fault with her. Hunting was resumed the following day; a private conversation was again held in the late afternoon, the result of which showed clearly that the fault complained of still remained. The distracted father could only assure her that he could do nothing further to render her acceptable to his son-in-law. When the latter heard this, he consulted a <animal latin="Opistho comus">b&#250;-nia bird</animal> [Opistho comus], whom he brought back with him next day. While being nursed and fed in the girl's lap, the wretched <animal>bird</animal> forcibly took a very mean advantage of her innocence, and then flew away. This outrage having been brought to the knowledge of the father, he determined upon giving his daughter one more trial, with the result that he succeeded in removing a <animal>snake</animal> from the complained-of part of her person. The difficulty was now remedied and the young woman went once more to join her husband. The following afternoon, on their return from the usual hunt, father and daughter met again in private conversation. Happy girl! - her husband was quite satisfied with her, having no complaint whatever to make.</p>
+      <p>Now although the old man purposely evinced no signs of ill-will, he was greatly displeased with his son-in-law, not only for expressing discontent with the piece of sculpture when it first came into his possession, but also for having allowed the <animal>bunia bird</animal> to tinker with it. He bided his time, waiting for his revenge to come when the young man should complete the customary marriage tasks - the cutting of a field, and the building of a house for him. It was not long before <persName>Yar</persName> commenced cutting the field: he worked at it early, he worked at it late, and at last told his wife to let her father know that it was ready for his inspection. The old man went to have a <pb n="132"/>look and on his return home told his daughter that he found fault with it. The young couple then went off to inspect the field on their own account; they were much surprised to see all the <plant>trees</plant> and <plant>bushes</plant> standing there, just as luxuriant as before, little dreaming that <persName>Nahakoboni</persName> by means of his "medicine" had caused this rapid growth to take place only the night before. <persName>Yar</persName> had therefore to cut another and a bigger field, and just the same thing happened as before, the old father again expressing himself in terms of strong disapproval. "How is this?" said <persName>Yar</persName> to his wife. "I have cut a field twice, and yet the old man is not satisfied with it." She thereupon advised him to cut a third field, but on this occasion suggested, in addition, his pulling out all the stumps by their roots. Having cut the third field, he started pulling up the stumps; it is true that he started on many, but he did not succeed in pulling out one! He fell down exhausted. By and by, his old friend the Hebu put in an appearance, and seeing his distress, offered to do the job for him, advising him to return home at once and to tell his wife that the field was now thoroughly cleared. <persName>Nahakoboni</persName> went next morning to inspect, and planted the field with <plant>cassava</plant>, <plant>plantains</plant>, and all other useful <plant>plants</plant>; he returned in the evening, but spake never a word. This made <persName>Yar</persName> suspicious, so getting up early the following day, he was much surprised to find in place of an empty field, a beautiful crop of ripe <plant>cassava</plant>, <plant>plantains</plant>, and all the other good things that his belly might yearn for. But anger still rankled in the old man's breast, so that when his son-in-law started on and completed his other marriage task, the building of a house, the old man again found fault, pulled it down, and said he wanted it built stronger. <persName>Yar</persName> accordingly rebuilt it with <plant latin="Peltogyne">purple-heart</plant> - the hardest timber he could find. <persName>Nahakoboni</persName>, pleased at last, took charge of the house, and lived there.</p>
+      <p><persName>Yar</persName>, the Sun, was now free to look after his own domestic affairs, and being well satisfied with his wife, they lived very, very happily together. One day he told her he proposed taking a journey to the westward, but that as she was now pregnant, she had better travel at her leisure; she would not be able to keep pace with him. He would start first, and she must follow his tracks; she must always take the right-hand track; he would scatter feathers on the left so that she could make no mistake. Accordingly, next morning when she commenced her journey, there was no difficulty in finding her way, by avoiding the feathers, but by and by she arrived at a spot where the wind had blown them away, and then the trouble began.<note>In Sect. 223 there is mentioned a connection between certain feathers and loss of memory.</note> What was the poor woman to do now that she had lost her way? Her very motherhood proved her salvation, because her unborn babe began talking, and told her which path to follow. And as she wandered on and ever on, her child told her to pluck the pretty <plant>flowers</plant> whose little heads bobbed here and there over the roadway.<note>Dance (p. 340) in connection with the Makusi, says, "she plucked pretty leaves and <plant>flowers</plant> and placed them in her girdle ... the same as we do now when our pregnant wives travel with us."</note> She had picked some of the <color>red</color> and <color>yellow</color> ones, when a <animal>marabunta [wasp]</animal> happened to sting her below the waist; in trying to kill it she missed the <animal>insect</animal> and struck herself. The unborn baby, however, misinterpreted her action, and thinking that it was being smacked, became vexed and refused any longer to show its mother which direction to pursue. The result was that the poor woman got hopelessly astray, and at last more dead than alive found herself in front of a very large house whose only occupant was <persName>Nanyobo</persName> [lit. a big kind of <animal>frog</animal>], a very old and very big woman. Saying "how day" to each other, the visitor was asked her business. She was trying to find her husband the Sun, but she had lost the road, and she was so very weary. <persName>Nanyobo</persName>, the <animal>Frog</animal>, therefore bade the woman welcome, and giving her to eat and drink and telling her to be seated, squatted on the ground close, and asked her to clean her host's head. "But mind," continued the old woman, "don't put the <animal>insects</animal> into your mouth, because they will poison you." Our wanderer, however, overcome with fatigue <pb n="133"/>and anxiety, forgot all about the injunction, and picking out a <animal>louse</animal>, placed it, as is customary with the Indians, between her teeth. But no sooner had she done so, than she fell dead.<note>For further reference to <animal>head-lice</animal> in legendary lore, see PE, 78, 82.</note></p>
+      <p>Old <persName>Nanyobo</persName> thereupon slashed open the mother, and extracted not one child, but two; a pair of beautiful boys, <persName>Makunaima</persName> and <persName>Pia</persName>. <persName>Nanyobo</persName> proved a dear, kind foster-mother and minded them well. As the babies grew larger, they commenced shooting <animal>birds</animal>; when still bigger they went to the waterside and shot <animal>fish</animal> and <animal>game</animal>. On each occasion when they shot <animal>fish</animal>, the old woman would say, "You must dry your <animal>fish</animal> in the sun, and never over a fire;" but what was curious was that she would invariably send them to fetch firewood, and by the time that they had returned with it, there would be the <animal>fish</animal> all nicely cooked and ready for them. As a matter of fact, she would vomit fire out of her mouth, do her cooking, and lick the fire up again before the lads' return; she apparently never had a fire burning for them to see.<note>I find it to be well known among the Indians that certain kinds of <animal>frogs</animal>, after <color>dark</color>, can be made to swallow glowing embers, which are then probably mistaken for various luminous <animal>insects</animal>. - W. E. R.</note> The repetition of this sort of thing day after day made the boys suspicious; they could not understand how the old lady made her fire, and accordingly determined to find out. On the next occasion that they were despatched to bring firewood, one of them, when at a safe distance from the house, changed himself into a <animal>lizard</animal>, and turning back, ran up into the roof whence he could get a good view of everything that was going on. What did he see? He not only saw the old woman vomit out fire, use it, and lick it up again, but he watched her scratch her neck, whence flowed something like <plant latin="Mimusops balata">balata</plant> [Mimusops balata] milk, out of which she prepared starch. Sufficiently satisfied with what he had witnessed, he came down, and ran after his brother. They discussed the matter carefully, the result of their deliberations being summarized in the somewhat terse expression, "What old woman do, no good. Kill old woman." This sentiment was carried into execution. Clearing a large field, they left in its very center a fine <plant>tree</plant>, to which they tied her; then, surrounding her on all sides with stacks of timber, the boys set them on fire. As the old woman gradually became consumed, the fire which used to be within her passed into the surrounding fagots. These fagots happened to be <plant>hima-heru</plant> wood, and whenever we rub together two sticks of this same timber we can get fire.</p>
+    </body>
+  </text>
+</TEI>
