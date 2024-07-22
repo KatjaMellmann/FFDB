@@ -19,7 +19,7 @@
         </respStmt>
       </titleStmt>
       <extent>
-        <measure unit="KB" quantity="12">About 12 kilobytes</measure>
+        <measure unit="KB" quantity="13">About 13 kilobytes</measure>
       </extent>
       <publicationStmt>
         <authority>The Forager Folklore Database</authority>
@@ -124,6 +124,10 @@
             <item>
               <idno type="TMI">D1001</idno>
               <term>D1001. Magic spittle.</term>
+            </item>
+            <item>
+              <idno type="TMI">D1611</idno>
+              <term>D1611. Magic object answers for fugitive. Left behind to impersonate fugitive and delay pursuit.</term>
             </item>
             <item>
               <idno type="TMI">E586</idno>
