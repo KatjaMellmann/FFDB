@@ -1,0 +1,157 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Dinewan the Emu, and Goomblegubbon the Bustard</title>
+        <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor>
+        <editor ref="p:unidentified0" role="informant">unidentified</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="19">About 19 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NIP028560</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade. Quot. pp. 1-5.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="85">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="4">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="0">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="0">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="1">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CIPD0270">Yuwaalaraay</name>
+          <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
+        </setting>
+      </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <!-- link to our TMI once its online -->
+          <list>
+            <item>
+              <idno type="TMI">A2284.1</idno>
+              <term>A2284.1. Animal persuaded to amputate limb: therefore lacks it. (Cf. A2371.2.10, A2377.1.)</term>
+            </item>
+            <item>
+              <idno type="TMI">A2284.2</idno>
+              <term>A2284.2. Bustard persuaded to kill all but two children: has but two eggs. (Cf. A2486.2.)</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><animal><ref target="g:GIP0247.047">Dinewan</ref></animal> the <animal>emu</animal>, being the largest <animal>bird</animal>, was acknowledged as king by the other <animal>birds</animal>. The <animal><ref target="g:GIP0247.072">Goomblegubbons</ref></animal>, the <animal>bustards</animal>, were jealous of the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal>. Particularly was <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal>, the mother, jealous of the <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> mother. She would watch with envy the high flight of the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal>, and their swift running. And she always fancied that the <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> mother flaunted her superiority in her face, for whenever <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> alighted near <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal>, after a long, high flight, she would flap her big wings and begin booing in her pride, not the loud booing of the male <animal>bird</animal>, but a little, triumphant, satisfied booing noise of her own, which never failed to irritate <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> when she heard it.</p>
+      <p><animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> used to wonder how she could put an end to <animal><ref target="g:GIP0247.047">Dinewan</ref></animal>'s supremacy. She decided that she would only be able to do so by injuring her wings and checking her power of flight. But the question that troubled her was how to effect this end. She knew she would gain nothing by having a quarrel with <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> and fighting <pb n="2"/> her, for no <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> would stand any chance against a <animal><ref target="g:GIP0247.047">Dinewan</ref></animal>. There was evidently nothing to be gained by an open fight. She would have to effect her end by cunning.</p>
+      <p>One day, when <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> saw in the distance <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> coming towards her, she squatted down and doubled in her wings in such a way as to look as if she had none. After <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> had been talking to her for some time, <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> said: "Why do you not imitate me and do without wings? Every <animal>bird</animal> flies. The <animal><ref target="g:GIP0247.047">Dinewans</ref></animal>, to be the king of <animal>birds</animal>, should do without wings. When all the <animal>birds</animal> see that I can do without wings, they will think I am the cleverest <animal>bird</animal> and they will make a <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> king."</p>
+      <p>"But you have wings," said <animal><ref target="g:GIP0247.047">Dinewan</ref></animal>.</p>
+      <p>"No, I have no wings." And indeed she looked as if her words were true, so well were her wings hidden, as she squatted in the <plant>grass</plant>. <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> went away after awhile, and thought much of what she had heard. She talked it all over with her mate, who was as disturbed as she was. They made up their minds that it would never do to let the <animal><ref target="g:GIP0247.072">Goomblegubbons</ref></animal> reign in their stead, even if they had to lose their wings to save their kingship.</p>
+      <p>At length they decided on the sacrifice of their wings. The <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> mother showed the example by persuading her mate to cut off hers with a <ref target="g:GIP0247.034">combo</ref> or stone tomahawk, and then she did the same to his. As soon as the operations were over, the <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> mother lost no time in letting <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> know what they had done. She ran swiftly down to the plain on which she had left <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal>, and, finding her still squatting there, <pb n="3"/>she said: "See, I have followed your example. I have now no wings. They are cut off."</p>
+      <p>"Ha! ha! ha!" laughed <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal>, jumping up and dancing round with joy at the success of her plot. As she danced round, she spread out her wings, flapped them, and said: "I have taken you in, old stumpy wings. I have my wings yet. You are fine <animal>birds</animal>, you <animal><ref target="g:GIP0247.047">Dinewans</ref></animal>, to be chosen kings, when you are so easily taken in. Ha! ha! ha!" And, laughing derisively, <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> flapped her wings right in front of <animal><ref target="g:GIP0247.047">Dinewan</ref></animal>, who rushed towards her to chastise her treachery. But <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> flew away, and, alas, the now wingless <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> could not follow her.</p>
+      <p>Brooding over her wrongs, <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> walked away, vowing she would be revenged. But how? That was the question which she and her mate failed to answer for some time. At length the <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> mother thought of a plan and prepared at once to execute it. She hid all her young <animal><ref target="g:GIP0247.047">Dinewans</ref></animal> but two, under a big salt <plant>bush</plant>. Then she walked off to <animal><ref target="g:GIP0247.072">Goomblegubbons</ref></animal>' plain with the two young ones following her. As she walked off the <placeName><ref target="g:GIP0247.100">Morilla</ref> ridge</placeName>, where her home was, on to the plain, she saw <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> out feeding with her twelve young ones.</p>
+      <p>After exchanging a few remarks in a friendly manner with <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal>, she said to her, "Why do you not imitate me and only have two children? Twelve are too many to feed. If you keep so many they will never grow big <animal>birds</animal> like the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal>. The food that would make big <animal>birds</animal> of two would only starve twelve." <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> said nothing, but she thought it might be so. It was impossible to deny that the young <animal><ref target="g:GIP0247.047">Dinewans</ref></animal> were <pb n="4"/>much bigger than the young <animal><ref target="g:GIP0247.072">Goomblegubbons</ref></animal>, and, discontentedly, <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> walked away, wondering whether the smallness of her young ones was owing to the number of them being so much greater than that of the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal>. It would be grand, she thought, to grow as big as the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal>. But she remembered the trick she had played on <animal><ref target="g:GIP0247.047">Dinewan</ref></animal>, and she thought that perhaps she was being fooled in her turn. She looked back to where the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal> fed, and as she saw how much bigger the two young ones were than any of hers, once more mad envy of <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> possessed her. She determined she would not be outdone. Rather would she kill all her young ones but two. She said, "The <animal><ref target="g:GIP0247.047">Dinewans</ref></animal> shall not be the king <animal>birds</animal> of the plains. The <animal><ref target="g:GIP0247.072">Goomblegubbons</ref></animal> shall replace them. They shall grow as big as the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal>, and shall keep their wings and fly, which now the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal> cannot do." And straightway <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> killed all her young ones but two. Then back she came to where the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal> were still feeding. When <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> saw her coming and noticed she had only two young ones with her, she called out: "Where are all your young ones?"</p>
+      <p><animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> answered, "I have killed them, and have only two left. Those will have plenty to eat now, and will soon grow as big as your young ones."</p>
+      <p>"You cruel mother to kill your children. You greedy mother. Why, I have twelve children and I find food for them all. I would not kill one for anything, not even if by so doing I could get back my wings. There is plenty for all. Look at the emu <plant>bush</plant> how it covers itself with berries to feed my big family. See how the <animal>grasshoppers</animal> come hopping round, so that we can catch them and fatten on them."</p>
+      <p><pb n="5"/>"But you have only two children."</p>
+      <p>"I have twelve. I will go and bring them to show you." <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> ran off to her salt <plant>bush</plant> where she had hidden her ten young ones. Soon she was to be seen coming back. Running with her neck stretched forward, her head thrown back with pride, and the feathers of her <ref target="g:GIP0247.014">boobootella</ref> swinging as she ran, booming out the while her queer throat noise, the <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> song of joy, the pretty, soft-looking little ones with their <animal>zebra</animal> striped skins, running beside her whistling their baby <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> note. When <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> reached the place where <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> was, she stopped her booing and said in a solemn tone, "Now you see my words are true, I have twelve young ones, as I said. You can gaze at my loved ones and think of your poor murdered children. And while you do so I will tell you the fate of your descendants for ever. By trickery and deceit you lost the <animal><ref target="g:GIP0247.047">Dinewans</ref></animal> their wings, and now for evermore, as long as a <animal><ref target="g:GIP0247.047">Dinewan</ref></animal> has no wings, so long shall a <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal> lay only two eggs and have only two young ones. We are quits now. You have your wings and I my children."</p>
+      <p>
+        <epimyth>And ever since that time a <animal><ref target="g:GIP0247.047">Dinewan</ref></animal>, or <animal>emu</animal>, has had no wings, and a <animal><ref target="g:GIP0247.072">Goomblegubbon</ref></animal>, or <animal>bustard</animal> of the plains, has laid only two eggs in a season.</epimyth>
+      </p>
+    </body>
+  </text>
+</TEI>
