@@ -117,6 +117,21 @@
           <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
         </setting>
       </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <!-- link to our TMI once its online -->
+          <list>
+            <item>
+              <idno type="TMI">A761</idno>
+              <term>A761. Ascent to stars. People or animals ascend to the sky and become stars.</term>
+            </item>
+            <item>
+              <idno type="TMI">C221.2</idno>
+              <term>C221.2. Eating totem animal (or animal namesake).</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
     </profileDesc>
   </teiHeader>
   <text>
