@@ -1,0 +1,151 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Gwineeboos the Redbreasts</title>
+        <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor>
+        <editor ref="p:unidentified0" role="informant">unidentified</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="16">About 16 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NIP028736</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade. Quot. pp. 35-39.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="72">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="3">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="1">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="0">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="0">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CIPD0270">Yuwaalaraay</name>
+          <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> and <animal><ref target="g:GIP0247.071">Goomai</ref></animal>, the <animal>water rat</animal>, were down at the creek one day, getting <animal>mussels</animal> for food, when, to their astonishment, a <animal>kangaroo</animal> hopped right into the water beside them. Well they knew that he must be escaping from hunters, who were probably pressing him close. So <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> quickly seized her yam stick, and knocked the <animal>kangaroo</animal> on the head; he was caught fast in the <plant>weeds</plant> in the creek, so could not escape. When the two old women had killed the <animal>kangaroo</animal> they hid its body under the <plant>weeds</plant> in the creek, fearing to take it out and cook it straight away, lest the hunters should come up and claim it. The little son of <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> watched them from the bank. After having hidden the <animal>kangaroo</animal>, the women picked up their <animal>mussels</animal> and started for their camp, when up came the hunters, <animal><ref target="g:GIP0247.116">Quarrian</ref></animal> and <animal><ref target="g:GIP0247.060">Gidgereegah</ref></animal>, who had tracked the <animal>kangaroo</animal> right to the creek.</p>
+      <p>Seeing the women they said: "Did you see a <animal>kangaroo</animal>?"</p>
+      <p>The women answered: "No. We saw no <animal>kangaroo</animal>."</p>
+      <p>"That is strange, for we have tracked it right up to here."</p>
+      <p><pb n="36"/>"We have seen no <animal>kangaroo</animal>. See, we have been digging out <animal>mussels</animal> for food. Come to our camp, and we will give you some when they are cooked."</p>
+      <p>The young men, puzzled in their minds, followed the women to their camp, and when the <animal>mussels</animal> were cooked the hunters joined the old women at their dinner. The little boy would not eat the <animal>mussels</animal>; he kept crying to his mother, "<animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal>, <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal>. I want <animal>kangaroo</animal>. I want <animal>kangaroo</animal>. <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal>. <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal>."</p>
+      <p>"There," said <animal><ref target="g:GIP0247.116">Quarrian</ref></animal>. "Your little boy has seen the <animal>kangaroo</animal>, and wants some; it must be here somewhere."</p>
+      <p>"Oh, no. He cries for anything he thinks of, some days for <animal>kangaroo</animal>; he is only a little boy, and does not know what he wants," said old <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal>. But still the child kept saying, "<animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal>. <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal>. I want <animal>kangaroo</animal>. I want <animal>kangaroo</animal>." <animal><ref target="g:GIP0247.071">Goomai</ref></animal> was so angry with little <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> for keeping on asking for <animal>kangaroo</animal>, and thereby making the young men suspicious, that she hit him so hard on the mouth to keep him quiet, that the blood came, and trickled down his breast, staining it <color>red</color>. When she saw this, old <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> grew angry in her turn, and hit old <animal><ref target="g:GIP0247.071">Goomai</ref></animal>, who returned the blow, and so a fight began, more words than blows, so the noise was great, the women fighting, little <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> crying, not quite knowing whether he was crying because <animal><ref target="g:GIP0247.071">Goomai</ref></animal> had hit him, because his mother was fighting, or because he still wanted <animal>kangaroo</animal>.</p>
+      <p><animal><ref target="g:GIP0247.116">Quarrian</ref></animal> said to <animal><ref target="g:GIP0247.060">Gidgereegah</ref></animal>: "They have the <animal>kangaroo</animal> somewhere hidden; let us slip away now in the confusion. We will only hide, then come back in a little while, and surprise them."</p>
+      <p><pb n="37"/>They went quietly away, and as soon as the two women noticed they had gone, they ceased fighting, and determined to cook the <animal>kangaroo</animal>. They watched the two young men out of sight, and waited some time so as to be sure that they were safe. Then down they hurried to get the <animal>kangaroo</animal>. They dragged it out, and were just making a big fire on which to cook it, when up came <animal><ref target="g:GIP0247.116">Quarrian</ref></animal> and <animal><ref target="g:GIP0247.060">Gidgereegah</ref></animal>, saying:</p>
+      <p>"Ah! we thought so. You had our <animal>kangaroo</animal> all the time; little <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> was right."</p>
+      <p>"But we killed it," said the women.</p>
+      <p>"But we hunted it here," said the men, and so saying caught hold of the <animal>kangaroo</animal> and dragged it away to some distance, where they made a fire and cooked it. <animal><ref target="g:GIP0247.071">Goomai</ref></animal>, <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal>, and her little boy went over to <animal><ref target="g:GIP0247.116">Quarrian</ref></animal> and <animal><ref target="g:GIP0247.060">Gidgereegah</ref></animal>, and begged for some of the meat, but the young men would give them none, though little <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> cried piteously for some. But no; they said they would rather throw what they did not want to the <animal>hawks</animal> than give it to the women or child. At last, seeing that there was no hope of their getting any, the women went away. They built a big <ref target="g:GIP0247.041">dardurr</ref> for themselves, shutting themselves and the little boy up in it. Then they began singing a song which was to invoke a storm to destroy their enemies, for so now they considered <animal><ref target="g:GIP0247.116">Quarrian</ref></animal> and <animal><ref target="g:GIP0247.060">Gidgereegah</ref></animal>. For some time they chanted:</p>
+      <lg type="song">
+        <l>"<ref target="g:GIP0247.095">Moogaray</ref>, <ref target="g:GIP0247.095">Moogaray</ref>, <ref target="g:GIP0247.089">May</ref>, <ref target="g:GIP0247.089">May</ref>, </l>
+        <l><ref target="g:GIP4128.054">Eehu</ref>, <ref target="g:GIP4128.054">Eehu</ref>, <ref target="g:GIP0247.050">Doongarah</ref>." </l>
+      </lg>
+      <p>First they would begin very slowly and softly, gradually getting quicker and louder, until at length they almost <pb n="38"/>shrieked it out. The words they said meant, "Come hailstones; come wind; come rain; come lightning."</p>
+      <p>While they were chanting, little <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> kept crying, and would not be comforted. Soon came a few big drops of rain, then a big wind, and as that lulled, more rain. Then came thunder and lightning, the air grew bitterly cold, and there came a pitiless hailstorm, hailstones bigger than a <animal>duck</animal>'s egg fell, cutting the leaves from the <plant>trees</plant> and bruising their bark. <animal><ref target="g:GIP0247.060">Gidgereegah</ref></animal> and <animal><ref target="g:GIP0247.116">Quarrian</ref></animal> came running over to the <ref target="g:GIP0247.041">dardurr</ref> and begged the women to let them in.</p>
+      <p>"No," shrieked <animal><ref target="g:GIP0247.081">Gwineeboo</ref></animal> above the storm, "there was no kangaroo meat for us: there is no <ref target="g:GIP0247.041">dardurr</ref> shelter for you. Ask shelter of the <animal>hawks</animal> whom ye fed." The men begged to be let in, said they would hunt again and get <animal>kangaroo</animal> for the women, not one but many. "No," again shrieked the women. "You would not even listen to the crying of a little child; it is better such as you should perish." And fiercer raged the storm and louder sang the women:</p>
+      <lg type="song">
+        <l>"<ref target="g:GIP0247.095">Moogaray</ref>, <ref target="g:GIP0247.095">Moogaray</ref>, <ref target="g:GIP0247.089">May</ref>, <ref target="g:GIP0247.089">May</ref>, </l>
+        <l><ref target="g:GIP4128.054">Eehu</ref>, <ref target="g:GIP4128.054">Eehu</ref>, <ref target="g:GIP0247.050">Doongarah</ref>." </l>
+      </lg>
+      <p>So long and so fierce was the storm that the young men <pb n="39"/>must have perished had they not been changed into <animal>birds</animal>. First they were changed into <animal>birds</animal> and afterwards into stars in the sky, <epimyth>where they now are, <animal><ref target="g:GIP0247.060">Gidgereegah</ref></animal> and <animal><ref target="g:GIP0247.116">Quarrian</ref></animal> with the <animal>kangaroo</animal> between them, still bearing the names that they bore on the earth.</epimyth></p>
+    </body>
+  </text>
+</TEI>
