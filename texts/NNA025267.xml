@@ -1,0 +1,142 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kangaroo-Rat Races with Coyote and Others</title>
+        <editor ref="p:Curtin1091" role="collector">Jeremiah Curtin</editor>
+        <editor ref="p:unidentified0" role="informant">unidentified</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="11">About 11 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NNA025267</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Curtin, Jeremiah/Dixon, Roland B. (1909): Achomawi Myths. In: The Journal of American Folk-Lore 22(85), 283-287. Quot. pp. 284-285.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="18">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="1">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="0">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="1">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="0">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CNA29602">Achumawi</name>
+          <date notAfter="1906" notBefore="1835" type="recorded">Recorded sometime between 1835 and 1906.</date>
+        </setting>
+      </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <!-- link to our TMI once its online -->
+          <list>
+            <item>
+              <idno type="TMI">H331.5</idno>
+              <term>H331.5. Suitor contest: race.</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Two <animal>Kangaroo-Rat</animal> women, a mother and her daughter, lived near <animal>Coyote</animal>'s place. Now the people at this place hunted all the time, but never sent any meat to the old woman. She said, "It is best to get a man to hunt for us. I do not like these people; they are too proud." Her daughter said, "I will run a race with these men, and I'll bet myself against a man. I'll win and have a husband."</p>
+      <p>The next morning the girl went over to <animal>Coyote</animal>'s house when the men were just through breakfast. She went on top of the sweat-house and called out, "I want to run a race with one of your boys; to-day I feel like running."</p>
+      <p><animal>Coyote</animal> said, "All right. The chief men always run first. I will run with you first." He went out, and they started towards the north, and ran until he fell down dead. The girl came home, and that night <persName>Cocoon-Man</persName> said, "I know what she is trying to do. When women want to marry us, they always kill us first. These are bad women."</p>
+      <p>Next day she came to the house, and asked again to run with a man. <animal>Badger</animal> ran with her. He ran northward, turned to come back, reached a mountain-top, and died. Next day <animal>Silver-Fox</animal> went out to run with her. He ran far to the north, came back halfway, and fell dead. <animal>Ground-Squirrel</animal> ran, came halfway home, and died. <animal>Kangaroo-Rat</animal> was coming home slowly. She came more slowly each time. First she had always returned in the middle of the morning, but this time she was back about noon. The mother thought, "My daughter will fail. I am afraid she gets tired too easily." The girl ran the next day with <animal>Wolf</animal>, but he died, and she reached home still later.</p>
+      <p>Now she had killed all but three men. <animal>Pine-Marten</animal> ran the next day. They kept together. The girl thought he was going to win; but when he came into the valley and almost reached home, he fell dead. The last men left were <animal>Weasel</animal> and his brother from the mountain. They were angry because <animal>Pine-Marten</animal> had been killed. They were going to take an otter-skin quiver. One of the brothers was to rest in it; so when the other became tired, this one would jump out and carry the tired one. When then the other one had rested and was fresh, he would jump out and take his turn. Thus they would run and carry each other alternately. The two looked just alike, and the girl thought she was running with one. The mountain brother of <animal>Weasel</animal> sang. They ran near the girl all the time. They found the bones of <animal>Coyote</animal>, picked them up, and put them in the otter-skin quiver. They came to the other bones and picked them up also. While they were picking up the bones, the girl, thinking she had beaten <animal>Weasel</animal>, turned and looked <pb n="285"/>back. He called out, "Don't look back. I can outrun you. Girls cannot run fast." She was frightened at his words, and ran on as fast as possible. When one brother was tired, the other came out, and the first went into the quiver. <animal>Weasel</animal> called out, "Run fast, I am going to beat you." Now the girl began to give out. While <animal>Weasel</animal> was running, she thought she noticed a difference in the song, and looked back. He called out, "Go on fast!" It was near sundown now. The old woman saw them coming. The two <animal>Weasel</animal> brothers as one, reached the sweathouse first. The young woman went with them to their sweat-house, and did not go back to her mother. That evening they put the bones in water, and the dead all came to life. The girl went in the morning to her mother's house to get <plant>roots</plant>, and the men went hunting. She always sent plenty of meat to her mother after that.</p>
+    </body>
+  </text>
+</TEI>
