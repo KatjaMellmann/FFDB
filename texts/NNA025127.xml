@@ -1,0 +1,131 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hawk-Man</title>
+        <editor ref="p:Dixon1051" role="collector">Roland B. Dixon</editor>
+        <editor ref="p:OldWool4761" role="informant">"Old Wool"</editor>
+        <editor ref="p:CharleyGreen4760" role="informant">Charley Green</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="14">About 14 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NNA025127</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Dixon, Roland B. (1908): Achomawi and Atsugewi Tales. In: The Journal of American Folk-Lore 21(81), 159-177. Quot. pp. 163-165.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="30">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="5">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="0">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="0">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="1">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CNA29602">Achumawi</name>
+          <date notAfter="1903" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1903.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Sun had a wife, Shell-Woman. She said to her husband, "There are two chiefs living over there. Let our children go and marry them." So Sun agreed; and Shell-Woman said, "Now, go ye! There are many chiefs there. They have much to eat. Ye must go to <animal>Pine-Marten</animal>. He is the best." Then the sisters got ready, put in their pack-baskets of shell, <animal>salmon</animal> and <plant>acorn</plant>-bread and <plant>manzanita</plant>-berries for food, and came from the west hitherward, across the Fall River. As they came around the point of woods in the valley, <animal>Coyote</animal> was burning down a <plant>tree</plant>, and saw them. The youngest sister knew at once who he was, but the oldest fell in love at once. The youngest said, "Go on! Don't stop! That is <animal>Coyote</animal>." Then <animal>Coyote</animal> said to himself, "I wish that she should not know who I am," and ran ahead, calling for all kinds of fine clothing to come to him. At once they were there, at his hand, and, putting them on, he disguised himself so that he looked different, covering up a dimple which he had. But when he again met the sisters, the youngest knew him again at once. She said, "Go on! Don't stop! That is <animal>Coyote</animal>." So they went on.</p>
+      <p>By and by they saw smoke rising. "Some one lives there. Let us go and visit, and find out where to go." So they went, and found in the house <animal>Hawk</animal>-Man. He was a shaman, and lay with his back to the fire. "Where do you come from?" he said. "Where are you going?" - "Our father and mother told us to go to <placeName>Plat&#700;thtau&#700;ika</placeName>," said the oldest, "to the <animal>Pine-Marten</animal> brothers, who defecate only dentalia. To them they told us to go." - "Ah!" said <animal>Hawk</animal>-Man, "I think they must have meant me. I am Hawk-Man, and I defecate only beads. I am a chief. I go out to hunt, and send my people out to hunt and get wood. What kind of a house did your father say this man lived in to whom you were going?" Then the oldest sister said, "At the house there is a post on which hangs a bear-hide, they told us." - "Yes," said <animal>Hawk</animal>-Man, "I am the one they meant. The bear-hide hangs there. Wait a moment, I will prove to you that I am the one. Hold out your caps." Then they held out their caps, and he ran up and defecated in them. He defecated rattles into the caps. Then he said, "Close your eyes," and they did so; and when they heard the rattling, they thought it was dentalia. And Hawk-Man said, "Let us go!" and they said, "Yes."</p>
+      <p>They put on their packs and started. "Do ye go slowly. I will go on ahead." So they went; and he hurried on, and reached there first. The post with the bear-hide was standing outside the door of the house opposite his, and so he quickly pulled it up and set it by his door. Then the sisters arrived, and saw the post and the hide, and went at once to <pb n="164"/>his house and took off their packs. Now, <animal>Hawk</animal>-Man had a wife; and he told her to go over and sit on the opposite side of the house, and not to call him husband, but son. And she promised. When the sisters came in, <animal>Hawk</animal>-Man told them to sit in the wife's place, and they did. Then people came, bringing <animal>deer</animal>, and piled it up, and sent a boy to <animal>Hawk</animal>-Man's to call him. When the boy came, <animal>Hawk</animal>-Man made a noise with some dried <plant>grass</plant>, so that the sisters should not hear what the boy said. Then he told them that he had to go out to divide up the meat. "I only took what I wanted for myself before, for I had no wife," he said. "Now I shall have to bring more." So he went out, and took a basket with him. Going over to where the people were, he sat down, and opened his mouth. As they ate their meat, they tossed the bones to him, and he swallowed them; while they joked him, saying, "Did you hear that some girls were coming to marry you?" Then they laughed. After they had finished, he went off, sat down behind the house, and sliced the flesh off of his thighs, and put it into the basket. He carried it back, and his wives cooked the meat; and although it smelled and tasted very badly, yet they ate it, thinking it was <animal>deer</animal>. Then they went to sleep. In the morning he went off, as he said, to hunt, but instead cut off more of his flesh, and put it and his entrails into the basket. In the evening when he got back, his wives again cooked the meat, and ate. Again the boy came and called him to come out, and, as before, he made a noise so that the women should not hear. He went out, and the people threw him bones, taunting him as they had the previous night. Meanwhile the youngest sister crawled softly after him, and saw what was going on, and came back and told her sister. "You always do what you want. You will not take advice. I know that the chief we were to marry lives opposite. This man we live with came on ahead of us, he took down the bear-hide, and brought it over here." Then <animal>Hawk</animal>-Man came in again with his basket of flesh, but they would not eat any.</p>
+      <p>In the morning he went off to hunt again. Then the two sisters destroyed their children, dressed themselves up finely, took their baskets, and went out. They went across to the other house, and, going in, sat down by <animal>Pine-Marten</animal>'s side. By and by the people came in from the hunt, and brought <animal>deer</animal>. They skinned and cut it up, cooked it, and ate supper. <animal>Weasel</animal>, however, did not like it that these two women, <animal>Hawk</animal>-Man's wives, should sit by his brother <animal>Pine-Marten</animal>. But <animal>Marten</animal> just sat there and said nothing, but smoked <plant>marrow</plant> all the time. Meanwhile <animal>Hawk</animal>-Man came back, and found that his wives had gone. He grew very angry, and at once put on his shaman's ornaments, and began to dance, and to sing, "K&#275;tj k&#275;tja wi&#700;n&#299;no, ketj ketja wi&#700;n&#299;no." At once it began to rain. Only <animal>Weasel</animal> noticed it and spoke of it. All night it poured. The water rose higher and higher till it ran in at the door. "Tell them to go back, these two women! That <animal>Hawk</animal>-Man will kill us, he <pb n="165"/>will drown us." But <animal>Pine-Marten</animal> said nothing until morning. Then he said, "I do not like this. Where is a brave man? I want him to go over and kill <animal>Hawk</animal>-Man." So a man got up and went over, taking a knife and a shield. Meanwhile <animal>Hawk</animal>-Man was dancing harder and harder, and at every leap his head came up through the smoke-hole. The man crept nearer and nearer, and finally struck <animal>Hawk</animal>-Man and cut off his head. And at once the rain stopped, and the cloud cleared away, and the water sank. Then the people said to each other, "If a shaman is bad, we will kill him. That is how it shall be." Then they went off to hunt.</p>
+    </body>
+  </text>
+</TEI>
