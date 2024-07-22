@@ -1,0 +1,224 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Origin of Man</title>
+        <editor ref="p:Oberg378" role="collector">Kalervo Oberg</editor>
+        <editor ref="p:unidentified0" role="informant">unidentified</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="13">About 13 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NSA013329</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Oberg, Kalervo (1949): The Terena and the Caduveo of Southern Mato Grosso, Brazil. Washington, D. C.: Government Printing Office (Smithsonian Institution, Institute of Social Anthropology, Publication 9.) Quot. p. 63.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="25">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="1">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="0">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="13">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="0">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="1">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="3">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CSA39202">Kadiw&#233;u</name>
+          <date when="1947" type="recorded">Recorded in 1947.</date>
+        </setting>
+      </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <!-- link to our TMI once its online -->
+          <list>
+            <item>
+              <idno type="TMI">A33.1.1</idno>
+              <term>A33.1.1. Creator's dog. The creator is accompanied by a dog. (Cf. A63.4.)</term>
+            </item>
+            <item>
+              <idno type="TMI">A1211+WS2</idno>
+              <term>A1211+WS2. Tribe from creator's excrement.</term>
+            </item>
+            <item>
+              <idno type="TMI">A1232.3.1</idno>
+              <term>A1232.3.1. Mankind emerges from a pit.</term>
+            </item>
+            <item>
+              <idno type="TMI">A1600</idno>
+              <term>A1600. Distribution and differentiation of peoples &#8211; general.</term>
+            </item>
+            <item>
+              <idno type="TMI">A1610</idno>
+              <term>A1610. Origin of various tribes.</term>
+            </item>
+            <item>
+              <idno type="TMI">A1610.1</idno>
+              <term>A1610.1. Unworthy origin ascribed to hostile tribes.</term>
+            </item>
+            <item>
+              <idno type="TMI">A1618</idno>
+              <term>A1618. Origin of inequalities among men.</term>
+            </item>
+            <item>
+              <idno type="TMI">A2230</idno>
+              <term>A2230. Animal characteristics as punishment.</term>
+            </item>
+            <item>
+              <idno type="TMI">A2286</idno>
+              <term>A2286. Animal characteristics established by deity.</term>
+            </item>
+            <item>
+              <idno type="TMI">A2426.2</idno>
+              <term>A2426.2. Cries of birds.</term>
+            </item>
+            <item>
+              <idno type="TMI">A2435.4</idno>
+              <term>A2435.4. Food of birds.</term>
+            </item>
+            <item>
+              <idno type="TMI">B450</idno>
+              <term>B450. Helpful birds.</term>
+            </item>
+            <item>
+              <idno type="TMI">B576</idno>
+              <term>B576. Animal as guard.</term>
+            </item>
+            <item>
+              <idno type="TMI">B576.1.1</idno>
+              <term>B576.1.1. Guardian animals evaded.</term>
+            </item>
+            <item>
+              <idno type="TMI">D437.4</idno>
+              <term>D437.4. Transformation: excrements to person.</term>
+            </item>
+            <item>
+              <idno type="TMI">F660+WS4</idno>
+              <term>F660+WS4. Skillful fisherman.</term>
+            </item>
+            <item>
+              <idno type="TMI">H1199.17</idno>
+              <term>H1199.17. Task: guarding.</term>
+            </item>
+            <item>
+              <idno type="TMI">J1144</idno>
+              <term>J1144. Eaters of stolen food detected.</term>
+            </item>
+            <item>
+              <idno type="TMI">K300</idno>
+              <term>K300. Thefts and cheats &#8211; general.</term>
+            </item>
+            <item>
+              <idno type="TMI">K420</idno>
+              <term>K420. Thief loses his goods or is detected.</term>
+            </item>
+            <item>
+              <idno type="TMI">N396</idno>
+              <term>N396. The sleeping guard. Watchman falls asleep as enemy approaches.</term>
+            </item>
+            <item>
+              <idno type="TMI">Q221.5</idno>
+              <term>Q221.5. Disobedience to God punished.</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><anamyth><persName>Ono&#233;-noe</persName> is like a god, he is a Caduveo Indian, he pulled all the Indians out of a hole in the ground.</anamyth><persName>Ono&#233;-noe</persName> lived in the bushes by a stream. He placed traps to catch <animal>fish</animal> in the pools along the stream. He was very lucky and always caught <animal>fish</animal>. One day, <persName>Ono&#233;-noe</persName> went to his <animal>fish</animal> trap and noticed that someone had stolen his <animal>fish</animal>. This happened for many days. <persName>Ono&#233;-noe</persName> then asked the <animal>&#233;tahaha</animal> [a large heron-like marsh <animal>bird</animal>] to watch the trap, but <animal>&#233;tahaha</animal> went to sleep. <persName>Ono&#233;-noe</persName> was angry and as punishment permitted <animal>&#233;tahaha</animal> to eat only <animal>lizards</animal>. <apartmyth>That is why this <animal>bird</animal> eats <animal>lizards</animal> today.</apartmyth> Next <persName>Ono&#233;-noe</persName> ordered the <animal>etoli-toli bird</animal> to watch the trap. He too fell asleep and as punishment the <animal>etoli-toli bird</animal> has had to live thereafter on <animal>locusts</animal>. Finally <persName>Ono&#233;-noe</persName> ordered the <animal>opokon&#243; bird</animal> to fly over his trap all night. At dawn <animal>opokon&#243;</animal> saw some people taking <animal>fish</animal> out of the trap. <animal>Opokon&#243;</animal> then began to cry out and went to <persName>Ono&#233;-noe</persName> to tell him what he had seen. <persName>Ono&#233;-noe</persName> gave <animal>opokon&#243;</animal> a <animal>snail</animal> to eat. <apartmyth>That is why <animal>opokon&#243;</animal> keeps crying and eating <animal>snails</animal> today.</apartmyth></p>
+      <p>Then <persName>Ono&#233;-noe</persName> got up, put on his sandals and with his two <animal>dogs</animal> went to the trap. The <animal>dogs</animal> took up the trail of the thieves and followed the tracks to a hole in the ground. <persName>Ono&#233;-noe</persName> took away the leaves covering the hole and found that it was full of people. He then pulled out all the people. He pulled out the Brazilians, Paraguayans, and all other nations. To the Terena he gave land and told them how to grow <plant>crops</plant>. He almost forgot the Caduveo and pulled them out last and told them to wait while he was giving the other people land. But the Caduveo ran off to hunt. <persName>Ono&#233;-noe</persName> was angry and said, "Now you must always wander about looking for <animal>animals</animal> to hunt." <apartmyth>That is why the Caduveo are still poor hunters.</apartmyth></p>
+      <p><persName>Ono&#233;-noe</persName> then evacuated and from his excrement came the Chamacoco, <epimyth>"That is why the Chamacoco are such stupid and dirty people."</epimyth></p>
+    </body>
+  </text>
+</TEI>
