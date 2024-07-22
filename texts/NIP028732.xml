@@ -19,7 +19,7 @@
         </respStmt>
       </titleStmt>
       <extent>
-        <measure unit="KB" quantity="15">About 15 kilobytes</measure>
+        <measure unit="KB" quantity="16">About 16 kilobytes</measure>
       </extent>
       <publicationStmt>
         <authority>The Forager Folklore Database</authority>
@@ -117,6 +117,21 @@
           <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
         </setting>
       </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <!-- link to our TMI once its online -->
+          <list>
+            <item>
+              <idno type="TMI">E16</idno>
+              <term>E16. Resuscitation by stinging. Corpse is laid on an ant-heap.</term>
+            </item>
+            <item>
+              <idno type="TMI">F913</idno>
+              <term>F913. Victims rescued from swallower's belly. (Cf. X1723.1.)</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
     </profileDesc>
   </teiHeader>
   <text>
