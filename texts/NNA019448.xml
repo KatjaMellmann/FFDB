@@ -1,0 +1,133 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512; and Xat&#275;&#700;ts&#7431;n</title>
+        <editor ref="p:Boas15" role="collector">Franz Boas</editor>
+        <editor ref="p:Wanuk&#7512;1000" role="informant">Wa&#700;nuk&#7512;</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="12">About 12 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NNA019448</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Boas, Franz (1910): Kwakiutl Tales. New York: Columbia University Press (Columbia University Contributions to Anthropology, 2). Quot. pp. 2-6.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="8">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="0">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="0">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="61">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="0">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CNA29001">Kwakwaka&#700;wakw</name>
+          <date when="1893" type="recorded">Recorded in 1893.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><persName>Xat&#275;&#700;ts&#7431;n</persName> was sitting in his house when his attendant came and said, "Don't sit here in the house, for somebody is coming to the beach here." - "Maybe this is what I am expecting, that will make things right on the beach." Then <persName>Xat&#275;&#700;ts&#7431;n</persName> went out of his house to invite <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName>. Then [<persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName>] entered the house of <persName>Xat&#275;&#700;ts&#7431;n</persName>, and he was given dried [<animal>salmon</animal> to eat. It was dried] meat of the double-headed <animal>serpent</animal>. <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> began to eat it, and his body became contorted. Then <persName>Xat&#275;&#700;ts&#7431;n</persName> spoke. "Don't urge our friend here [to eat]." Then <persName>Xat&#275;&#700;ts&#7431;n</persName> and <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> went out of the house. <persName>Xat&#275;&#700;ts&#7431;n</persName> looked at his salmon-weir. Then <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> transformed him into stone. <persName>Xat&#275;&#700;ts&#7431;n</persName> became a man again, because he also had supernatural power. [He said,] "Go on, take warning, friend! Now I will also do something to you." Then <persName>Xat&#275;&#700;ts&#7431;n</persName> transformed his friend into stone, but <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> became a man again.</p>
+      <p>Then he warned <persName>Xat&#275;&#700;ts&#7431;n</persName>. "Take warning, friend! Now I will try you again." They took hold of each other, and <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> held <persName>Xat&#275;&#700;ts&#7431;n</persName> by his sides. He lifted him up. Then <persName>Xat&#275;&#700;ts&#7431;n</persName> was transformed into fog. He became a man again. Then <persName>Xat&#275;&#700;ts&#7431;n</persName> spoke. "Go on, take warning, friend! Now I will do something to you also." Then <persName>Xat&#275;&#700;ts&#7431;n</persName> lifted <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> and threw him upward. Then <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> also became fog. <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> became a man again.</p>
+      <p><pb n="5"/>Then <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> spoke. "Go on, take warning, friend! Now I will try to lift you from the rock." Then <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> took hold of <persName>Xat&#275;&#700;ts&#7431;n</persName> and threw him upward. He transformed <persName>Xat&#275;&#700;ts&#7431;n</persName> into a <animal>crane</animal>, and the <animal>crane</animal> began to fly. <persName>Xat&#275;&#700;ts&#7431;n</persName> became a man again. Then he also warned <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName>. "Go on, take care, friend!" Then <persName>Xat&#275;&#700;ts&#7431;n</persName> took hold of <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> and threw him upward. A <animal>crane</animal> was flying there. <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> became a man again.</p>
+      <p>Then <persName>Xat&#275;&#700;ts&#7431;n</persName> spoke. "Oh, indeed, you have supernatural power, friend! Come, let us go to my playground." Then they went aboard his canoe, and they paddled, going to <persName>Xat&#275;&#700;ts&#7431;n</persName>'s play-round. They were dressed quite with the same kind of belts; namely, double-headed <animal>serpents</animal>. Double-headed <animal>serpents</animal> also were their canoes. Then they arrived at the playground.</p>
+      <p>Then <persName>Xat&#275;&#700;ts&#7431;n</persName> spoke. "Take care, friend! else you might have a mishap on my playground. Nobody who ever tried to come and play on it has succeeded a single time. This is what makes it slippery, the blood of those who came from time to time to play here." Then <persName>Xat&#275;&#700;ts&#7431;n</persName> spoke. "You go on first, friend!" Thus <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> was told by his friend. "[No,] you first," said <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName>. "You said that it is your playground." - "Let me go first, friend," said <persName>Xat&#275;&#700;ts&#7431;n</persName>, on his part. Then he [<persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName>] clapped on the gunwale of his canoe with his paddle, and <persName>Xat&#275;&#700;ts&#7431;n</persName> ran up. <persName>Xat&#275;&#700;ts&#7431;n</persName> ran straight up. He did not rest on his resting-place halfway up: he just turned round and came down again and jumped into his canoe.</p>
+      <p>Then <persName>Xat&#275;&#700;ts&#7431;n</persName> spoke. "Now you go, friend!" Thus he said to <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName>. "Take care, fasten your belt well, else it might [drag] behind you!" Then <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> ran. He had nearly reached the top when he <pb n="7"/>slipped on the rock. His belt came off, and <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> fell down. He fell into the water and sank. Then <persName>Xat&#275;&#700;ts&#7431;n</persName> went away to <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName>'s canoe, and upset it on the water. "Indeed, you have no real supernatural power, friend," thus he said while upsetting <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName>'s canoe.</p>
+      <p><persName>Xat&#275;&#700;ts&#7431;n</persName> waited in vain for <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> to show himself, but <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> just did mischief to <persName>Xat&#275;&#700;ts&#7431;n</persName>'s land. <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> transformed into stone a <animal>beaver</animal> that was sitting by the river. Then <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> caught sight of the watchman at the salmon-weir of <persName>Xat&#275;&#700;ts&#7431;n</persName>. He transformed into stone him and his pole. Then he also transformed into stone the watchman of <persName>Xat&#275;&#700;ts&#7431;n</persName>. Then <persName>Xat&#275;&#700;ts&#7431;n</persName> was vanquished by <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName>, for <persName>Xat&#275;&#700;ts&#7431;n</persName> did not know what <persName>Q!&#257;&#700;n&#275;q&#275;&#7499;lak&#7512;</persName> was doing.</p>
+    </body>
+  </text>
+</TEI>
