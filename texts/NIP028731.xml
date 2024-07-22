@@ -1,0 +1,142 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Bahloo the Moon, and the Daens</title>
+        <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor>
+        <editor ref="p:unidentified0" role="informant">unidentified</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="11">About 11 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NIP028731</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade. Quot. pp. 8-10.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="22">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="1">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="11">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="0">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="0">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CIPD0270">Yuwaalaraay</name>
+          <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
+        </setting>
+      </settingDesc>
+      <textClass>
+        <keywords scheme="URLtoOurTMI">
+          <!-- link to our TMI once its online -->
+          <list>
+            <item>
+              <idno type="TMI">A1335</idno>
+              <term>A1335. Origin of death.</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><ref target="g:GIP0247.001">Bahloo</ref> the moon looked down at the earth one night, when his light was shining quite <color>brightly</color>, to see if any one was moving. When the earth people were all asleep was the time he chose for playing with his three <animal>dogs</animal>. He called them <animal>dogs</animal>, but the earth people called them <animal>snakes</animal>, the <animal>death adder</animal>, the <animal><color>black</color> snake</animal>, and the <animal>tiger snake</animal>. As he looked down on to the earth, with his three <animal>dogs</animal> beside him, <ref target="g:GIP0247.001">Bahloo</ref> saw about a dozen <ref target="g:GIP0247.040">daens</ref>, or <color>black</color> fellows, crossing a creek. He called to them saying, "Stop, I want you to carry my <animal>dogs</animal> across that creek." But the <color>black</color> fellows, though they liked <ref target="g:GIP0247.001">Bahloo</ref> well, did not like his <animal>dogs</animal>, for sometimes when he had brought these <animal>dogs</animal> to play on the earth, they had bitten not only the earth <animal>dogs</animal> but their masters; and the poison left by the bites had killed those bitten. So the <color>black</color> fellows said, "No, <ref target="g:GIP0247.001">Bahloo</ref>, we are too frightened; your <animal>dogs</animal> might bite us. They are not like our <animal>dogs</animal>, whose bite would not kill us."</p>
+      <p><ref target="g:GIP0247.001">Bahloo</ref> said, "If you do what I ask you, when you die you shall come to life again, not die and stay always where you are put when you are dead. See this piece of bark. <pb n="9"/>I throw it into the water." And he threw a piece of bark into the creek. "See it comes to the top again and floats. That is what would happen to you if you would do what I ask you: first under when you die, then up again at once. If you will not take my <animal>dogs</animal> over, you foolish <ref target="g:GIP0247.040">daens</ref>, you will die like this," and he threw a stone into the creek, which sank to the bottom. "You will be like that stone, never rise again, <ref target="g:GIP0247.130">Wombah</ref> <ref target="g:GIP0247.040">daens</ref>!"</p>
+      <p>But the <color>black</color> fellows said, "We cannot do it, <ref target="g:GIP0247.001">Bahloo</ref>. We are too frightened of your <animal>dogs</animal>."</p>
+      <p>"I will come down and carry them over myself to show you that they are quite safe and harmless." And down he came, the <animal><color>black</color> snake</animal> coiled round one arm, the <animal>tiger snake</animal> round the other, and the <animal>death adder</animal> on his shoulder, coiled towards his neck. He carried them over. When he had crossed the creek he picked up a big stone, and he threw it into the water, saying, "Now, you cowardly <ref target="g:GIP0247.040">daens</ref>, you would not do what I, <ref target="g:GIP0247.001">Bahloo</ref>, asked you to do, and so forever you have lost the chance of rising again after you die. You will just stay where you are put, like that stone does under the water, and grow, as it does, to be part of the earth. If you had done what I asked you, you could have died as often as I die, and have come to life as often as I come to life. But now you will only be <color>black</color> fellows while you live, and bones when you are dead."</p>
+      <p><ref target="g:GIP0247.001">Bahloo</ref> looked so cross, and the three <animal>snakes</animal> hissed so fiercely, that the <color>black</color> fellows were very glad to see them disappear from their sight behind the <plant>trees</plant>. The <color>black</color> fellows had always been frightened of <ref target="g:GIP0247.001">Bahloo</ref>'s <animal>dogs</animal>, and now they hated them, and they said, "If we could get <pb n="10"/>them away from <ref target="g:GIP0247.001">Bahloo</ref> we would kill them." And thenceforth, whenever they saw a <animal>snake</animal> alone they killed it. But <ref target="g:GIP0247.001">Bahloo</ref> only sent more, for he said, "As long as there are <color>black</color> fellows there shall be <animal>snakes</animal> to remind them that they would not do what I asked them."</p>
+    </body>
+  </text>
+</TEI>
