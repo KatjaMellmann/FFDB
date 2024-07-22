@@ -1,0 +1,130 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Lost Brother</title>
+        <editor ref="p:Dixon1051" role="collector">Roland B. Dixon</editor>
+        <editor ref="p:OldWool4761" role="informant">"Old Wool"</editor>
+        <editor ref="p:CharleyGreen4760" role="informant">Charley Green</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="12">About 12 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NNA025131</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Dixon, Roland B. (1908): Achomawi and Atsugewi Tales. In: The Journal of American Folk-Lore 21(81), 159-177. Quot. pp. 167-168.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="59">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="1">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="1">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="0">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="1">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CNA29602">Achumawi</name>
+          <date notAfter="1903" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1903.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><animal>Fisher</animal> and his brother <animal>Weasel</animal> were living together. One day <animal>Lizard</animal> stole <animal>Weasel</animal>, and carried him off, and <animal>Fisher</animal> hunted in vain for him. As he went about searching, he kicked up the earth, and so made the mountains. One day some <animal>Mice</animal> came to <animal>Fisher</animal>'s house as he lay asleep. They came to get some meat from a <animal>deer</animal> he had killed. They cried and talked at the same time, throwing dust in their eyes for grief. <animal>Fisher</animal> gave the <animal>Mice</animal> some meat, and told them how his brother had been stolen by <animal>Lizard</animal> while gathering wood. The <animal>Mice</animal> said that they thought he could find his brother again somehow. Then <animal>Fisher</animal> asked them to help, to go and ask Sun where he was. He promised to give them feathers and beads and paint to give Sun. The <animal>Mice</animal> agreed to go, and, taking a long cord, tied it to an arrow and shot it up to the sky, where it stuck firmly. <animal>Fisher</animal> then gave them the gifts he had promised, told them to ask Sun if he had seen where <animal>Weasel</animal> was, for he could see all over the world. If Sun did not answer at first, they were not to be discouraged, but to go on ahead of him along the road he travelled in the sky, and ask him again.</p>
+      <p>The <animal>Mice</animal> started, and climbed up to the sky, to the road on which Sun travelled. He came along, carrying his daughter on his back in a basket. The <animal>Mice</animal> asked him to stop, said that they had come to see him, and had brought presents from <animal>Fisher</animal>, who wished to know where his brother had been taken to. Sun did not answer, but walked steadily on. So the <animal>Mice</animal> ran ahead and asked again, and then Sun stopped. He said he could not see <animal>Weasel</animal>, but that a man lived far away at <placeName>Baiwa</placeName>, that he had no children, yet he could see him with a little <color>white</color> boy, which might be <animal>Weasel</animal>. The <animal>Mice</animal> said that they were sure it was, and gave the gifts to Sun, after which they came back down the rope to <animal>Fisher</animal>'s house.</p>
+      <p>The <animal>Mice</animal> told <animal>Fisher</animal> all that they had done, and said that Sun had said that <animal>Lizard</animal> had a small boy with him, who might be <animal>Weasel</animal>. <animal>Fisher</animal> thanked them, and sent them away. He felt happy, for he knew where his brother was. He built a fire, took out his arrows and dried them, and in the morning started off to where <animal>Lizard</animal> lived. <animal>Lizard</animal> went out to catch <animal>ducks</animal>; and when he left, he told <animal>Weasel</animal> to stay behind in the house and watch his bow and arrows. As <animal>Fisher</animal> came near, he caused <plant>trees</plant> to grow in front of him to conceal his approach. <animal>Weasel</animal> had gone out to get some wood, and saw his brother. He was glad to <pb n="168"/>find him; and they talked together, and decided how to escape. <animal>Weasel</animal> made a great fire in the house, and then took <animal>Lizard</animal>'s bow and arrows and threw them in, then joined <animal>Fisher</animal>, and the two ran off. <animal>Lizard</animal> was looking back, and saw the big fire in his house, and came back in a hurry to see what was the trouble. He found his weapons burned, all but a few arrows. These he took, and started after the two brothers. They and <animal>Lizard</animal> travelled very fast, as they snapped themselves from one mountain-top to another by means of an arrow-flaker. <animal>Fisher</animal> tried to escape, but <animal>Lizard</animal> always got in front of him. So at last they fought. <animal>Fisher</animal> put <animal>Weasel</animal> in his quiver and fought as hard as he could, but by and by got very tired. Every now and then <animal>Weasel</animal> would pop his head out and say, "He nearly hit you then! Be careful, brother!" Toward sundown <animal>Fisher</animal> was very tired, and looked to see where <animal>Bluejay</animal> was. He was out stalking <animal>deer</animal> with a <animal>deer</animal>-head on as disguise, and, seeing <animal>deer</animal>, he was creeping up on them, and did not see the conflict. The <animal>deer</animal> were startled by it, however, and ran; and <animal>Bluejay</animal>, looking up, saw <animal>Fisher</animal> retreating backwards toward him. <animal>Bluejay</animal> was an older brother of <animal>Fisher</animal>'s, and came to his aid, and succeeded in hitting <animal>Lizard</animal> in the belly, when he burst in two and was killed. Then <animal>Fisher</animal> stood up, and wiped the sweat from him, and went home with <animal>Bluejay</animal> and <animal>Weasel</animal>.</p>
+    </body>
+  </text>
+</TEI>
