@@ -26,7 +26,7 @@
         <authority>The Forager Folklore Database</authority>
         <idno type="FFDB">NNA024306</idno>
         <availability status="free">
-          <licence target="http://rightsstatements.org/vocab/InC-NC/1.0/">In Copyright - Non-Commercial Use Permitted</licence>
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
         </availability>
         <date when="2023">2023</date>
       </publicationStmt>
