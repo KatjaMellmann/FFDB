@@ -1,0 +1,145 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Weeoombeens and the Piggiebillah</title>
+        <editor ref="p:Parker1451" role="collector">K. Langloh Parker</editor>
+        <editor ref="p:unidentified0" role="informant">unidentified</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="16">About 16 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NIP028734</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Parker, K. Langloh (1896): Australian Legendary Tales. Folk-Lore of the Noongahburrahs as Told by the Piccaninnies. With Introduction by Andrew Lang. Illustrations by a Native Artist, and Specimen of the Native Text. London: Nutt &amp; Melbourne: Melville, Mullen &amp; Slade. Quot. pp. 19-23.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="62">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="6">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="18">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="0">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="0">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="1">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CIPD0270">Yuwaalaraay</name>
+          <date notAfter="1895" notBefore="1875" type="recorded">Recorded sometime between 1875 and 1895.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Two <animal><ref target="g:GIP0247.125">Weeoombeen</ref></animal> brothers went out hunting. One brother was much younger than the other and smaller, so when they sighted an <animal>emu</animal>, the elder one said to the younger: "You stay quietly here and do not make a noise, or <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal>, whose camp we passed just now, will hear you and steal the <animal>emu</animal> if I kill it. He is so strong. I'll go on and try to kill the <animal>emu</animal> with this stone." The little <animal><ref target="g:GIP0247.125">Weeoombeen</ref></animal> watched his big brother sneak up to the <animal>emu</animal>, crawling along, almost flat, on the ground. He saw him get quite close to the <animal>emu</animal>, then spring up quickly and throw the stone with such an accurate aim as to kill the <animal>bird</animal> on the spot. The little brother was so rejoiced that he forgot his brother's caution, and he called aloud in his <pb n="20"/>joy. The big <animal><ref target="g:GIP0247.125">Weeoombeen</ref></animal> looked round and gave him a warning sign, but too late, <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal> had heard the cry and was hastening towards them. Quickly big <animal><ref target="g:GIP0247.125">Weeoombeen</ref></animal> left the <animal>emu</animal> and joined his little brother.</p>
+      <p><animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal>, when he came up, said: "What have you found?"</p>
+      <p>"Nothing," said the big <animal><ref target="g:GIP0247.125">Weeoombeen</ref></animal>, "nothing but some <plant>mistletoe</plant> berries."</p>
+      <p>"It must have been something more than that, or your little brother would not have called out so loudly."</p>
+      <p>Little <animal><ref target="g:GIP0247.125">Weeoombeen</ref></animal> was so afraid that <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal> would find their <animal>emu</animal> and take it, that he said: "I hit a little <animal>bird</animal> with a stone, and I was glad I could throw so straight."</p>
+      <p>"It was no cry for the killing of a little <animal>bird</animal> or for the finding of <plant>mistletoe</plant> berries that I heard. It was for something much more than either, or you would not have called out so joyfully. If you do not tell me at once I will kill you both."</p>
+      <p>The <animal><ref target="g:GIP0247.125">Weeoombeen</ref></animal> brothers were frightened, for <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal> was a great fighter and very strong, so when they saw he was really angry, they showed him the dead <animal>emu</animal>.</p>
+      <p>"Just what I want for my supper," he said, and so saying, dragged it away to his own camp. The <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> followed him and even helped him to make a fire to cook the <animal>emu</animal>, hoping by so doing to get a share given to them. But <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal> would not give them any; he said he must have it all for himself.</p>
+      <p>Angry and disappointed, the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> marched straight off and told some <color>black</color> fellows who lived near, that <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal> had a fine fat <animal>emu</animal> just cooked for supper.</p>
+      <p>Up jumped the <color>black</color> fellows, seized their spears, bade <pb n="21"/>the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> quickly lead them to <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal>'s camp, promising them for so doing a share of the <animal>emu</animal>.</p>
+      <p>When they were within range of spear shot, the <color>black</color> fellows formed a circle, took aim, and threw their spears at <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal>. As the spears fell thick on him, sticking out all over him, <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal> cried aloud: "Bingehlah, Bingehlah. You can have it, you can have it." But the <color>black</color> fellows did not desist until <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal> was too wounded even to cry out; then they left him a mass of spears and turned to look for the <animal>emu</animal>. But to their surprise they found it not. Then for the first time they missed the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal>.</p>
+      <p>Looking round they saw their tracks going to where the <animal>emu</animal> had evidently been; then they saw that they had dragged the <animal>emu</animal> to their <ref target="g:GIP0247.110">nyunnoo</ref>, which was a humpy made of <plant>grass</plant>.</p>
+      <p>When the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> saw the <color>black</color> fellows coming, they caught hold of the <animal>emu</animal> and dragged it to a big hole they knew of, with a big stone at its entrance, which stone only they knew the secret of moving. They moved the stone, got the <animal>emu</animal> and themselves into the hole, and the stone in place again before the <color>black</color> fellows reached the place.</p>
+      <p>The <color>black</color> fellows tried to move the stone, but could not. Yet they knew that the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> must have done so, for they had tracked them right up to it, and they could hear the sound of their voices on the other side of it. They saw there was a crevice on either side of the stone, between it and the ground. Through these crevices they drove in their spears, thinking they must surely kill the brothers. But the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> too had seen these <pb n="22"/>crevices and had anticipated the spears, so they had placed the dead <animal>emu</animal> before them to act as a shield. And into its body were driven the spears of the <color>black</color> fellows extended for the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal>.</p>
+      <p>Having driven the spears well in, the <color>black</color> fellows went off to get help to move the stone, but when they had gone a little way they heard the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> laughing. Back they came and speared again, and again started for help, only as they left to hear once more the laughter of the brothers.</p>
+      <p>The <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> finding their laughter only brought back the <color>black</color> fellows to a fresh attack, determined to keep quiet, which, after the next spearing, they did.</p>
+      <p>Quite sure, when they heard their spear shots followed by neither conversation nor laughter, that they had killed the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> at last, the <color>black</color> fellows hurried away to bring back the strength and cunning of the camp, to remove the stone.</p>
+      <p>The <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> hurriedly discussed what plan they had better adopt to elude the <color>black</color> fellows, for well they knew that should they ever meet any of them again they would be killed without mercy. And as they talked they satisfied their hunger by eating some of the <animal>emu</animal> flesh.</p>
+      <p>After a while the <color>black</color> fellows returned, and soon was the stone removed from the entrance. Some of them crept into the hole, where, to their surprise, they found only the remains of the <animal>emu</animal> and no trace of the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal>. As those who had gone in first crept out and told of the disappearance of the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal>, others, incredulous of such a story, crept in to find it confirmed. They searched round for tracks; seeing that their spears were all in the <pb n="23"/>emu it seemed to them probable the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal> had escaped alive, but if so, whither they had gone their tracks would show. But search as they would no tracks could they find. All they could see were two little <animal>birds</animal> which sat on a <plant>bush</plant> near the hole, watching the <color>black</color> fellows all the time. The little <animal>birds</animal> flew round the hole sometimes, but never away, always returning to their <plant>bush</plant> and seeming to be discussing the whole affair; but what they said the <color>black</color> fellows could not understand. But as time went on and no sign was ever found of the <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal>, the <color>black</color> fellows became sure that the brothers had turned into the little <color>white</color>-throated <animal>birds</animal> which had sat on the <plant>bush</plant> by the hole, so, they supposed, to escape their vengeance. <epimyth>And ever afterwards the little <color>white</color>-throats were called <animal><ref target="g:GIP0247.125">Weeoombeens</ref></animal>. And the memory of <animal><ref target="g:GIP0247.115">Piggiebillah</ref></animal> is perpetuated by a sort of <animal>porcupine ant-eater</animal>, which bears his name, and whose skin is covered closely with miniature spears sticking all over it.</epimyth></p>
+    </body>
+  </text>
+</TEI>
