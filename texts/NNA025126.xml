@@ -1,0 +1,130 @@
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/KatjaMellmann/FFDB/main/schema/FFDB.rng" type="application/xml" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Making of Daylight</title>
+        <editor ref="p:Dixon1051" role="collector">Roland B. Dixon</editor>
+        <editor ref="p:OldWool4761" role="informant">"Old Wool"</editor>
+        <editor ref="p:CharleyGreen4760" role="informant">Charley Green</editor>
+        <funder>Deutsche Forschungsgemeinschaft</funder>
+        <principal>
+          <persName>Katja Mellmann</persName>
+          <persName>Michelle Scalise Sugiyama</persName>
+        </principal>
+        <respStmt>
+          <resp>XML templates, digitization architecture, and automated inline tagging</resp>
+          <persName>Jan Jokisch</persName>
+        </respStmt>
+      </titleStmt>
+      <extent>
+        <measure unit="KB" quantity="11">About 11 kilobytes</measure>
+      </extent>
+      <publicationStmt>
+        <authority>The Forager Folklore Database</authority>
+        <idno type="FFDB">NNA025126</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution NonCommercial (CC BY-NC)</licence>
+        </availability>
+        <date when="2023">2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Dixon, Roland B. (1908): Achomawi and Atsugewi Tales. In: The Journal of American Folk-Lore 21(81), 159-177. Quot. pp. 161-163.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Text digitized and encoded for use in the Forager Folklore Database. The FFDB
+                    offers a basis for a systematic study of narrative universals,
+                    the evolutionary origin of storytelling, and (comparative) folklore studies.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The narrative was selected for being a genuine piece of oral literature recorded
+                    directly, or mediated by an interpreter, from an informant who either lived or
+                    grew up as a member of a culture whose subsistence at the time of recording was,
+                    or until recently had been, depending primarily on hunting, gathering, and/or
+                    fishing. Care was taken to ensure the quality of the recording and the relative
+                    absence of external cultural influences.</p>
+      </samplingDecl>
+      <tagsDecl>
+        <namespace name="">
+          <tagUsage gi="animal" occurs="44">Used to mark animal names mentioned in the text.</tagUsage>
+          <tagUsage gi="plant" occurs="1">Used to mark plant names mentioned in the text.</tagUsage>
+          <tagUsage gi="color" occurs="1">Used to mark colors (adjectives and nouns) mentioned in the
+                        text.</tagUsage>
+          <tagUsage gi="persName" occurs="0">Used to mark personal names (usually characters)
+                        mentioned in the text.</tagUsage>
+          <tagUsage gi="placeName" occurs="0">Used to mark named place names mentioned in the text.</tagUsage>
+          <tagUsage gi="anamyth" occurs="0">Used to mark a framing metacommentary at the beginning of
+                        a narrative.</tagUsage>
+          <tagUsage gi="apartmyth" occurs="0">Used to mark comments or asides within the course of a
+                        narrative.</tagUsage>
+          <tagUsage gi="epimyth" occurs="0">Used to mark a framing metacommentary at the end of a
+                        narrative.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="p" matchPattern=".*" replacementPattern="../references/personography.xml#$1">
+          <p>Private URIs using the <code>p</code> prefix are pointers to <gi>person</gi>
+                        elements in the <name type="file">personography.xml</name> file.</p>
+        </prefixDef>
+        <prefixDef ident="q" matchPattern=".*" replacementPattern="https://www.wikidata.org/wiki/$1">
+          <p>URIs using the <code>q</code> prefix are <name ref="q:Q43649390">Wikidata Q
+                        identifiers</name> and refer to the respective entries on <orgName ref="https://www.wikidata.org/">Wikidata</orgName>.</p>
+        </prefixDef>
+        <prefixDef ident="g" matchPattern=".*" replacementPattern="">
+          <!-- write a replacementPattern once glossaries are online -->
+          <p>Private URIs using the <code>g</code> prefix are pointers to the respective
+                        lemmas in the FFDB collection of glossaries.</p>
+        </prefixDef>
+      </listPrefixDef>
+      <editorialDecl>
+        <p>Footnotes are generally retained, but no effort has been made to link the
+                    narratives mentioned in comparative notes with corresponding records within the
+                    FFDB.</p>
+        <p>Page numbers have been retained, but page beginnings, <gi>pb</gi>, occurring
+                    within a word have been moved either before or after the word (or nominal
+                    phrase) on a case to case basis, without general rule.</p>
+        <normalization method="silent">
+          <p>Omissions as well as supplementations by the original editor are set in
+                        brackets. In all other cases, parentheses in the original are retained.</p>
+          <p>Latin passages in the original (usually to mask language and themes deemed
+                        indecent) are rendered in English.</p>
+        </normalization>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation has been removed. All other hyphenation has been
+                        retained.</p>
+        </hyphenation>
+        <quotation marks="all">
+          <p>All quotation marks have been retained. No effort was made to mark up
+                        passages in quotation marks as, for example, <gi>q</gi>, <gi>quote</gi>, <gi>
+                        said</gi>, <gi>cit</gi>, or <gi>soCalled</gi>.</p>
+        </quotation>
+        <interpretation>
+          <p>Animals, plants, colors, characters, and place names were automatically
+                        tagged using a semantic tagger based on WordNet and self-provided word
+                        lists, and were subsequently checked manually. They are tagged with <gi>
+                        animal</gi>, <gi>plant</gi>, <gi>color</gi>, <gi>persName</gi>, and <gi>
+                        placeName</gi>, respectively.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <settingDesc>
+        <setting>
+          <name type="culture" key="CNA29602">Achumawi</name>
+          <date notAfter="1903" notBefore="1900" type="recorded">Recorded sometime between 1900 and 1903.</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>In the beginning it was always dark. Darkness was a woman, who had two daughters, and came from the eastward to gamble with <animal>Wildcat</animal>. She reached <animal>Wildcat</animal>'s house at night, and after supper began to talk about gambling, saying, "I never came here before. I came to gamble." The others present advised <animal>Wildcat</animal> to play: so all the preparations were made, and, sitting on either side of the fire, they began to play. Darkness bet her two daughters against all the people which <animal>Wildcat</animal> had. Darkness wanted <animal>Wildcat</animal> to bet her husband, <animal>Chicken-Hawk</animal>, but she did not wish to. Finally, on <animal>Coyote</animal>'s advice, she bet him as chief first. Then they began to play, <animal>Coyote</animal> helping to sing. He thought the game was going favorably, and that <animal>Wildcat</animal> would win the two girls, and <pb n="162"/>that he would get them for wives. But just as she almost won, Darkness beat her, and, taking <animal>Coyote</animal>, broke him in two and threw him outside. Darkness then threatened to "stay dark all the time" unless <animal>Wildcat</animal> would bet her husband, as Darkness wanted him for a husband for her daughters. <animal>Wildcat</animal> refused, and bet other people in the house. All but three offered themselves to be bet. These were <animal>Rabbit</animal>, <animal>Weasel</animal>, and <animal>Caterpillar</animal>. Finally all were lost to Darkness but these; and then <animal>Caterpillar</animal> said, "Bet me," and he came near where <animal>Wildcat</animal> sat. They were gambling with a small slippery thing like ice, instead of the usual gambling-bone. <animal>Caterpillar</animal> began to sing, and to win. Pretty soon all but one of Darkness' counters were gone, and she began to be afraid. She was afraid of the smooth gambling-stick. <animal>Caterpillar</animal> told her to sit still, as she was moving about nervously. Suddenly he slid the gambling-stick across at her, and, entering her body, it caused her to burst. Then <animal>Caterpillar</animal> took her body and threw it outside.</p>
+      <p>The two girls were sitting there crying. One of them was going to gamble. She told <animal>Caterpillar</animal> to deal, but he refused. So she began, and won until <animal>Caterpillar</animal> had only one counter left. Then he began to win, and finally killed her just as he had her mother. He then threw her body outside. Only the youngest sister was left. <animal>Caterpillar</animal> told her not to cry, as he was not crying, although all his people were lost. They played and played, and, as before, <animal>Caterpillar</animal> killed her by the same trick. Then <animal>Caterpillar</animal> said, "In after time, people will say that I was the one who won my people back."</p>
+      <p>Still, however, it was dark. So <animal>Lizard</animal> set to work to try to make light. He went over to Big-<animal>Lizard</animal>'s house, and took a light with him. He told Big-<animal>Lizard</animal> all about what had happened, and told him that he and <animal>Caterpillar</animal> and <animal>Rabbit</animal> were the only ones left. Then <animal>Lizard</animal> put on his cap and began to dance. His cap was made of a <animal>grizzly-bear</animal>'s head. <animal>Rabbit</animal> was talking, singing, while <animal>Lizard</animal> was dancing near the house-post. By and by it began to grow <color>light</color>. <animal>Lizard</animal> made daylight come by dancing. <animal>Rabbit</animal> said, "That is what people will say; that is what people must say, 'Daylight is coming."' <animal>Lizard</animal>'s grandmother was sitting there, and she sang, "Daylight is coming, daylight is coming!" Then she made a mistake, and sang about a man. <animal>Lizard</animal> was angry, and said, "You are always thinking about men." His grandmother answered, "I meant to sing properly, but my teeth are all gone, and so I made a mistake." <animal>Lizard</animal> then told <animal>Rabbit</animal> to go out and see where light was coming. He went up and looked, and, looking to the east, saw the dawn and heard the <animal>birds</animal> singing. He came back and said, "I did not see anything." By and by he went up again, after <animal>Lizard</animal> had danced some more. This time daylight had come. All over the world people woke up, and made a noise. Then <animal>Lizard</animal> stopped dancing. He told people to open the doors, to build a fire and go out. It was <pb n="163"/>spring-time, and <plant>sunflowers</plant> were ripening. All the people came out and talked about <animal>Lizard</animal>'s having made the light.</p>
+    </body>
+  </text>
+</TEI>
